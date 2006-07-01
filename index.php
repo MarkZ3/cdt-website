@@ -41,7 +41,8 @@
 		you install the Eclipse SDK.</p>
 		<p>I am also in the middle of Phoenix'ing the CDT web site. More content will appear here over the next
 		few days. In the meantime more information about the CDT project can be found on the
-		<a href="http://wiki.eclipse.org/index.php/CDT">CDT Wiki</a></p>
+		<a href="http://wiki.eclipse.org/index.php/CDT">CDT Wiki</a> and the old page is still available
+		<a href="index_old.html">here</a></p>
 		<p>Thanks for your patience, Doug Schaefer, CDT Project Lead</p>
 	</div>
 </div>

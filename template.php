@@ -4,7 +4,7 @@
 	#
 	# template.php
 	#
-	# Author: 		Your Name
+	# Author: 		Denis Roy
 	# Date:			2005-06-16
 	#
 	# Description: Type your page comments here - these are not sent to the browser
@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "C/C++ IDE Project";
+	$pageTitle 		= "Sample Phoenix web page using the new templates";
 	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Type your name here";
 	
@@ -27,14 +27,12 @@
 	# End: page-specific settings
 	#
 		
-	# Paste your HTML content here!
-	ob_start();
-		
-?>
+	# Paste your HTML content between the EOHTML markers!	
+	$html = <<<EOHTML
 
 <div id="maincontent">
 	<div id="midcolumn">
-		<h1><?= $pageTitle ?></h1>
+		<h1>$pageTitle</h1>
 		<h2>Section title</h2>
 		<p>Intro text.<br /> <a href="#">more about something &raquo;</a> </p>
 		<div class="homeitem">
@@ -99,9 +97,8 @@
 </div>
 
 
-<?
-	$html = ob_get_contents();
-	ob_end_clean();
+EOHTML;
+
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);

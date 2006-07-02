@@ -9,7 +9,7 @@
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# these are optional
-	$Nav->addNavSeparator("Project Home", 	"downloads.php");
+	$Nav->addNavSeparator("CDT Home", 	"index.php");
 	$Nav->addCustomNav("Downloads", 		"downloads.php", 	"_self", 2);
 	$Nav->addCustomNav("Wiki",				"http://wiki.eclipse.org/index.php/CDT", "_self", 2);
 	#$Nav->addCustomNav("Installation", 		"install.php", 		"_self", 2);

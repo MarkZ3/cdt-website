@@ -23,8 +23,8 @@
 		the Eclipse Platform release. So please be careful how you are matching these versions.</p>
 		<p>As a minimum, you need to install the Eclipse Platform Runtime before installing the CDT</p>
 		<h2>CDT 3.1</h2>
-		<p>The CDT can be installed from the Callisto Update Site or the CDT Update Site. The CDT Update Site is
-		avalable by entering the following URL as the remote site in the Update Manager.
+		<p>CDT 3.1 runs on Eclipse 3.2. It can be installed from the Callisto Update Site or the CDT Update Site.
+		The CDT Update Site is avalable by entering the following URL as the remote site in the Update Manager.
 		<ul>
 			<li>http://download.eclipse.org/tools/cdt/releases/callisto</li>
 		</ul></p>

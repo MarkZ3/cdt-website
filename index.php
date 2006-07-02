@@ -34,12 +34,10 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>Welcome to the Eclipse CDT</h2>
-		<p>I appreciate everyone's patience as we slowly roll out the new Eclipse CDT 3.1 which is one
-		of the 10 project available in Callisto. We will shortly be making the zip/tar distributions available
-		as well as pointers to the CDT update site for Callisto.</p>
-		<p>In the meantime, you can install the CDT from the Callisto update site that is available when
-		you install the Eclipse SDK.</p>
-		<p>I am also in the middle of Phoenix'ing the CDT web site. More content will appear here over the next
+		<p><b>CDT 3.1 Now Available!</b>CDT 3.1 is build for Eclipse 3.2 or Callisto. It can be downloaded from
+		the Callisto Update site of by following the instructions on the CDT Download page by following the
+		Downloads link on the left.</p>
+		<p>I am in the middle of Phoenix'ing the CDT web site. More content will appear here over the next
 		few days. In the meantime more information about the CDT project can be found on the
 		<a href="http://wiki.eclipse.org/index.php/CDT">CDT Wiki</a> and the old page is still available
 		<a href="index_old.html">here</a></p>

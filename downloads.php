@@ -31,6 +31,7 @@
 		<p>The CDT can also be downloaded in a single file form the following pages</p>
 		<ul>
 			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.0">CDT 3.1.0 (June 30, 2006)</a></li>
+			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.1">CDT 3.1.1 (September 29, 2006)</a></li>
 		</ul>
 		<br>
 	</div>

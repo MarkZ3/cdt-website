@@ -2,16 +2,26 @@
 
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
-	function getFileID($filename, $dbh) {
+	function getCount($filename, $from, $to, $dbh) {
+		#get the file id
 		$sql = "SELECT file_id
 				FROM download_file_index
 				WHERE file_name = '" . $filename . "'";
 		$rs = mysql_query($sql, $dbh);
 		$myrow = mysql_fetch_assoc($rs);
-		print_r($myrow);
-		return $myrow('file_id');
+		$fileid = $myrow['file_id'];
+		
+		$sql = "SELECT COUNT(file_id) as count
+				FROM downloads
+				WHERE file_id = " . $fileid . "
+					AND download_date BETWEEN \"" . $from . "\" AND \"" . $to . "\"
+				GROUP BY file_id";
+		$rs = mysql_query($sql, $dbh);
+		$myrow = mysql_fetch_assoc($rs);
+		echo $myrow;
+		return $myrow['count'];
 	}
-
+			
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.
 	$_PASSWORD = $_GET['password'];
@@ -113,9 +123,9 @@
 			"6/1/2006,2006-06-01,2006-06-30",
 			"7/1/2006,2006-07-01,2006-07-31",
 			"8/1/2006,2006-08-01,2006-08-31",
-			"9/1/2006,2009-09-01,2006-09-30",
-			"10/1/2006,2009-10-01,2006-10-31",
-			"11/1/2006,2009-11-01,2006-11-30");
+			"9/1/2006,2006-09-01,2006-09-30",
+			"10/1/2006,2006-10-01,2006-10-31",
+			"11/1/2006,2006-11-01,2006-11-30");
 
 		$platforms = array(
 			"aix,.ppc.tar.gz",
@@ -169,7 +179,8 @@
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
 
-		echo "File id is: " . getFileId("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar", $dbh);
+		echo "File count: " . getCount("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar",
+			"2006-09-01", "2006-09-30", $dbh);
 
 		$dbc->disconnect();
 	} else {

@@ -41,8 +41,6 @@
 		echo "</tr>";
 	}
 	
-	echo "Starting<br>";
-
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.
 	$_PASSWORD = $_GET['password'];
@@ -62,7 +60,7 @@
 #			"8/1/2006,2006-08-01,2006-08-31",
 #			"9/1/2006,2006-09-01,2006-09-30",
 			"10/1/2006,2006-10-01,2006-10-31",
-#			"11/1/2006,2006-11-01,2006-11-30"
+#			"11/1/2006,2006-11-01,2006-11-30",
 		);
 
 		$files = array(
@@ -130,7 +128,7 @@
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.macosx_3.0.2.jar,3.0.2,macosx,update",
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.qnx_3.0.2.jar,3.0.2,qnx,update",
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.solaris_3.0.2.jar,3.0.2,solaris,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.win32_3.0.2.jar,3.0.2,win32,update"
+			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.win32_3.0.2.jar,3.0.2,win32,update",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-aix.ppc.tar.gz,3.0.2,aix,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-linux.ia64.tar.gz,3.0.2,linux.ia64,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-linux.ppc.tar.gz,3.0.2,linux.ppc,runtime",
@@ -225,7 +223,7 @@
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-win32.x86.zip,3.1.1,win32,sdk",
 		);
 		
-//		printHeader();
+		printHeader();
 
 		foreach ($months as $month) {
 			$monthex = explode(",", $month);
@@ -241,11 +239,11 @@
 				$type = $fileex[3];
 				echo $filename . "<br>";
 				$count = getCount($filename, $monthfrom, $monthto, $dbh);
-//				printRow($monthdate, $release, $platfrom, $type, $count);
+				printRow($monthdate, $release, $platfrom, $type, $count);
 			}
 		}
 		
-//		echo "</table>";
+		echo "</table>";
 		
 		$dbc->disconnect();
 	} else {

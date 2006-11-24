@@ -3,12 +3,12 @@
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
 	function getFileID($filename, $dbh) {
-		$sql = "SELECT IDX.file_id
-				FROM download_file_index AS IDX
-				WHERE IDX.file_name = '" . $filename . "'";
+		$sql = "SELECT file_id
+				FROM download_file_index
+				WHERE file_name = '" . $filename . "'";
 		$rs = mysql_query($sql, $dbh);
 		$myrow = mysql_fetch_assoc($rs);
-		echo $myrow;
+		print_r($myrow);
 		return $myrow('file_id');
 	}
 

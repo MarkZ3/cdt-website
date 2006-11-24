@@ -178,7 +178,7 @@
 		$dbh 	= $dbc->connect();
 
 		echo "File count: " . getCount("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar",
-			"2006-09-01", "2006-09-30", $dbh);
+			"2006-04-01", "2006-04-30", $dbh);
 
 		$dbc->disconnect();
 	} else {

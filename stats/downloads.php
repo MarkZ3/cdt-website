@@ -1,6 +1,6 @@
 <?php
 
-	echo "2";
+	echo "3";
 	
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
@@ -42,7 +42,6 @@
 		echo "<td>$count</td>";
 		echo "</tr>";
 	}
-/*	
 	
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.
@@ -51,7 +50,8 @@
 		# Connect to database
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
-
+/*	
+		
 		$months = array(
 #			"1/1/2006,2006-01-01,2006-01-31",
 #			"2/1/2006,2006-02-01,2006-02-28",
@@ -245,6 +245,7 @@
 				printRow($monthdate, $release, $platfrom, $type, $count);
 			}
 		}
+*/		
 		
 		echo "</table>";
 		
@@ -252,6 +253,5 @@
 	} else {
 		echo "You are not authorized to access this page.";
 	}
-*/		
 
 ?>

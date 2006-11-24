@@ -6,19 +6,18 @@
 		#get the file id
 		$sql = "SELECT file_id
 				FROM download_file_index
-				WHERE file_name = '" . $filename . "'";
+				WHERE file_name = '$filename'";
 		$rs = mysql_query($sql, $dbh);
 		$myrow = mysql_fetch_assoc($rs);
 		$fileid = $myrow['file_id'];
 		
 		$sql = "SELECT COUNT(file_id) as count
 				FROM downloads
-				WHERE file_id = " . $fileid . "
-					AND download_date BETWEEN \"" . $from . "\" AND \"" . $to . "\"
+				WHERE file_id = $fileid
 				GROUP BY file_id";
+#					AND download_date BETWEEN \"$from\" AND \"$to\"
 		$rs = mysql_query($sql, $dbh);
 		$myrow = mysql_fetch_assoc($rs);
-		echo $myrow;
 		return $myrow['count'];
 	}
 			

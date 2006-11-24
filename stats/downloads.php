@@ -1,24 +1,16 @@
 <?php
 
-	#
-	# Sample PHP code to issue a Downloads query.
-	# Logic, DB and Presentation lumped here for simplicity.
-	#
-	#
-	
-
-	# Load up the classfile
-	# You need to tell the WebMaster from which URL you are loading this class from, 
-	# otherwise the connect() will fail.
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
+	function getFileID($filename, $dbh) {
+		$sql = "SELECT IDX.file_id
+				FROM download_file_index AS IDX
+				WHERE IDX.file_name = " . $filename;
+		$rs = mysql_query($sql, $dbh);
+		$myrow = mysql_fetch_assoc($rs);
+		return $myrow('file_id');
+	}
 
-	# :::::PLEASE NOTE:::::
-	# There are usually in excess of 200 million records, and queries can take up to a few minutes to execute
-	# Don't use these queries in "publicly accessible" web pages!!!
-	# Queries that run for more than 5 minutes are killed by the SQL server.
-	
-	
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.
 	$_PASSWORD = $_GET['password'];
@@ -150,10 +142,35 @@
 		echo "<td>Type</td>";
 		echo "<td>Count</td>";
 		echo "</th>";
-		
-		
+
+		foreach ($months as $month) {		
+			foreach ($releases as $release) {
+				foreach ($platforms as $platform) {
+					$monthex = explode(",", $month);
+					$monthdate = $monthex[0];
+					$monthfrom = $monthex[1];
+					$monthto = $monthex[2];
+					
+					$platformex = explode(",", $platform);
+					$platformbase = $platformex[0];
+					$platformext = $platformex[1];
+					
+					# tools update
+				}
+			}		
+		}
 		
 		echo "</table>";
+		
+		$dbc->disconnect();
+	} elseif ($_PASSWORD == "cdttest") {
+		# Connect to database
+		$dbc 	= new DBConnectionDownloads();
+		$dbh 	= $dbc->connect();
+
+		echo getFileId("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar", $dbh);
+
+		$dbc->disconnect();
 	} else {
 		echo "<b>";
 		echo "You are not authorized to access this page.";

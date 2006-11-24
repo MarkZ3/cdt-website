@@ -1,7 +1,5 @@
 <?php
 
-	echo "4";
-	
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
 	function getCount($filename, $from, $to, $dbh) {
@@ -78,7 +76,7 @@
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-aix.ppc.tar.gz,3.0.0,aix,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.ia64.tar.gz,3.0.0,linux.ia64,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.ppc.tar.gz,3.0.0,linux.ppc,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.x86.tar.gz,3.0.0,linux.x86,runtime"
+			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.x86.tar.gz,3.0.0,linux.x86,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.x86_64.tar.gz,3.0.0,linux.x86_64,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-macosx.ppc.tar.gz,3.0.0,macosx,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-qnx.x86.tar.gz,3.0.0,qnx,runtime",
@@ -225,7 +223,6 @@
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-win32.x86.zip,3.1.1,win32,sdk"
 		);
 
-/*	
 		printHeader();
 
 		foreach ($months as $month) {
@@ -245,7 +242,6 @@
 				printRow($monthdate, $release, $platfrom, $type, $count);
 			}
 		}
-*/		
 		
 		echo "</table>";
 		

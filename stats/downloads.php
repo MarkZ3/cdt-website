@@ -1,8 +1,8 @@
 <?php
 
-	echo "hey";
-	error_reporting(2047);
+	echo date(DATE_RFC822, filemtime("downloads.php"));
 	
+/*	
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
 	function getCount($filename, $from, $to, $dbh) {
@@ -65,7 +65,7 @@
 			"10/1/2006,2006-10-01,2006-10-31",
 #			"11/1/2006,2006-11-01,2006-11-30",
 		);
-/*
+
 		$files = array(
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.aix_3.0.0.jar,3.0.0,aix,update",
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.ia64_3.0.0.jar,3.0.0,linux.ia64,update",
@@ -225,7 +225,7 @@
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-solaris.sparc.tar.gz,3.1.1,solaris,sdk",
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-win32.x86.zip,3.1.1,win32,sdk"
 		);
-*/		
+
 		printHeader();
 
 		foreach ($months as $month) {
@@ -252,5 +252,6 @@
 	} else {
 		echo "You are not authorized to access this page.";
 	}
+*/		
 
 ?>

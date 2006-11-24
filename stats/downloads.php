@@ -1,6 +1,6 @@
 <?php
 
-	echo "3";
+	echo "4";
 	
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
@@ -50,7 +50,6 @@
 		# Connect to database
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
-/*	
 		
 		$months = array(
 #			"1/1/2006,2006-01-01,2006-01-31",
@@ -65,7 +64,8 @@
 			"10/1/2006,2006-10-01,2006-10-31",
 #			"11/1/2006,2006-11-01,2006-11-30",
 		);
-
+/*	
+		
 		$files = array(
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.aix_3.0.0.jar,3.0.0,aix,update",
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.ia64_3.0.0.jar,3.0.0,linux.ia64,update",

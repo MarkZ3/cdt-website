@@ -106,11 +106,34 @@
 		$rs3 		= null;
 		$dbh 		= null;
 		$dbc 		= null;
-	}
-	else {
-	<b>
+	} elseif($_PASSWORD == "cdtstats") {
+		# Connect to database
+		$dbc 	= new DBConnectionDownloads();
+		$dbh 	= $dbc->connect();
+
+		$months = array(
+		$platforms = array(
+			"aix",
+			"linux.ia64",
+			"linux.ppc",
+			"linux.x86",
+			"linux.x86_64",
+			"macosx",
+			"qnx",
+			"solaris",
+			"win32");
+			
+		$releases = array(
+			"3.0.0",
+			"3.0.1",
+			"3.0.2",
+			"3.1.0",
+			"3.1.1");
+
+	} else {
+		echo "<b>";
 		echo "You are not authorized to access this page.";
-	</b>
+		echo "</b>";
 	}
 
 ?>

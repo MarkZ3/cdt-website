@@ -5,7 +5,8 @@
 	function getFileID($filename, $dbh) {
 		$sql = "SELECT IDX.file_id
 				FROM download_file_index AS IDX
-				WHERE IDX.file_name = " . $filename;
+				WHERE IDX.file_name = '" . $filename . "'";
+		echo $sql;
 		$rs = mysql_query($sql, $dbh);
 		$myrow = mysql_fetch_assoc($rs);
 		return $myrow('file_id');
@@ -168,7 +169,7 @@
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
 
-		echo "File id is: "; # . getFileId("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar", $dbh);
+		echo "File id is: " . getFileId("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar", $dbh);
 
 		$dbc->disconnect();
 	} else {

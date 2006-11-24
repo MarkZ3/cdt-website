@@ -40,6 +40,8 @@
 		echo "<td>$count</td>";
 		echo "</tr>";
 	}
+	
+	echo "Starting<br>";
 
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.

@@ -111,16 +111,29 @@
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
 
+		$months = array(
+			"1/1/2006,2006-01-01,2006-01-31",
+			"2/1/2006,2006-02-01,2006-02-28",
+			"3/1/2006,2006-03-01,2006-03-31",
+			"4/1/2006,2006-04-01,2006-04-30",
+			"5/1/2006,2006-05-01,2006-05-31",
+			"6/1/2006,2006-06-01,2006-06-30",
+			"7/1/2006,2006-07-01,2006-07-31",
+			"8/1/2006,2006-08-01,2006-08-31",
+			"9/1/2006,2009-09-01,2006-09-30",
+			"10/1/2006,2009-10-01,2006-10-31",
+			"11/1/2006,2009-11-01,2006-11-30");
+
 		$platforms = array(
-			"aix",
-			"linux.ia64",
-			"linux.ppc",
-			"linux.x86",
-			"linux.x86_64",
-			"macosx",
-			"qnx",
-			"solaris",
-			"win32");
+			"aix,.ppc.tar.gz",
+			"linux.ia64,.tar.gz",
+			"linux.ppc,.tar.gz",
+			"linux.x86,.tar.gz",
+			"linux.x86_64,.tar.gz",
+			"macosx,.ppc.tar.gz",
+			"qnx,.x86.tar.gz",
+			"solaris,.sparc.tar.gz",
+			"win32,.x86.zip");
 			
 		$releases = array(
 			"3.0.0",
@@ -129,6 +142,18 @@
 			"3.1.0",
 			"3.1.1");
 
+		echo "<table>";
+		echo "<th>";
+		echo "<td>Month</td>";
+		echo "<td>Release</td>";
+		echo "<td>Platform</td>";
+		echo "<td>Type</td>";
+		echo "<td>Count</td>";
+		echo "</th>";
+		
+		
+		
+		echo "</table>";
 	} else {
 		echo "<b>";
 		echo "You are not authorized to access this page.";

@@ -1,8 +1,7 @@
 <?php
 
-	echo date(DATE_RFC822, filemtime("downloads.php"));
+	echo "1";
 	
-/*	
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
 	function getCount($filename, $from, $to, $dbh) {
@@ -23,6 +22,7 @@
 		return $myrow['count'];
 	}
 	
+/*	
 	function printHeader() {
 		echo "<table>";
 		echo "<th>";

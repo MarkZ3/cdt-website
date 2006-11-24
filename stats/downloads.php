@@ -108,7 +108,9 @@
 		$dbc 		= null;
 	}
 	else {
+	<b>
 		echo "You are not authorized to access this page.";
+	</b>
 	}
 
 ?>

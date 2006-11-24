@@ -1,6 +1,6 @@
 <?php
 
-	echo "1";
+	echo "2";
 	
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
@@ -22,7 +22,6 @@
 		return $myrow['count'];
 	}
 	
-/*	
 	function printHeader() {
 		echo "<table>";
 		echo "<th>";
@@ -43,6 +42,7 @@
 		echo "<td>$count</td>";
 		echo "</tr>";
 	}
+/*	
 	
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.

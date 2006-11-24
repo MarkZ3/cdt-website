@@ -44,7 +44,7 @@
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.
 	$_PASSWORD = $_GET['password'];
-	if($_PASSWORD == "cdtstats") {
+	if ($_PASSWORD == "cdtstats") {
 		# Connect to database
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
@@ -223,7 +223,7 @@
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-win32.x86.zip,3.1.1,win32,sdk",
 		);
 		
-		printHeader();
+//		printHeader();
 
 		foreach ($months as $month) {
 			$monthex = explode(",", $month);
@@ -239,26 +239,15 @@
 				$type = $fileex[3];
 				echo $filename . "<br>";
 				$count = getCount($filename, $monthfrom, $monthto, $dbh);
-				printRow($monthdate, $release, $platfrom, $type, $count);
+//				printRow($monthdate, $release, $platfrom, $type, $count);
 			}
 		}
 		
-		echo "</table>";
+//		echo "</table>";
 		
 		$dbc->disconnect();
-	} elseif ($_PASSWORD == "cdttest") {
-		# Connect to database
-		$dbc 	= new DBConnectionDownloads();
-		$dbh 	= $dbc->connect();
-
-		echo "File count: " . getCount("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar",
-			"2006-04-01", "2006-04-30", $dbh);
-
-		$dbc->disconnect();
 	} else {
-		echo "<b>";
 		echo "You are not authorized to access this page.";
-		echo "</b>";
 	}
 
 ?>

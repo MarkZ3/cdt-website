@@ -168,7 +168,7 @@
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
 
-		echo "File id is: " . getFileId("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar", $dbh);
+		echo "File id is: "; # . getFileId("/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core_3.0.2.jar", $dbh);
 
 		$dbc->disconnect();
 	} else {

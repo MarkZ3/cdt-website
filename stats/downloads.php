@@ -14,13 +14,12 @@
 		$sql = "SELECT COUNT(file_id) as count
 				FROM downloads
 				WHERE file_id = $fileid
-				GROUP BY file_id";
-#					AND download_date BETWEEN \"$from\" AND \"$to\"
+					AND download_date BETWEEN \"$from\" AND \"$to\"";
 		$rs = mysql_query($sql, $dbh);
 		$myrow = mysql_fetch_assoc($rs);
 		return $myrow['count'];
 	}
-			
+
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.
 	$_PASSWORD = $_GET['password'];

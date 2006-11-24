@@ -1,5 +1,7 @@
 <?php
 
+	error_reporting(2047);
+	
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 
 	function getCount($filename, $from, $to, $dbh) {

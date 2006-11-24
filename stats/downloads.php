@@ -111,7 +111,6 @@
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
 
-		$months = array(
 		$platforms = array(
 			"aix",
 			"linux.ia64",

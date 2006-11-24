@@ -1,5 +1,6 @@
 <?php
 
+	echo "hey";
 	error_reporting(2047);
 	
 	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
@@ -61,7 +62,7 @@
 #			"7/1/2006,2006-07-01,2006-07-31",
 #			"8/1/2006,2006-08-01,2006-08-31",
 #			"9/1/2006,2006-09-01,2006-09-30",
-			"10/1/2006,2006-10-01,2006-10-31",
+			"10/1/2006,2006-10-01,2006-10-31"
 #			"11/1/2006,2006-11-01,2006-11-30",
 		);
 
@@ -222,7 +223,7 @@
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-macosx.ppc.tar.gz,3.1.1,macosx,sdk",
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-qnx.x86.tar.gz,3.1.1,qnx,sdk",
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-solaris.sparc.tar.gz,3.1.1,solaris,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-win32.x86.zip,3.1.1,win32,sdk",
+			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-win32.x86.zip,3.1.1,win32,sdk"
 		);
 		
 		printHeader();

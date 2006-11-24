@@ -6,9 +6,9 @@
 		$sql = "SELECT IDX.file_id
 				FROM download_file_index AS IDX
 				WHERE IDX.file_name = '" . $filename . "'";
-		echo $sql;
 		$rs = mysql_query($sql, $dbh);
 		$myrow = mysql_fetch_assoc($rs);
+		echo $myrow;
 		return $myrow('file_id');
 	}
 

@@ -221,7 +221,7 @@
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-qnx.x86.tar.gz,3.1.1,qnx,sdk",
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-solaris.sparc.tar.gz,3.1.1,solaris,sdk",
 			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-win32.x86.zip,3.1.1,win32,sdk",
-			);
+		);
 		
 		printHeader();
 
@@ -237,9 +237,10 @@
 				$release = $fileex[1];
 				$platform = $fileex[2];
 				$type = $fileex[3];
+				echo $filename . "<br>";
 				$count = getCount($filename, $monthfrom, $monthto, $dbh);
 				printRow($monthdate, $release, $platfrom, $type, $count);
-			}		
+			}
 		}
 		
 		echo "</table>";

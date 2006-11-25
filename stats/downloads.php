@@ -22,13 +22,13 @@
 	
 	function printHeader() {
 		echo "<table>";
-		echo "<th>";
-		echo "<td>Month</td>";
-		echo "<td>Release</td>";
-		echo "<td>Platform</td>";
-		echo "<td>Type</td>";
-		echo "<td>Count</td>";
-		echo "</th>";
+		echo "<tr>";
+		echo "<th>Month</th>";
+		echo "<th>Release</th>";
+		echo "<th>Platform</th>";
+		echo "<th>Type</th>";
+		echo "<th>Count</th>";
+		echo "</tr>";
 	}
 	
 	function printRow($month, $release, $platform, $type, $count) {
@@ -246,7 +246,6 @@
 		
 		$dbc->disconnect();
 	} else {
-		echo "2<br>";
 		echo "You are not authorized to access this page.";
 	}
 

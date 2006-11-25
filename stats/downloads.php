@@ -101,7 +101,7 @@
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.qnx_3.0.1.jar,3.0.1,qnx,update",
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.solaris_3.0.1.jar,3.0.1,solaris,update",
 			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.win32_3.0.1.jar,3.0.1,win32,update",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-aix.ppc.tar.gz,3.0.1,aix.runtime",
+			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-aix.ppc.tar.gz,3.0.1,aix,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-linux.ia64.tar.gz,3.0.1,linux.ia64,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-linux.ppc.tar.gz,3.0.1,linux.ppc,runtime",
 			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-linux.x86.tar.gz,3.0.1,linux.x86,runtime",
@@ -237,9 +237,8 @@
 				$release = $fileex[1];
 				$platform = $fileex[2];
 				$type = $fileex[3];
-				echo $filename . "<br>";
 				$count = getCount($filename, $monthfrom, $monthto, $dbh);
-				printRow($monthdate, $release, $platfrom, $type, $count);
+				printRow($monthdate, $release, $platform, $type, $count);
 			}
 		}
 		

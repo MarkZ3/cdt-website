@@ -61,6 +61,7 @@
 			"9/1/2006,2006-09-01,2006-09-30",
 			"10/1/2006,2006-10-01,2006-10-31",
 			"11/1/2006,2006-11-01,2006-11-30",
+			"12/1/2006,2006-12-01,2006-12-31",
 		);
 		
 		$files = array(
@@ -246,7 +247,7 @@
 		
 		$dbc->disconnect();
 	} else {
-		echo "You are not authorized to access this page.";
+		echo "You are not authorized to access this page. (1)";
 	}
 
 ?>

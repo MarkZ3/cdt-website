@@ -41,7 +41,7 @@
 		releases. If new strings are added to CDT after 3.1.1, they will not show up as translated in the 3.1.x stream 
 		when you install this language pack.</p>
 		<ul>
-			<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/callisto/NL_language_packs/CDT_NL_3.1.1.zip">CDT 3.1.x Language Pack</a></li>
+			<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/callisto/NL_language_packs/CDT_NL_3.1.1.zip">CDT 3.1.x Language Pack</a>
 			– Contains the NL fragments and the NL features that contain those fragments for: German, Spanish, French, 
 			Italian, Japanese, Korean, Portuguese (Brazil), Traditional Chinese and Simplified Chinese.</li>
 		</ul>

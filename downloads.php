@@ -33,6 +33,18 @@
 			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.0">CDT 3.1.0 (June 30, 2006)</a></li>
 			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.1">CDT 3.1.1 (September 29, 2006)</a></li>
 		</ul>
+		<h2>CDT 3.1.x Language Pack</h2>
+		<p>IBM has donated translations from their products to Eclipse. The language pack groups translations for 
+		several languages into a single download which are distributed as a set of features which you can install 
+		by extracting over your Eclipse directory and restarting Eclipse.</p>
+		<p>These translations are based on the CDT 3.1.1 build but should work with all subsequent 3.1.x maintenance 
+		releases. If new strings are added to CDT after 3.1.1, they will not show up as translated in the 3.1.x stream 
+		when you install this language pack.</p>
+		<ul>
+			<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/callisto/NL_language_packs/CDT_NL_3.1.1.zip">CDT 3.1.x Language Pack</a></li>
+			– Contains the NL fragments and the NL features that contain those fragments for: German, Spanish, French, 
+			Italian, Japanese, Korean, Portuguese (Brazil), Traditional Chinese and Simplified Chinese.</li>
+		</ul>
 		<br>
 	</div>
 </div>

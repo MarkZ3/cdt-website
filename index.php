@@ -34,13 +34,14 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>Welcome to the Eclipse CDT</h2>
-		<p><b>CDT 3.1.1 Now Available!</b> - September 29, 2006 - CDT 3.1.1 runs on Eclipse 3.2.x or Callisto.
-		It can be downloaded from the Callisto Update site of by following the instructions
+		<p><b>CDT 3.1.2 Now Available!</b> - February 16, 2007 - CDT 3.1.2 runs on Eclipse 3.2.x or Callisto.
+		It can be downloaded from the CDT Update or Callisto Discovery sites by following the instructions
 		on the CDT Download page by following the Downloads link on the left.</p>
-		<p>I am in the middle of Phoenix'ing the CDT web site. More content will appear here over the next
-		few weeks. In the meantime more information about the CDT project can be found on the
-		<a href="http://wiki.eclipse.org/index.php/CDT">CDT Wiki</a> and the old page is still available
-		<a href="index_old.html">here</a>.</p>
+		<p>Obviously this, the main CDT web site, is sorely lacking in content.
+		Once the CDT 4.0 cycle is over, we should have more time to spend on it.
+		In the meantime the latest information about the CDT project can be found on the
+		<a href="http://wiki.eclipse.org/index.php/CDT">CDT Wiki</a>. As well the old page is still available
+		<a href="index_old.html">here</a>, but it is now getting really old.</p>
 		<p>Thanks for your patience, Doug Schaefer, CDT Project Lead</p>
 	</div>
 </div>

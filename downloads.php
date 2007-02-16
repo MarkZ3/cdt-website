@@ -23,8 +23,10 @@
 		the Eclipse Platform release. So please be careful how you are matching these versions.</p>
 		<p>As a minimum, you need to install the Eclipse Platform Runtime before installing the CDT</p>
 		<h2>CDT 3.1</h2>
-		<p>CDT 3.1 runs on Eclipse 3.2. It can be installed from the Callisto Discovery Site or the CDT Update Site.
-		The CDT Update Site is avalable by entering the following URL as the remote site in the Update Manager.</p>
+		<p>CDT 3.1 runs with Eclipse 3.2. It can be installed from the Callisto Discovery Site or the CDT Update Site.
+		The CDT Update Site is avalable by entering the following URL as the Remote Site in the Update Manager.
+		The Callisto Discovery Site should already be there. Note that the CDT SDK feature which is used if you
+		are building plugins that extend the CDT is only available from the CDT Update Site.</p>
 		<ul>
 			<li>http://download.eclipse.org/tools/cdt/releases/callisto</li>
 		</ul>
@@ -32,6 +34,7 @@
 		<ul>
 			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.0">CDT 3.1.0 (June 30, 2006)</a></li>
 			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.1">CDT 3.1.1 (September 29, 2006)</a></li>
+			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.2">CDT 3.1.2 (February 15, 2007)</a></li>
 		</ul>
 		<h2>CDT 3.1.x Language Pack</h2>
 		<p>IBM has donated translations from their products to Eclipse. The language pack groups translations for 

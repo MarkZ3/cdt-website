@@ -68,7 +68,13 @@
 		<p>The zip/tar distributions as well as compile logs and JUnit results are available by visiting
 		the build page:<p>
 		<ul>
-			<li><a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0M5">CDT 4.0.0 M5 (February 16, 2007)</a></li>
+			<li>
+				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0M5">CDT 4.0.0 M5 (February 16, 2007)</a>
+				-
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+M4&target_milestone=4.0+M5&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=4.0M5&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+					Bugs resolved up to M5
+				</a>
+			</li>
 		</ul>
 		<br>
 	</div>

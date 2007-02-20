@@ -22,7 +22,8 @@
 		<p>One thing to note about the CDT is that, up to this point, we are very tied to specific versions of
 		the Eclipse Platform release. So please be careful how you are matching these versions.</p>
 		<p>As a minimum, you need to install the Eclipse Platform Runtime before installing the CDT</p>
-		<h2>CDT 3.1</h2>
+		
+		<h2>CDT 3.1.x</h2>
 		<p>CDT 3.1 runs with Eclipse 3.2. It can be installed from the Callisto Discovery Site or the CDT Update Site.
 		The CDT Update Site is avalable by entering the following URL as the Remote Site in the Update Manager.
 		The Callisto Discovery Site should already be there. Note that the CDT SDK feature which is used if you
@@ -36,6 +37,7 @@
 			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.1">CDT 3.1.1 (September 29, 2006)</a></li>
 			<li><a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.2">CDT 3.1.2 (February 15, 2007)</a></li>
 		</ul>
+		
 		<h2>CDT 3.1.x Language Pack</h2>
 		<p>IBM has donated translations from their products to Eclipse. The language pack groups translations for 
 		several languages into a single download which are distributed as a set of features which you can install 
@@ -48,7 +50,20 @@
 			– Contains the NL fragments and the NL features that contain those fragments for: German, Spanish, French, 
 			Italian, Japanese, Korean, Portuguese (Brazil), Traditional Chinese and Simplified Chinese.</li>
 		</ul>
-		<br>
+		
+		<h2>CDT 4.0 Milestones</h2>
+		<p>CDT 4.0 will be the biggest release of the CDT since it was first contributed to open source.
+		As a result, there will be a lot of churn and to make sure we end up with a good quality release,
+		we are encouraging the community to take it out for a spin. CDT 4.0 requires Eclipse 3.3 M5 or later.
+		You can download it from CDT's Europa update site at:<p>
+		<ul>
+			<li>http://download.eclipse.org/tools/cdt/releases/europa</li>
+		</ul>
+		<p>The zip/tar distributions as well as compile logs and JUnit results are available by visiting
+		the build page:<p>
+		<ul>
+			<li><a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0M5">CDT 4.0.0 M5 (February 16, 2007)</a></li>
+		</ul>
 	</div>
 </div>
 

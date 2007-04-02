@@ -34,7 +34,7 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>Welcome to the Eclipse CDT</h2>
-		<p>CDT 4.0 M6 Now Available - April 2, 2007 - CDT 4.0 M6 is the latest milestone release
+		<p><b>CDT 4.0 M6 Now Available</b> - April 2, 2007 - CDT 4.0 M6 is the latest milestone release
 		of CDT 4.0. This release promises to be the biggest and best ever with over a dozen committers working
 		on it. As a result, it also represents the biggest churn and it is important that we get early
 		feedback from the community. To download, check our Downloads page. Please raise any bugs by using

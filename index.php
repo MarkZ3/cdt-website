@@ -34,9 +34,9 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>Welcome to the Eclipse CDT</h2>
-		<p><b>CDT 4.0 RC0 Now Available</b> - May 2, 2007 - CDT 4.0 RC0 is the first release candidate
-		for CDT 4.0. This milestone marks our feature complete state where all new features have been
-		implemented. This release promises to be the biggest and best ever with over a dozen committers
+		<p><b>CDT 4.0 M7/RC1 Now Available</b> - May 11, 2007 - CDT 4.0 M7/RC is the next release candidate
+		for CDT 4.0. This release feeds into Europa M7.
+		This release promises to be the biggest and best ever with over a dozen committers
 		working on it. As a result, it also represents the biggest churn and it is important that we get
 		feedback from the community. To download, check our Downloads page. Please raise any bugs by using
 		the Bugs link.

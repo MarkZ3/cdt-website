@@ -87,6 +87,13 @@
 		the build page:<p>
 		<ul>
 			<li>
+				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0RC2">CDT 4.0.0 RC2 (May 25, 2007)</a>
+				- Requires Eclipse 3.3M6+ -
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+RC2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+					Bugs resolved for RC2
+				</a>
+			</li>
+			<li>
 				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0M7">CDT 4.0.0 M7/RC1 (May 11, 2007)</a>
 				- Requires Eclipse 3.3M6+ -
 				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+M7&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">

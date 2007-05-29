@@ -1,7 +1,5 @@
 <?php
 
-	require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
-
 	function getCount($filename, $from, $to, $dbh) {
 		#get the file id
 		$sql = "SELECT file_id
@@ -45,6 +43,8 @@
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.
 	$_PASSWORD = $_GET['password'];
 	if ($_PASSWORD == "cdtstats") {
+		require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
+
 		# Connect to database
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();

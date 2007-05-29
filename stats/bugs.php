@@ -2,6 +2,7 @@
 
 	$report = $_GET['report'];
 	if ($report == "contrib") {
+		echo "Hi";
 		require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_bugs_ro.class.php";
 		
 		$dbc = new DBConnectionBugs();

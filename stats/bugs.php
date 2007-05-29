@@ -8,7 +8,7 @@
 		$dbh = $dbc->connect();
 		
 	} else {
-		echo "Not authorized (1)";
+		echo "Not authorized (2)";
 	}
 	
 ?>

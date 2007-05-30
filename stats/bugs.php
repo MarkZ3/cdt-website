@@ -9,14 +9,17 @@
 		$dbh = $dbc->connect();
 		
 		$sql = "select
-					COUNT(bugs.bug_id) AS count
+					COUNT(attachments.attach_id) AS count
 				from
 					bugs,
-					products
+					products,
+					attachments
 				where
 					bugs.product_id = products.id
 					AND products.name = 'CDT'
 					AND bugs.keywords LIKE '%contributed%'
+					AND attachment.bug_id = bugs.bug_id
+					AND attachment.ispatch = 1
 				";
 		
 		$rs = mysql_query($sql, $dbh);
@@ -39,7 +42,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (1)";
+		echo "Not authorized (2)";
 	}
 	
 ?>

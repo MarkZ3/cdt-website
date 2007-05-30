@@ -9,14 +9,15 @@
 		$dbh = $dbc->connect();
 		
 		$sql = "select
-					bug.bug_id,
-					bug.short_desc,
-					usr.realname as somedude
+					COUNT(bugs.bug_id) as count,
 				from
-					bugs as bug
-					inner join profiles as usr on usr.userid = bug.reporter
+					bugs
+					products
 				where
-					bug.bug_id = 12345";
+					bugs.product_id = products.id
+					AND products.name = 'CDT'
+					AND bugs.keywords CONTAINS 'contributed'
+				";
 		
 		$rs = mysql_query($sql, $dbh);
 		
@@ -28,7 +29,7 @@
 		}
 		
 		while($myrow = mysql_fetch_assoc($rs)) {
-			echo "Bug ID: " . $myrow['bug_id'] . " Description: " . $myrow['short_desc'] . " Reporter: " . $myrow['somedude'];
+			echo "Count: " . $myrow['count'];
 		}
 		
 		$dbc->disconnect();
@@ -38,7 +39,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (3)";
+		echo "Not authorized (4)";
 	}
 	
 ?>

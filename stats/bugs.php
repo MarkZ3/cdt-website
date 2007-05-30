@@ -7,7 +7,7 @@
 		$dbc = new DBConnectionBugs();
 		$dbh = $dbc->connect();
 		
-		$sql = "select
+		$sql = "SELECT
 					components.name AS componentName,
 					bugs.target_milestone AS milestone,
 					bugs.bug_id AS bugId,
@@ -15,7 +15,7 @@
 					contributor.realname AS contributorName,
 					committer.realname AS committerName,
 					LENGTH(attach_data.thedata) AS size
-				from
+				FROM
 					bugs,
 					products,
 					components,
@@ -23,7 +23,7 @@
 					attach_data,
 					profiles AS contributor,
 					profiles AS committer 
-				where
+				WHERE
 					bugs.product_id = products.id
 					AND products.name = 'CDT'
 					AND bugs.component_id = components.id
@@ -49,6 +49,7 @@
 						'Markus Schorn',
 						'Mike Kucera'
 						)
+				ORDER BY milestone, bugId, attachId
 				";
 		
 		$rs = mysql_query($sql, $dbh);
@@ -94,7 +95,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (3)";
+		echo "Not authorized (1)";
 	}
 	
 ?>

@@ -2,14 +2,14 @@
 
 	$report = $_GET['report'];
 	if ($report == "contrib") {
-		echo "Hi ";
 		require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_bugs_ro.class.php";
 		
 		$dbc = new DBConnectionBugs();
 		$dbh = $dbc->connect();
 		
 		$sql = "select
-					COUNT(attachments.attach_id) AS count
+					attachments.attach_id AS attachId,
+					attachments.filename AS filename
 				from
 					bugs,
 					products,
@@ -31,10 +31,21 @@
 			exit;
 		}
 		
+		echo "<table>";
+		
+		echo "<tr>";
+		echo "<th>Attachment Id</th>";
+		echo "<th>Filename</th>";
+		echo "</tr>";
+		
 		while($myrow = mysql_fetch_assoc($rs)) {
-			echo "Count: " . $myrow['count'];
+			echo "<tr>";
+			echo "<td>" . $myrow['attachId'] . "</td>";
+			echo "<td>" . $myrow['filename'] . "</td>";
+			echo "</tr>";
 		}
 		
+		echo "</table>";
 		$dbc->disconnect();
 	
 		$rs 		= null;
@@ -42,7 +53,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (3)";
+		echo "Not authorized (4)";
 	}
 	
 ?>

@@ -8,6 +8,7 @@
 		$dbh = $dbc->connect();
 		
 		$sql = "select
+					bugs.bug_id AS bugId,
 					attachments.attach_id AS attachId,
 					attachments.filename AS filename
 				from
@@ -31,7 +32,7 @@
 			exit;
 		}
 		
-		echo "<table>";
+		echo "<table border='1'>";
 		
 		echo "<tr>";
 		echo "<th>Attachment Id</th>";
@@ -40,6 +41,7 @@
 		
 		while($myrow = mysql_fetch_assoc($rs)) {
 			echo "<tr>";
+			echo "<td><a href=\"https://bugs.eclipse.org/bugs/show_bug.cgi?id=" . $myrow['bugId'] . "\">" . $myrow['bugId'] . "</a>";
 			echo "<td>" . $myrow['attachId'] . "</td>";
 			echo "<td>" . $myrow['filename'] . "</td>";
 			echo "</tr>";
@@ -53,7 +55,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (4)";
+		echo "Not authorized (5)";
 	}
 	
 ?>

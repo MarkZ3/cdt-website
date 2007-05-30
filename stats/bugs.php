@@ -16,7 +16,7 @@
 				where
 					bugs.product_id = products.id
 					AND products.name = 'CDT'
-					AND bugs.keywords CONTAINS 'contributed'
+					AND bugs.keywords LIKE '%contributed%'
 				";
 		
 		$rs = mysql_query($sql, $dbh);
@@ -39,7 +39,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (5)";
+		echo "Not authorized (6)";
 	}
 	
 ?>

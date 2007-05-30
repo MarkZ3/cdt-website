@@ -18,8 +18,8 @@
 					bugs.product_id = products.id
 					AND products.name = 'CDT'
 					AND bugs.keywords LIKE '%contributed%'
-					AND attachment.bug_id = bugs.bug_id
-					AND attachment.ispatch = 1
+					AND attachments.bug_id = bugs.bug_id
+					AND attachments.ispatch = 1
 				";
 		
 		$rs = mysql_query($sql, $dbh);
@@ -42,7 +42,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (2)";
+		echo "Not authorized (3)";
 	}
 	
 ?>

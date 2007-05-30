@@ -61,7 +61,7 @@
 			exit;
 		}
 		
-		echo "<H2>CDT Contribution Log</H2>";
+		echo "<H2>CDT Contribution Log</H2>\n";
 		echo "<p>Number of contributions: " . mysql_num_rows($rs) . "</p>\n";
 		
 		echo "<table border='1'>\n";

@@ -7,30 +7,30 @@
 		$dbc = new DBConnectionBugs();
 		$dbh = $dbc->connect();
 		
-		$sql = "select
-					components.name AS componentName,
-					bugs.bug_id AS bugId,
-					attachments.attach_id AS attachId,
-					contributor.realname AS contributorName,
-					committer.realname AS committerName,
-					LEN(attach_data.thedata) AS size
-				from
-					bugs,
-					products,
-					components,
-					attachments,
-					attach_data,
-					INNER JOIN profiles AS contributor ON contributor.userid = attachments.submitter_id,
-					INNER JOIN profiles AS committer ON committer.userid = bugs.assigned_to
-				where
-					bugs.product_id = products.id
-					AND products.name = 'CDT'
-					AND bugs.component_id = components.id
-					AND bugs.keywords LIKE '%contributed%'
-					AND attachments.bug_id = bugs.bug_id
-					AND attachments.ispatch = 1
-					AND attach_data.id = attachments.attach_id
-				";
+		#$sql = "select
+		#			components.name AS componentName,
+		#			bugs.bug_id AS bugId,
+		#			attachments.attach_id AS attachId,
+		#			contributor.realname AS contributorName,
+		#			committer.realname AS committerName,
+		#			LEN(attach_data.thedata) AS size
+		#		from
+		#			bugs,
+		#			products,
+		#			components,
+		#			attachments,
+		#			attach_data,
+		#			INNER JOIN profiles AS contributor ON contributor.userid = attachments.submitter_id,
+		#			INNER JOIN profiles AS committer ON committer.userid = bugs.assigned_to
+		#		where
+		#			bugs.product_id = products.id
+		#			AND products.name = 'CDT'
+		#			AND bugs.component_id = components.id
+		#			AND bugs.keywords LIKE '%contributed%'
+		#			AND attachments.bug_id = bugs.bug_id
+		#			AND attachments.ispatch = 1
+		#			AND attach_data.id = attachments.attach_id
+		#		";
 		
 		$rs = mysql_query($sql, $dbh);
 		
@@ -72,7 +72,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (2)";
+		echo "Not authorized (3)";
 	}
 	
 ?>

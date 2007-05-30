@@ -33,6 +33,22 @@
 					AND attach_data.id = attachments.attach_id
 					AND contributor.userid = attachments.submitter_id
 					AND committer.userid = bugs.assigned_to
+					AND contributor.realname NOT IN (
+						'Anton Leherbauer',
+						'Mikhail Khodjaiants',
+						'Alain Magloire',
+						'Andrew Niefer',
+						'Chris Wiebe',
+						'Leo Treggiari',
+						'Markus Schorn',
+						'Norbert Plött',
+						'Ken Ryall',
+						'Vivian Kong',
+						'Chris Recoskie',
+						'Andrew Ferguson',
+						'Markus Schorn',
+						'Mike Kucera'
+						)
 				";
 		
 		$rs = mysql_query($sql, $dbh);
@@ -78,7 +94,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (2)";
+		echo "Not authorized (3)";
 	}
 	
 ?>

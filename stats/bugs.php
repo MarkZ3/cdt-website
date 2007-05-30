@@ -9,9 +9,9 @@
 		$dbh = $dbc->connect();
 		
 		$sql = "select
-					bugs.bug_id
+					COUNT(bugs.bug_id) AS count
 				from
-					bugs
+					bugs,
 					products
 				where
 					bugs.product_id = products.id
@@ -39,7 +39,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (7)";
+		echo "Not authorized (1)";
 	}
 	
 ?>

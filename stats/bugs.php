@@ -20,8 +20,8 @@
 					components,
 					attachments,
 					attach_data,
-					INNER JOIN profiles AS contributor ON contributor.userid = attachments.submitter_id,
-					INNER JOIN profiles AS committer ON committer.userid = bugs.assigned_to
+					profiles AS contributor,
+					profiles AS committer 
 				where
 					bugs.product_id = products.id
 					AND products.name = 'CDT'
@@ -30,6 +30,8 @@
 					AND attachments.bug_id = bugs.bug_id
 					AND attachments.ispatch = 1
 					AND attach_data.id = attachments.attach_id
+					AND contributor.userid = attachments.submitter_id
+					AND committer.userid = bugs.assigned_to
 				";
 		
 		$rs = mysql_query($sql, $dbh);
@@ -72,7 +74,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (1)";
+		echo "Not authorized (2)";
 	}
 	
 ?>

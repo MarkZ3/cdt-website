@@ -62,6 +62,8 @@
 		}
 		
 		echo "<H2>CDT Contribution Log</H2>";
+		echo "<p>Number of contributions: " . mysql_num_rows($rs) . "</p>";
+		
 		echo "<table border='1'>";
 		
 		echo "<tr>";
@@ -95,7 +97,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (1)";
+		echo "Not authorized (2)";
 	}
 	
 ?>

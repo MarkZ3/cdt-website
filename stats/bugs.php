@@ -62,33 +62,33 @@
 		}
 		
 		echo "<H2>CDT Contribution Log</H2>";
-		echo "<p>Number of contributions: " . mysql_num_rows($rs) . "</p>";
+		echo "<p>Number of contributions: " . mysql_num_rows($rs) . "</p>\n";
 		
-		echo "<table border='1'>";
+		echo "<table border='1'>\n";
 		
-		echo "<tr>";
-		echo "<th>Component</th>";
-		echo "<th>Milestone</th>";
-		echo "<th>Bug</th>";
-		echo "<th>Attachment</th>";
-		echo "<th>Contributor</th>";
-		echo "<th>Committer</th>";
-		echo "<th>Size</th>";
-		echo "</tr>";
+		echo "<tr>\n";
+		echo "<th>Component</th>\n";
+		echo "<th>Milestone</th>\n";
+		echo "<th>Bug</th>\n";
+		echo "<th>Attachment</th>\n";
+		echo "<th>Contributor</th>\n";
+		echo "<th>Committer</th>\n";
+		echo "<th>Size</th>\n";
+		echo "</tr>\n";
 		
 		while($myrow = mysql_fetch_assoc($rs)) {
-			echo "<tr>";
-			echo "<td>" . $myrow['componentName'] . "</td>";
-			echo "<td>" . $myrow['milestone'] . "</td>";
-			echo "<td><a href=\"https://bugs.eclipse.org/bugs/show_bug.cgi?id=" . $myrow['bugId'] . "\">" . $myrow['bugId'] . "</a>";
-			echo "<td>" . $myrow['attachId'] . "</td>";
-			echo "<td>" . $myrow['contributorName'] . "</td>";
-			echo "<td>" . $myrow['committerName'] . "</td>";
-			echo "<td>" . $myrow['size'] . "</td>";
-			echo "</tr>";
+			echo "<tr>\n";
+			echo "<td>" . $myrow['componentName'] . "</td>\n";
+			echo "<td>" . $myrow['milestone'] . "</td>\n";
+			echo "<td><a href=\"https://bugs.eclipse.org/bugs/show_bug.cgi?id=" . $myrow['bugId'] . "\">" . $myrow['bugId'] . "</a>\n";
+			echo "<td>" . $myrow['attachId'] . "</td>\n";
+			echo "<td>" . $myrow['contributorName'] . "</td>\n";
+			echo "<td>" . $myrow['committerName'] . "</td>\n";
+			echo "<td>" . $myrow['size'] . "</td>\n";
+			echo "</tr>\n";
 		}
 		
-		echo "</table>";
+		echo "</table>\n";
 		
 		$dbc->disconnect();
 	
@@ -97,7 +97,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (2)";
+		echo "Not authorized (1)";
 	}
 	
 ?>

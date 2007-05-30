@@ -13,7 +13,7 @@
 					attachments.attach_id AS attachId,
 					contributor.realname AS contributorName,
 					committer.realname AS committerName,
-					LEN(attach_data.thedata) AS size
+					LENGTH(attach_data.thedata) AS size
 				from
 					bugs,
 					products,
@@ -74,7 +74,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (2)";
+		echo "Not authorized (3)";
 	}
 	
 ?>

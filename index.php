@@ -34,9 +34,10 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>Welcome to the Eclipse CDT</h2>
-		<p><b>CDT 4.0 RC2 Now Available</b> - May 25, 2007
-		- CDT 4.0 RC2 is the next release candidate for CDT 4.0.
-		With only four weeks to go, this release promises to be the biggest and best ever with over a dozen committers
+		<p><b>CDT 4.0 RC3 Now Available</b> - June 8, 2007
+		- CDT 4.0 RC3 is the second last release candidate for CDT 4.0.
+		The final release candidate will be on June 22.
+		With only two weeks to go, this release promises to be the biggest and best ever with over a dozen committers
 		working on it. It also represents the biggest churn and it is important that we get
 		feedback from the community. To download, check our Downloads page. Please raise any bugs by using
 		the Bugs link.

@@ -37,10 +37,11 @@
 		<p><b>CDT 4.0 RC3 Now Available</b> - June 8, 2007
 		- CDT 4.0 RC3 is the second last release candidate for CDT 4.0.
 		The final release candidate will be on June 22.
-		With only two weeks to go, this release promises to be the biggest and best ever with over a dozen committers
-		working on it. It also represents the biggest churn and it is important that we get
-		feedback from the community. To download, check our Downloads page. Please raise any bugs by using
-		the Bugs link.
+		Starting with this build, we will now only produce an update site with all features that
+		are releasing with CDT 4. The update site is available as a single zip file for those who
+		need to install off-line or produce other artifacts with the build.
+		Please see the build page for instructions.
+		To download, check our Downloads page. Please raise any bugs by using the Bugs link.
 		
 		<p><b>CDT 3.1.2 Now Available!</b> - February 16, 2007 - CDT 3.1.2 runs on Eclipse 3.2.x or Callisto.
 		It can be downloaded from the CDT Update or Callisto Discovery sites by following the instructions

@@ -33,8 +33,11 @@
 		</ul>
 		<p>A single zip file containing all of the CDT features for off-line installation is also available by
 		clicking the link above.</p>
-		<p><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0&target_milestone=4.0+M4&target_milestone=4.0+M5&target_milestone=4.0+M6&target_milestone=4.0+M7&target_milestone=4.0+RC0&target_milestone=4.0+RC2&target_milestone=4.0+RC3&target_milestone=4.0+RC4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		  Bugs fixed in 4.0.0</a></p>
+		<p>Bugs fixed in:</p>
+		<ul>
+		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0&target_milestone=4.0+M4&target_milestone=4.0+M5&target_milestone=4.0+M6&target_milestone=4.0+M7&target_milestone=4.0+RC0&target_milestone=4.0+RC2&target_milestone=4.0+RC3&target_milestone=4.0+RC4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+		      4.0.0</a></li>
+		</ul>
 
 		<h2>CDT 3.1.x</h2>
 		<p>CDT 3.1 runs with Eclipse 3.2. It can be installed from the Callisto Discovery Site or the CDT Update Site.

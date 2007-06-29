@@ -45,10 +45,10 @@
              date="12/2005"
              download="http://download.eclipse.org/tools/cdt/releases/eclipse3.1"/>
 	<release name="3.0.2"
-			 status="planned"
+			 status="completed"
 			 date="2/2006"/>
     <release name="3.1"
-             status="planned"
+             status="completed"
              date="06/2006"
              plan="http://wiki.eclipse.org/index.php/CDT/planning/3.1"/>
   </releases>

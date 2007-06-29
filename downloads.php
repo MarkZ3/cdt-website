@@ -23,6 +23,19 @@
 		the Eclipse Platform release. So please be careful how you are matching these versions.</p>
 		<p>As a minimum, you need to install the Eclipse Platform Runtime before installing the CDT</p>
 		
+		<h2>CDT 4.0.x</h2>
+		<p>CDT 4.0 runs with Eclipse 3.3 and is part of the Eclipse Europa simultaneous release.
+		The main CDT feature can be installed from the Europa Discovery Site. This feature as well as all other
+		CDT 4.0 features can also be installed from the CDT Europa Update Site with the following URL.</p>
+		<ul>
+			<li><a href="http://download.eclipse.org/tools/cdt/releases/europa">
+			  http://download.eclipse.org/tools/cdt/releases/europa</a></li>
+		</ul>
+		<p>A single zip file containing all of the CDT features for off-line installation is also available by
+		clicking the link above.</p>
+		<p><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0&target_milestone=4.0+M4&target_milestone=4.0+M5&target_milestone=4.0+M6&target_milestone=4.0+M7&target_milestone=4.0+RC0&target_milestone=4.0+RC2&target_milestone=4.0+RC3&target_milestone=4.0+RC4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+		  Bugs fixed in 4.0.0</a></p>
+
 		<h2>CDT 3.1.x</h2>
 		<p>CDT 3.1 runs with Eclipse 3.2. It can be installed from the Callisto Discovery Site or the CDT Update Site.
 		The CDT Update Site is avalable by entering the following URL as the Remote Site in the Update Manager.
@@ -75,60 +88,6 @@
 			Italian, Japanese, Korean, Portuguese (Brazil), Traditional Chinese and Simplified Chinese.</li>
 		</ul>
 		
-		<h2>CDT 4.0 Milestones</h2>
-		<p>CDT 4.0 will be the biggest release of the CDT since it was first contributed to open source.
-		As a result, there will be a lot of churn and to make sure we end up with a good quality release,
-		we are encouraging the community to take it out for a spin. CDT 4.0 requires matching milestone
-		versions of Eclipse 3.3. You can download it from CDT's Europa update site at:<p>
-		<ul>
-			<li>http://download.eclipse.org/tools/cdt/releases/europa</li>
-		</ul>
-		<p>The zip/tar distributions as well as compile logs and JUnit results are available by visiting
-		the build page:<p>
-		<ul>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0RC3">CDT 4.0.0 RC3 (June 8, 2007)</a>
-				- Requires Eclipse 3.3M6+ -
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+RC3&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved for RC3
-				</a>
-			</li>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0RC2">CDT 4.0.0 RC2 (May 25, 2007)</a>
-				- Requires Eclipse 3.3M6+ -
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+RC2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved for RC2
-				</a>
-			</li>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0M7">CDT 4.0.0 M7/RC1 (May 11, 2007)</a>
-				- Requires Eclipse 3.3M6+ -
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+M7&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved for M7/RC1
-				</a>
-			</li>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0RC0">CDT 4.0.0 RC0 (May 2, 2007)</a>
-				- Requires Eclipse 3.3M6+ -
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+RC0&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved for RC0
-				</a>
-			</li>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0M6">CDT 4.0.0 M6 (April 2, 2007)</a>
-				- Requires Eclipse 3.3M6 -
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+M6&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved for M6
-				</a>
-			</li>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/europa/dist/4.0.0M5">CDT 4.0.0 M5 (February 16, 2007)</a>
-				- Requires Eclipse 3.3M5 -
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0+M4&target_milestone=4.0+M5&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved up to M5
-				</a>
-			</li>
-		</ul>
 		<br>
 	</div>
 </div>

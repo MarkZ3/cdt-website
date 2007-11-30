@@ -29,11 +29,14 @@
 		
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
-
+	
 <div id="maincontent">
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>Welcome to the Eclipse CDT</h2>
+		
+		<p><b>CDT 4.0.2 Now Available</b> - November 30, 2007
+		- CDT 4.0.2 includes numerous fixes to CDT 4.0.1.  To download, please visit our Downloads page on the left.</p>
 		
 		<p><b>CDT 4.0.1 Now Available</b> - September 26, 2007
 		- CDT 4.0.1 includes numerous fixes to CDT 4.0.</p>

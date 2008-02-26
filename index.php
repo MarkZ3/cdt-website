@@ -35,6 +35,9 @@
 		<h1>$pageTitle</h1>
 		<h2>Welcome to the Eclipse CDT</h2>
 		
+		<p><b>CDT 4.0.3 Now Available</b> - February 26, 2008
+		- As part of the Europa Winter Maintenance release, CDT 4.0.3 includes numerous fixes to CDT 4.0.2.  To download, please visit our Downloads page on the left.</p>
+		
 		<p><b>CDT 4.0.2 Now Available</b> - November 30, 2007
 		- CDT 4.0.2 includes numerous fixes to CDT 4.0.1.  To download, please visit our Downloads page on the left.</p>
 		

@@ -15,7 +15,7 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "Eclipse C/C++ Development Tooling - CDT";
-	$pageKeywords	= "CDT";
+	$pageKeywords	= "CDT, Eclipse, C++, IDE, C++ IDE";
 	$pageAuthor		= "Doug Schaefer";
 	
 	# Add page-specific Nav bars here
@@ -51,15 +51,21 @@
 		For download instructions, check out our Downloads page by clicking the link on the left.</p>
 			
 		<p>Obviously this, the main CDT web site, is sorely lacking in content.
-		Once the CDT 4.0 excitement is over, we should have more time to spend on it.
-		In the meantime the latest information about the CDT project can be found on the
+		Until we get time to work on this site, the latest information about the CDT project can be found on the
 		<a href="http://wiki.eclipse.org/index.php/CDT">CDT Wiki</a>. As well the old page is still available
 		<a href="index_old.html">here</a>, but it is now getting really old.</p>
-		
-		<p>Thanks for your patience, Doug Schaefer, CDT Project Lead</p>
+	</div>
+	<div id="rightcolumn">
+		<div class="sideitem">
+			<h6>Related Links</h6>
+			<ul><li><a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.cdt">CDT newsgroup</a> (<a href="http://www.eclipse.org/newsgroups/register.php">register</a>)</li>
+			<li><a href="http://wiki.eclipse.org/index.php/CDT">Wiki</a></li>
+			<li><a href="https://dev.eclipse.org/mailman/listinfo/cdt-dev">Mailing list</a></li>
+			<li><a href="/projects/project_summary.php?projectid=tools.cdt">Project Information</a></li>
+			<li><a href="/downloads">Download C++ IDE</a></li></ul>
+		</div>
 	</div>
 </div>
-
 
 EOHTML;
 

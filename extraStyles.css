@@ -1,0 +1,136 @@
+#marginLeft{ 
+margin-left: 20px; 
+}
+
+/* Download button and kibk text Left Aligned */
+#Download{ 
+text-align: center; 
+padding: 0 15px 10px 10px; }
+
+#Download a { 
+color: #12a030; 
+font-size: 20px; 
+font-family: arial, sans-serif; 
+line-height: normal; 
+text-decoration: none; 
+}
+#Download a:hover { 
+color: #30e94d; 
+font-size: 20px; 
+font-family: arial, sans-serif; 
+line-height: normal; 
+text-decoration: none; }
+
+/* Download button and kibk text Right Aligned */
+
+#DownloadR{ 
+text-align: center; 
+padding: 15px 10px 10px 15px; }
+
+#DownloadR a { 
+color: #12a030; 
+font-size: 20px; 
+font-family: arial, sans-serif; 
+line-height: normal; 
+text-decoration: none; }
+
+#DownloadR a:hover { 
+color: #30e94d; 
+font-size: 20px; 
+font-family: arial, sans-serif; 
+line-height: normal; 
+text-decoration: none; 
+}
+
+/* Nav C pluss page */
+#DL_leftNav { 
+color: #343434; 
+font-size: 1em; 
+font-family: arial, sans-serif; 
+font-weight: normal; 
+line-height: 1.3em; 
+text-align: left; 
+padding-right: 15px; 
+padding-left: 10px; 
+}
+#DL_leftNav a { 
+color: #343434; 
+font-size: 14px; 
+font-family: arial, sans-serif; 
+line-height: 1.5em; 
+text-decoration: none; 
+text-align: left; }
+
+#DL_leftNav a:hover { 
+color: #5c5c5c; 
+font-size: 14px; 
+font-family: arial, sans-serif; 
+line-height: 1.5em; 
+text-decoration: none; 
+text-align: left; 
+}
+
+/* Nav C right  pluss page */
+#DL_leftNavR { 
+color: #343434; 
+font-size: 1em; 
+font-family: arial, sans-serif; 
+font-weight: normal; 
+line-height: 1.3em; 
+text-align: right; 
+padding-right: 15px; 
+padding-left: 10px; 
+}
+#DL_leftNavR a { 
+color: #343434; 
+font-size: 14px; 
+font-family: arial, sans-serif; 
+line-height: 1.5em; 
+text-decoration: none; 
+text-align: right; }
+
+#DL_leftNavR a:hover { 
+color: #5c5c5c; 
+font-size: 14px; 
+font-family: arial, sans-serif; 
+line-height: 1.5em; 
+text-decoration: none; 
+text-align: right; }
+
+#RightImage { 
+color: #000; 
+font-size: 12px; 
+font-family: arial, sans-serif; 
+font-weight: bold; 
+line-height: 16px; 
+text-align: right; 
+width: auto; 
+height: auto; 
+float: right; 
+margin: 10px; 
+}
+#LeftImage { 
+color: #000; 
+font-size: 12px; 
+font-family: arial, sans-serif; 
+font-weight: bold; 
+line-height: 16px; 
+text-align: left; 
+margin: 10px 15px 15px 5px; 
+width: auto; 
+height: auto; 
+float: left; 
+}
+
+
+/* Contenet container for text in body */
+
+#Cplus_Contenet p { 
+color: #000; 
+font-size: 13px; 
+font-family: Arial, Verdana, sans-serif, Helvetica, sans-serif; 
+font-weight: normal; 
+font-style: normal; 
+line-height: 18px; 
+text-decoration: none; 
+}

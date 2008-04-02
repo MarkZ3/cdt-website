@@ -16,12 +16,15 @@
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
 	
-	
-<div id="container">
+<link href="extraStyles.css" rel="stylesheet" type="text/css" media="all" />
+
+
 <div id="maincontent">
 
-<div id="midcolumn">
-	<h1>Eclipse C/C++ Development Tooling - CDT</h1><br>
+<table border="0">
+<tr>
+<td valign="top">
+	<h1>&nbsp;&nbsp;Eclipse C/C++ Development Tooling - CDT</h1><br>
 	<div id="LeftImage"><img src="images/snapshots.gif" alt="" height="366" width="269" border="0"><br>
 		<!--Content regarding image-->
 	</div>
@@ -118,20 +121,18 @@
 				Doug on the Eclipse CDT</a><br>
 				All the latest news from the CDT world.
 			  </li>
-
-
-
 			</ul>
 	</div>
 
-</div>
-<div id="rightcolumn">
+</td>
+<td valign="top">
+
 	<div id="DownloadR">
 
 		<a href="http://www.eclipse.org/downloads">
 			<img src="images/download.jpg" alt="" height="133" width="143" border="0">
 			<br>
-			Download CDT
+			Download CDT
 		</a>
 
 	</div>
@@ -149,9 +150,11 @@
 		<a href="https://bugs.eclipse.org/bugs/">Report a bug</a>
 
 	</div>
-</div>
 
-</div>
+</td>
+</tr>
+</table>
+
 </div>
 
 

@@ -33,6 +33,11 @@
 					AND attach_data.id = attachments.attach_id
 					AND contributor.userid = attachments.submitter_id
 					AND committer.userid = bugs.assigned_to
+					AND bugs.bug_status IN (
+						'RESOLVED',
+						'VERIFIED',
+						'CLOSED'
+						)
 					AND contributor.realname NOT IN (
 						'Anton Leherbauer',
 						'Mikhail Khodjaiants',
@@ -47,7 +52,8 @@
 						'Chris Recoskie',
 						'Andrew Ferguson',
 						'Markus Schorn',
-						'Mike Kucera'
+						'Mike Kucera',
+						'Oleg Krasilnikov'
 						)
 				ORDER BY attachId
 				";

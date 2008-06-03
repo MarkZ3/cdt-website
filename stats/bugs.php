@@ -103,7 +103,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (4)";
+		echo "Not authorized (5)";
 	}
 	
 ?>

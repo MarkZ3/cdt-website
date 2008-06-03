@@ -49,7 +49,7 @@
 						'Markus Schorn',
 						'Mike Kucera'
 						)
-				ORDER BY milestone, bugId, attachId
+				ORDER BY bugId, attachId
 				";
 		
 		$rs = mysql_query($sql, $dbh);

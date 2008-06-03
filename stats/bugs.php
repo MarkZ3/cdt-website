@@ -141,7 +141,7 @@
 					AND attach_data.id = attachments.attach_id
 					AND contributor.userid = attachments.submitter_id
 					AND committer.userid = bugs.assigned_to
-				ORDER BY attachId
+				ORDER BY milestone, attachId
 				";
 		
 		$rs = mysql_query($sql, $dbh);
@@ -189,7 +189,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (2)";
+		echo "Not authorized (1)";
 	}
 	
 ?>

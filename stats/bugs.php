@@ -53,7 +53,10 @@
 						'Andrew Ferguson',
 						'Markus Schorn',
 						'Mike Kucera',
-						'Oleg Krasilnikov'
+						'Oleg Krasilnikov',
+						'Sergey Prigogin',
+						'Alena Laskavaia',
+						'John Cortell'
 						)
 				ORDER BY attachId
 				";
@@ -103,7 +106,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (5)";
+		echo "Not authorized (6)";
 	}
 	
 ?>

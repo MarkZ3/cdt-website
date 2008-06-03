@@ -58,7 +58,8 @@
 						'Alena Laskavaia',
 						'John Cortell',
 						'Jason Montojo',
-						'Warren Paul'
+						'Warren Paul',
+						'John Camelon'
 						)
 				ORDER BY attachId
 				";

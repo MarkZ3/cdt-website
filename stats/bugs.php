@@ -49,7 +49,7 @@
 						'Markus Schorn',
 						'Mike Kucera'
 						)
-				ORDER BY bugId, attachId
+				ORDER BY attachId
 				";
 		
 		$rs = mysql_query($sql, $dbh);
@@ -97,7 +97,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (1)";
+		echo "Not authorized (2)";
 	}
 	
 ?>

@@ -56,7 +56,9 @@
 						'Oleg Krasilnikov',
 						'Sergey Prigogin',
 						'Alena Laskavaia',
-						'John Cortell'
+						'John Cortell',
+						'Jason Montojo',
+						'Warren Paul'
 						)
 				ORDER BY attachId
 				";

@@ -27,6 +27,7 @@
 					bugs.product_id = products.id
 					AND products.name = 'CDT'
 					AND bugs.component_id = components.id
+					AND bugs.keywords NOT LIKE '%contributed%'
 					AND attachments.bug_id = bugs.bug_id
 					AND attachments.ispatch = 1
 					AND attach_data.id = attachments.attach_id
@@ -96,7 +97,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (3)";
+		echo "Not authorized (4)";
 	}
 	
 ?>

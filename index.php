@@ -34,10 +34,7 @@
 	<br>
 	<h2>News</h2>
 
-	<p><b>CDT 4.0.3 Now Available</b> - February 26, 2008<br>As part of the Europa Winter Maintenance release, CDT 4.0.3 includes numerous fixes to CDT 4.0.2.</p>
-	<p><b>CDT 4.0.2 Now Available</b> - November 30, 2007<br>Includes numerous fixes to CDT 4.0.1.</p>
-	<p><b>CDT 4.0.1 Now Available</b> - September 26, 2007<br>Includes numerous fixes to CDT 4.0.</p>
-	<p><b>CDT 4.0 Now Available</b> - June 29, 2007<br>Our biggest and best release to date. Check out our <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.cdt.doc.user/concepts/cdt_c_whatsnew.htm">New and Noteworthy</a> page in the on-line C/C++ Development User Guide.</p>
+	<p><b>CDT 5.0 Now Available</b> - June 25, 2008<br>As part of the Ganymede Simultaneous release, CDT 5.0 includes various new features.  Check out our <a href="http://wiki.eclipse.org/CDT/User/NewIn50">New and Noteworthy</a> page in the CDT Wiki.</p>
 
 	<hr class="clearer" />
 

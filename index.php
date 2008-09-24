@@ -33,7 +33,9 @@
 
 	<br>
 	<h2>News</h2>
-
+	<p><b>CDT 5.0.1 Now Available</b> - September 24, 2008
+		- CDT 5.0.1 includes numerous fixes to CDT 5.0.  To download, please visit our Downloads page on the left.</p>
+		
 	<p><b>CDT 5.0 Now Available</b> - June 25, 2008<br>As part of the Ganymede Simultaneous release, CDT 5.0 includes various new features.  Check out our <a href="http://wiki.eclipse.org/CDT/User/NewIn50">New and Noteworthy</a> page in the CDT Wiki.</p>
 
 	<hr class="clearer" />

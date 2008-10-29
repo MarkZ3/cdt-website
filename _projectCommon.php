@@ -11,7 +11,7 @@
 	# these are optional
 	$Nav->setLinkList( array() );
     $Nav->addNavSeparator( "CDT Home", "/cdt" );
-    $Nav->addCustomNav("About This Project", "/projects/project_summary.php?projectid=<em>tools.cdt</em>", "_self", 2  );
+    $Nav->addCustomNav("About This Project", "/projects/project_summary.php?projectid=tools.cdt", "_self", 2  );
 	$Nav->addCustomNav("Downloads", 		"downloads.php", 	"_self", 2);
 	$Nav->addCustomNav("Wiki",				"http://wiki.eclipse.org/index.php/CDT", "_self", 2);
 	#$Nav->addCustomNav("Installation", 		"install.php", 		"_self", 2);

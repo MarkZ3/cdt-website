@@ -19,9 +19,6 @@
 	# $Nav->addCustomNav("My Link", "mypage.php", "_self", 3);
 	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank", 3);
 
-    $Nav->setLinkList( array() );
-    $Nav->addNavSeparator( "<em>CDT</em>", "/<em>cdt</em>" );
-    $Nav->addCustomNav( "About This Project", "/projects/project_summary.php?projectid=<em>tools.cdt</em>", "", 1  );
 	# End: page-specific settings
 		
 	# Paste your HTML content between the EOHTML markers!	

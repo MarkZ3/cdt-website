@@ -1,4 +1,12 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  																			
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
+	$App 	= new App();	
+	$Nav	= new Nav();	
+	$Menu 	= new Menu();		
+	include($App->getProjectCommon());    
+	# All on the same line to unclutter the user's desktop'
 
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "Eclipse C/C++ Development Tooling - CDT";
@@ -11,6 +19,9 @@
 	# $Nav->addCustomNav("My Link", "mypage.php", "_self", 3);
 	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank", 3);
 
+    $Nav->setLinkList( array() );
+    $Nav->addNavSeparator( "<em>CDT</em>", "/<em>cdt</em>" );
+    $Nav->addCustomNav( "About This Project", "/projects/project_summary.php?projectid=<em>tools.cdt</em>", "", 1  );
 	# End: page-specific settings
 		
 	# Paste your HTML content between the EOHTML markers!	
@@ -89,7 +100,7 @@
 		      <li>
 				<a href="http://live.eclipse.org/node/293">
 				CDT 4.0 Webinar</a><br>
-				This webinar will walk through all of CDT’s features from new project creation, code editing, and source navigation, to build and debug with a special focus on what’s new in CDT 4.0.
+				This webinar will walk through all of CDTï¿½s features from new project creation, code editing, and source navigation, to build and debug with a special focus on whatï¿½s new in CDT 4.0.
 			  </li>
 			  <li>
 				<a href="http://live.eclipse.org/node/197">

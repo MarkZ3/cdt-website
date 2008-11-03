@@ -29,9 +29,6 @@
 
 <div id="maincontent">
 
-<table border="0">
-<tr>
-<td valign="top">
 	<h1>&nbsp;&nbsp;Eclipse C/C++ Development Tooling - CDT</h1><br>
 	<div id="LeftImage"><img src="images/snapshots.gif" alt="" height="366" width="269" border="0"><br>
 		<!--Content regarding image-->
@@ -130,38 +127,6 @@
 			  </li>
 			</ul>
 	</div>
-
-</td>
-<td valign="top">
-
-	<div id="DownloadR">
-
-		<a href="http://www.eclipse.org/downloads">
-			<img src="images/download.jpg" alt="" height="133" width="143" border="0">
-			<br>
-			Download CDT
-		</a>
-
-	</div>
-	<div id="DL_leftNavR">
-		<a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.cdt">CDT newsgroup</a><br>
-		<img src="images/RegisterArrow.gif" alt="" height="23" width="31" align="absmiddle" border="0">
-		<a href="http://www.eclipse.org/newsgroups/register.php">Register</a><br>
-		<img src="images/subNav_bars.gif" alt="" height="8" width="100%" border="0" vspace="5"><br>
-		<a href="http://wiki.eclipse.org/index.php/CDT">Wiki </a><br>
-		<img src="images/subNav_bars.gif" alt="" height="8" width="100%" border="0" vspace="5">
-		<a href="https://dev.eclipse.org/mailman/listinfo/cdt-dev">Mailing list</a><br>
-		<img src="images/subNav_bars.gif" alt="" height="8" width="100%" border="0" vspace="5">
-		<a href="/projects/project_summary.php?projectid=tools.cdt">Project Information</a><br>
-		<img src="images/subNav_bars.gif" alt="" height="8" width="100%" border="0" vspace="5">
-		<a href="https://bugs.eclipse.org/bugs/">Report a bug</a>
-
-	</div>
-
-</td>
-</tr>
-</table>
-
 </div>
 
 

@@ -75,7 +75,7 @@
 				Covers installation, configuration, and basic debugging of Eclipse/CDT Europa edition using MySQL as source code.
 			  </li>
 			  <li>
-				<a href="http://www.infoq.com/articles/aspectj-with-ajdt">
+				<a href="http://www.ibm.com/developerworks/opensource/library/os-ecl-cdt1/index.html?S_TACT=105AGX44&S_CMP=EDU">
 				Building a CDT-based editor
 				</a><br>
 				Five part article series on IBM developerWorks.

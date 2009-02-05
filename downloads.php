@@ -23,6 +23,8 @@
 		the Eclipse Platform release. So please be careful how you are matching these versions.</p>
 		<p>As a minimum, you need to install the Eclipse Platform Runtime before installing the CDT</p>
 		
+		<h2>CDT 6.0.x</h2>	
+		<p>CDT 6.0 runs with Eclipse 3.5. This is build M6 (Experimental) version: <a href="http://download.eclipse.org/tools/cdt/builds/6.0.0/I.I200902031437/index.html">Download</a>. 
 		<h2>CDT 5.0.x</h2>
 		<p>CDT 5.0 runs with Eclipse 3.4 and is part of the Eclipse Ganymede simultaneous release.
 		The main CDT feature can be installed from the Ganymede Discovery Site. This feature as well as all other
@@ -111,7 +113,7 @@
 		when you install this language pack.</p>
 		<ul>
 			<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/callisto/NL_language_packs/CDT_NL_3.1.1.zip">CDT 3.1.x Language Pack</a>
-			– Contains the NL fragments and the NL features that contain those fragments for: German, Spanish, French, 
+			ï¿½ Contains the NL fragments and the NL features that contain those fragments for: German, Spanish, French, 
 			Italian, Japanese, Korean, Portuguese (Brazil), Traditional Chinese and Simplified Chinese.</li>
 		</ul>
 		

@@ -36,7 +36,7 @@
 		<p>A single zip file containing all of the CDT features for off-line installation is also available by
 		clicking the link above.</p>
 		
-		<p>Latest 5.0 maintenance release is CDT 5.0.2, RC2 build available at <a href="http://download.eclipse.org/tools/cdt/builds/5.0.2/I.I200901300802/">
+		<p>Latest 5.0 maintenance release is CDT 5.0.2, RC2 build available at <a href="http://download.eclipse.org/tools/cdt/builds/5.0.2/I.I200902060802/">
 		   http://download.eclipse.org/tools/cdt/builds/5.0.2/I.I200902060802/
 		</a>
 		

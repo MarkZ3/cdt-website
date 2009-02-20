@@ -34,7 +34,12 @@
 		<!--Content regarding image-->
 	</div>
 	<h2>Welcome to the Eclipse CDT Project</h2>
-	<p>The CDT (C/C++ Development Tools) Project provides a fully functional C and C++ Integrated Development Environment (IDE) for the Eclipse platform.</p>
+	<p>The CDT (C/C++ Development Tools) Project provides a fully functional C and C++ Integrated Development Environment (IDE) for the Eclipse platform.
+	The features include: support for project creation and managed build for various toolchains, standard make build, source navigation, various source knowledge tools, such as
+	type hierarchy, call graph, include browser, macro definition browser, code editor with syntax highlighting, folding and hyperlink navigation,
+	source code refactoring and code generation,
+	visual debugging tools, including memory, registers, and disassembly viewers.
+	</p>
 
 	<br>
 	<h2>News</h2>
@@ -51,14 +56,17 @@
 	<hr class="clearer" />
 
 	<div class="homeitem">
-		<h3>Articles</h3>
+		<h3>For Users</h3>
 			<ul>
-
-
 			  <li>
 				<a href="http://www.ibm.com/developerworks/opensource/library/os-eclipse-stlcdt/">
 				Developing applications using the Eclipse C/C++ Development Toolkit </a><br>
 				IBM developerWorks article.
+			  </li>
+			  <li>
+				<a href="http://wascana.sourceforge.net/">
+				Wascana Desktop Developer</a><br>
+				CDT based distribution for Windows development.
 			  </li>
 			  <li>
 				<a href=" http://www.ibm.com/developerworks/opensource/library/os-ecc/?S_TACT=105AGX44&S_CMP=ART">
@@ -77,25 +85,11 @@
 				Covers installation, configuration, and basic debugging of Eclipse/CDT Europa edition using MySQL as source code.
 			  </li>
 			  <li>
-				<a href="http://www.ibm.com/developerworks/opensource/library/os-ecl-cdt1/index.html?S_TACT=105AGX44&S_CMP=EDU">
-				Building a CDT-based editor
-				</a><br>
-				Five part article series on IBM developerWorks.
-			  </li>
-			  <li>
 				<a href="http://www.codeproject.com/KB/tips/CPP_Dev_eclipse_CDT.aspx">
 				C++ Development using eclipse IDE
 				</a><br>
 				Starters guide.
 			  </li>
-
-			</ul>
-
-	</div>
-
-	<div class="homeitem">
-		<h3>Resources</h3>
-			<ul>
 		      <li>
 				<a href="http://live.eclipse.org/node/293">
 				CDT 4.0 Webinar</a><br>
@@ -106,29 +100,53 @@
 				Developing C/C++ Applications Webinar</a>
 			  </li>
 			  <li>
+				<a href="http://cdtdoug.blogspot.com/index.html">
+				Doug on the Eclipse CDT</a><br>
+				All the latest news from the CDT world.
+			  </li>
+			  <li>
 				<a href="http://wiki.eclipse.org/CDT/User/FAQ">
 				CDT FAQ</a><br>
 				All things CDT. May be slightly out of date.
-			  </li>
-
-			  <li>
-				<a href="http://cdt-devel-faq.wikidot.com/">
-				Unofficial CDT Developers FAQ</a>
 			  </li>
 			  <li>
 				<a href="http://www.eclipse.org/cdt/index_old.html">
 				Old CDT Website</a><br>
 				Covers CDT 3.0 and earlier.
 			  </li>
+			</ul>
+
+	</div>
+
+	<div class="homeitem">
+		<h3>For Developers</h3>
+			<ul>
 			  <li>
-				<a href="http://wascana.sourceforge.net/">
-				Wascana Desktop Developer</a><br>
-				CDT based distribution for Windows development.
+				<a href="http://www.ibm.com/developerworks/opensource/library/os-ecl-cdt1/index.html?S_TACT=105AGX44&S_CMP=EDU">
+				Building a CDT-based editor
+				</a><br>
+				Five part article series on IBM developerWorks.
 			  </li>
 			  <li>
-				<a href="http://cdtdoug.blogspot.com/index.html">
-				Doug on the Eclipse CDT</a><br>
-				All the latest news from the CDT world.
+				<a href="http://wiki.eclipse.org/CDT/Developer/FAQ">
+				CDT Developers FAQ</a>
+			  </li>
+			  <li>
+			    <a href="http://wiki.eclipse.org/Getting_started_with_CDT_development">
+			    Getting started with CDT Development
+			    </a>
+			  </li>
+			  <li>
+			    <a href="http://wiki.eclipse.org/CDT">
+			    Wiki 
+			    </a><br>
+			    Source of all knowledge
+			  </li>
+			  <li>
+			    <a href="http://download.eclipse.org/tools/cdt/builds">
+			    Nightly Builds
+			    </a><br>
+			    Download CDT Nightly builds
 			  </li>
 			</ul>
 	</div>

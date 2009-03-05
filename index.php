@@ -29,7 +29,16 @@
 
 <div id="maincontent">
 
-	<h1>&nbsp;&nbsp;Eclipse C/C++ Development Tooling - CDT<img src="images/CDT.png" height="128" width="128" border="0"/></h1><br>
+    <table width="100%">
+        <tr>
+            <td width="80%">
+	           <h1>&nbsp;&nbsp;Eclipse C/C++ Development Tooling - CDT</h1>
+	        </td>
+	        <td align="right">
+	           <img src="images/CDT.png" height="180" width="180" border="0"/>
+	        </td>
+	     </tr>
+	</table>
 	<div id="LeftImage"><img src="images/snapshots.gif" alt="" height="366" width="269" border="0"><br>
 		<!--Content regarding image-->
 	</div>

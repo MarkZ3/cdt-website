@@ -30,7 +30,7 @@
 <div id="maincontent">
 
     <div id="RightImage">
-       <img src="images/CDT.png" height="180" width="180" border="0"/>
+       <img src="images/CDT2.png" border="0"/>
     </div>
     <div id="marginLeft">
         <h1>Eclipse C/C++ Development Tooling - CDT</h1>

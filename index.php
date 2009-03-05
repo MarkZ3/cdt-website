@@ -31,7 +31,7 @@
 
     <h1>Eclipse C/C++ Development Tooling - CDT</h1>
 	<div id="LeftImage">
-       <img src="images/CDT.png" height="180" width="180" border="0"/>
+       <img src="images/CDT.png" height="180" width="180" border="0"/><br>
 	   <img src="images/snapshots.gif" alt="" height="366" width="269" border="0"/>
 	</div>
 	<h2>Welcome to the Eclipse CDT Project</h2>

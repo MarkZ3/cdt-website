@@ -43,11 +43,11 @@
 
 	<br>
 	<h2>News</h2>
-	<p><b>CDT 5.0.2 (RC2) Now Available</b> - Feb 11, 2009
-		- To download, please visit our Downloads page on the left.</p> 
+	<p><b>CDT 5.0.2 Now Available</b> - March 5, 2009
+		- CDT 5.0.2 includes numerous fixes to CDT 5.0.1.  To download, please visit our Downloads page on the left.</p> 
+
 	<p><b>CDT 6.0 M5 (Experimental)</b> - Feb 5, 2009. <a href="http://download.eclipse.org/tools/cdt/builds/6.0.0/I.I200902031437/index.html">Download</a>.
-	<p><b>CDT 5.0.2 (RC1) Now Available</b> - Feb 5, 2009
-		- To download, please visit our Downloads page on the left.</p> 
+
 	<p><b>CDT 5.0.1 Now Available</b> - September 24, 2008
 		- CDT 5.0.1 includes numerous fixes to CDT 5.0.  To download, please visit our Downloads page on the left.</p>
 		

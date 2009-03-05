@@ -46,7 +46,6 @@
 	visual debugging tools, including memory, registers, and disassembly viewers.
 	</p>
 
-	<br>
 	<h2>News</h2>
 	<p><b>CDT 5.0.2 Now Available</b> - March 5, 2009
 		- CDT 5.0.2 includes numerous fixes to CDT 5.0.1.  To download, please visit our Downloads page on the left.</p> 

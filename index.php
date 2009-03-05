@@ -52,9 +52,6 @@
 
 	<p><b>CDT 6.0 M5 (Experimental)</b> - Feb 5, 2009. <a href="http://download.eclipse.org/tools/cdt/builds/6.0.0/I.I200902031437/index.html">Download</a>.
 
-	<p><b>CDT 5.0.1 Now Available</b> - September 24, 2008
-		- CDT 5.0.1 includes numerous fixes to CDT 5.0.  To download, please visit our Downloads page on the left.</p>
-		
 	<p><b>CDT 5.0 Now Available</b> - June 25, 2008<br>As part of the Ganymede Simultaneous release, CDT 5.0 includes various new features.  Check out our <a href="http://wiki.eclipse.org/CDT/User/NewIn50">New and Noteworthy</a> page in the CDT Wiki.</p>
 
 	<hr class="clearer" />

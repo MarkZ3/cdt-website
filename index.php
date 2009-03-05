@@ -31,11 +31,11 @@
 
     <table width="100%">
         <tr>
-            <td>
+            <td align="left">
                <img src="images/CDT.png" height="180" width="180" border="0"/>
             </td>
             <td>
-	           <h1>&nbsp;&nbsp;Eclipse C/C++ Development Tooling - CDT</h1>
+	           <h1>Eclipse C/C++ Development Tooling - CDT</h1>
 	        </td>
 	     </tr>
 	</table>

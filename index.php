@@ -155,6 +155,13 @@
 			    </a><br>
 			    Mailing list for CDT Developers. If you are CDT user please post to <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.cdt">CDT Newsgroup</a> instead.
 			  </li> 
+			  <li>
+			    <a href="https://bugs.eclipse.org/bugs/query.cgi?product=CDT">
+			    Bugzilla
+			    </a><br>
+			    Search for CDT bugs.
+			  </li> 
+			  
 			</ul>
 	</div>
 </div>

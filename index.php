@@ -149,6 +149,12 @@
 			    </a><br>
 			    Download CDT Nightly builds
 			  </li>
+			   <li>
+			    <a href="https://dev.eclipse.org/mailman/listinfo/cdt-dev">
+			    CDT Developers Mailing List
+			    </a><br>
+			    Mailing list for CDT Developers. If you are CDT user please post to <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.cdt">CDT Newsgroup</a> instead.
+			  </li> 
 			</ul>
 	</div>
 </div>

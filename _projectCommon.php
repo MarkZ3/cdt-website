@@ -14,7 +14,6 @@
     $Nav->addCustomNav("About This Project", "/projects/project_summary.php?projectid=tools.cdt", "_self", 2  );
 	$Nav->addCustomNav("Downloads", 		"downloads.php", 	"_self", 2);
 	$Nav->addCustomNav("Wiki",				"http://wiki.eclipse.org/index.php/CDT", "_self", 2);
-	$Nav->addCustomNav("Dev Mailing List", "https://dev.eclipse.org/mailman/listinfo/cdt-dev", "_self", 2);
 	$Nav->addCustomNav("CDT Newsgroup", "http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.cdt", "_self", 2);
 	#$Nav->addNavSeparator( "Bugs", "https://bugs.eclipse.org/bugs/query.cgi?product=CDT", "_self", 2 );
 	$Nav->addCustomNav("Report a Bug","https://bugs.eclipse.org/bugs/enter_bug.cgi?product=CDT", "_self", 2);

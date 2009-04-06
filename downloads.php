@@ -24,7 +24,7 @@
 		<p>As a minimum, you need to install the Eclipse Platform Runtime before installing the CDT</p>
 		
 		<h2>CDT 6.0.x</h2>	
-		<p>CDT 6.0 runs with Eclipse 3.5. Latest stable build (M5) available <a href="http://download.eclipse.org/tools/cdt/builds/6.0.0/I.I200902031437/index.html">here</a>. 
+		<p>CDT 6.0 runs with Eclipse 3.5. Latest stable build (M6) available <a href="http://download.eclipse.org/tools/cdt/builds/6.0.0/I.I200903161435/index.html">here</a>. 
 		<h2>CDT 5.0.x</h2>
 		<p>CDT 5.0 runs with Eclipse 3.4 and is part of the Eclipse Ganymede simultaneous release.
 		The main CDT feature can be installed from the Ganymede Discovery Site. This feature as well as all other

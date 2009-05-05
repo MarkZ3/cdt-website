@@ -123,19 +123,13 @@
 		<h3>For Developers</h3>
 			<ul>
 			  <li>
-				<a href="http://www.ibm.com/developerworks/opensource/library/os-ecl-cdt1/index.html?S_TACT=105AGX44&S_CMP=EDU">
-				Building a CDT-based editor
-				</a><br>
-				Five part article series on IBM developerWorks.
+			    <a href="http://wiki.eclipse.org/Getting_started_with_CDT_development">
+			    Getting started with CDT Development
+			    </a>
 			  </li>
 			  <li>
 				<a href="http://wiki.eclipse.org/CDT/Developer/FAQ">
 				CDT Developers FAQ</a>
-			  </li>
-			  <li>
-			    <a href="http://wiki.eclipse.org/Getting_started_with_CDT_development">
-			    Getting started with CDT Development
-			    </a>
 			  </li>
 			  <li>
 			    <a href="http://wiki.eclipse.org/CDT">
@@ -161,7 +155,18 @@
 			    </a><br>
 			    Search for CDT bugs.
 			  </li> 
-			  
+			  <li>
+				<a href="http://www.ibm.com/developerworks/opensource/library/os-ecl-cdt1/index.html?S_TACT=105AGX44&S_CMP=EDU">
+				Building a CDT-based editor
+				</a><br>
+				Five part article series on IBM developerWorks.
+			  </li>
+			   <li>
+				<a href="http://wiki.eclipse.org/CDT/designs/StaticAnalysis">
+				Static Analysis in CDT
+				</a><br>
+				Proposal for CDT Static Analysis Framework
+			  </li>
 			</ul>
 	</div>
 </div>

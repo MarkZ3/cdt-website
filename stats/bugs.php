@@ -142,6 +142,7 @@
 						'VERIFIED',
 						'CLOSED'
 						)
+					AND bugs.resolution NOT IN ( 'DUPLICATE' )
 					AND bugs.component_id = components.id
 					AND attachments.bug_id = bugs.bug_id
 					AND flags.attach_id = attachments.attach_id

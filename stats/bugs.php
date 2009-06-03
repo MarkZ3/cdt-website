@@ -22,6 +22,8 @@
 					components,
 					attachments,
 					attach_data,
+					flags,
+					flagtypes,
 					profiles AS contributor,
 					profiles AS committer 
 				WHERE

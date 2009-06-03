@@ -146,7 +146,6 @@
 					AND attachments.bug_id = bugs.bug_id
 					AND flags.attach_id = attachments.attach_id
 					AND flags.type_id = flagtypes.id
-					AND flagtypes.name LIKE '%iplog+%'
 					AND attach_data.id = attachments.attach_id
 					AND contributor.userid = attachments.submitter_id
 					AND committer.userid = bugs.assigned_to
@@ -198,7 +197,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (1)";
+		echo "Not authorized (2)";
 	}
 	
 ?>

@@ -33,7 +33,7 @@
 					AND attachments.bug_id = bugs.bug_id
 					AND attachments.ispatch = 1
 					AND flags.attach_id = attachments.attach_id
-					AND flags.status = '+'
+					AND flags.status <> '+'
 					AND flags.type_id = flagtypes.id
 					AND flagtypes.name = 'iplog'
 					AND attach_data.id = attachments.attach_id

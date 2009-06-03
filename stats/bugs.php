@@ -121,9 +121,9 @@
 					bugs.bug_id AS bugId,
 					attachments.attach_id AS attachId,
 					contributor.realname AS contributorName,
+					contributor.login_name AS contributorEmail,
 					committer.realname AS committerName,
 					LENGTH(attach_data.thedata) AS size,
-					flagtypes.name AS flagtype
 				FROM
 					bugs,
 					products,
@@ -145,7 +145,9 @@
 					AND bugs.component_id = components.id
 					AND attachments.bug_id = bugs.bug_id
 					AND flags.attach_id = attachments.attach_id
+					AND flags.status = '+'
 					AND flags.type_id = flagtypes.id
+					AND flagtypes.name = 'iplog'
 					AND attach_data.id = attachments.attach_id
 					AND contributor.userid = attachments.submitter_id
 					AND committer.userid = bugs.assigned_to
@@ -174,7 +176,6 @@
 		echo "<th>Contributor</th>\n";
 		echo "<th>Committer</th>\n";
 		echo "<th>Size</th>\n";
-		echo "<th>Flagtype</th>\n";
 		echo "</tr>\n";
 		
 		while($myrow = mysql_fetch_assoc($rs)) {
@@ -183,10 +184,13 @@
 			echo "<td>" . $myrow['milestone'] . "</td>\n";
 			echo "<td><a href=\"https://bugs.eclipse.org/bugs/show_bug.cgi?id=" . $myrow['bugId'] . "\">" . $myrow['bugId'] . "</a>\n";
 			echo "<td>" . $myrow['attachId'] . "</td>\n";
-			echo "<td>" . $myrow['contributorName'] . "</td>\n";
+			$name = $myrow['contributorName'];
+			if ($name == "") {
+				$name = myrow['contributorEmail'];
+			}
+			echo "<td>" . $name . "</td>\n";
 			echo "<td>" . $myrow['committerName'] . "</td>\n";
 			echo "<td>" . $myrow['size'] . "</td>\n";
-			echo "<td>" . $myrow['flagtype'] . "</td>\n";
 			echo "</tr>\n";
 		}
 		
@@ -199,7 +203,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (3)";
+		echo "Not authorized (4)";
 	}
 	
 ?>

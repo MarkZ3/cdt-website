@@ -123,7 +123,7 @@
 					contributor.realname AS contributorName,
 					committer.realname AS committerName,
 					LENGTH(attach_data.thedata) AS size,
-					flagtype.name
+					flagtypes.name
 				FROM
 					bugs,
 					products,
@@ -145,8 +145,8 @@
 					AND bugs.component_id = components.id
 					AND attachments.bug_id = bugs.bug_id
 					AND flags.attach_id = attachments.attach_id
-					AND flags.type_id = flagtype.id
-					AND flagtype.name LIKE '%iplog+%'
+					AND flags.type_id = flagtypes.id
+					AND flagtypes.name LIKE '%iplog+%'
 					AND attach_data.id = attachments.attach_id
 					AND contributor.userid = attachments.submitter_id
 					AND committer.userid = bugs.assigned_to
@@ -198,7 +198,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (4)";
+		echo "Not authorized (1)";
 	}
 	
 ?>

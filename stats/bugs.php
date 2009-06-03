@@ -174,6 +174,7 @@
 		echo "<th>Contributor</th>\n";
 		echo "<th>Committer</th>\n";
 		echo "<th>Size</th>\n";
+		echo "<th>Flagtype</th>\n";
 		echo "</tr>\n";
 		
 		while($myrow = mysql_fetch_assoc($rs)) {
@@ -185,6 +186,7 @@
 			echo "<td>" . $myrow['contributorName'] . "</td>\n";
 			echo "<td>" . $myrow['committerName'] . "</td>\n";
 			echo "<td>" . $myrow['size'] . "</td>\n";
+			echo "<td>" . $myrow['flagtype'] . "</td>\n";
 			echo "</tr>\n";
 		}
 		

@@ -186,7 +186,7 @@
 			echo "<td>" . $myrow['attachId'] . "</td>\n";
 			$name = $myrow['contributorName'];
 			if ($name == "") {
-				$name = myrow['contributorEmail'];
+				$name = $myrow['contributorEmail'];
 			}
 			echo "<td>" . $name . "</td>\n";
 			echo "<td>" . $myrow['committerName'] . "</td>\n";
@@ -203,7 +203,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (4)";
+		echo "Not authorized (5)";
 	}
 	
 ?>

@@ -46,7 +46,7 @@
 						'Chris Wiebe',
 						'Leo Treggiari',
 						'Markus Schorn',
-						'Norbert Plött',
+						'Norbert Plï¿½tt',
 						'Ken Ryall',
 						'Vivian Kong',
 						'Chris Recoskie',
@@ -135,9 +135,8 @@
 					bugs.product_id = products.id
 					AND products.name = 'CDT'
 					AND bugs.component_id = components.id
-					AND bugs.keywords LIKE '%contributed%'
 					AND attachments.bug_id = bugs.bug_id
-					AND attachments.ispatch = 1
+					AND attachments.flag LIKE '%iplog+%'
 					AND attach_data.id = attachments.attach_id
 					AND contributor.userid = attachments.submitter_id
 					AND committer.userid = bugs.assigned_to
@@ -189,7 +188,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (1)";
+		echo "Not authorized (2)";
 	}
 	
 ?>

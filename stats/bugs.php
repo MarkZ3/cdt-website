@@ -134,6 +134,11 @@
 				WHERE
 					bugs.product_id = products.id
 					AND products.name = 'CDT'
+					AND bugs.bug_status IN (
+						'RESOLVED',
+						'VERIFIED',
+						'CLOSED'
+						)
 					AND bugs.component_id = components.id
 					AND attachments.bug_id = bugs.bug_id
 					AND attachments.flag LIKE '%iplog+%'
@@ -188,7 +193,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (2)";
+		echo "Not authorized (3)";
 	}
 	
 ?>

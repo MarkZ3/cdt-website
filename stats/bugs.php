@@ -123,7 +123,7 @@
 					contributor.realname AS contributorName,
 					committer.realname AS committerName,
 					LENGTH(attach_data.thedata) AS size,
-					flagtypes.name
+					flagtypes.name AS flagtype
 				FROM
 					bugs,
 					products,
@@ -197,7 +197,7 @@
 		$dbc 		= null;
 
 	} else {
-		echo "Not authorized (2)";
+		echo "Not authorized (3)";
 	}
 	
 ?>

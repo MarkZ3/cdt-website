@@ -123,7 +123,7 @@
 					contributor.realname AS contributorName,
 					contributor.login_name AS contributorEmail,
 					committer.realname AS committerName,
-					LENGTH(attach_data.thedata) AS size,
+					LENGTH(attach_data.thedata) AS size
 				FROM
 					bugs,
 					products,

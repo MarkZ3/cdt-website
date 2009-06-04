@@ -162,7 +162,7 @@
 					AND attach_data.id = attachments.attach_id
 					AND contributor.userid = attachments.submitter_id
 					AND committer.userid = bugs.assigned_to
-				ORDER BY milestone, attachId
+				ORDER BY milestone, bugId
 				";
 		
 		$rs = mysql_query($sql, $dbh);

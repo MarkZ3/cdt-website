@@ -92,9 +92,14 @@
 				Starters guide.
 			  </li>
 		      <li>
+				<a href="http://live.eclipse.org/node/723">
+				Webinar on Reverse Debugging with DSF-GDB</a><br>
+				This webinar introduces the new DSF-GDB debugger integration that is part of CDT 6.0.  It illustrates the recent GDB additions such as Reverse debugging, Multi-Process and Non-stop multi-thread debugging.
+			  </li>
+		      <li>
 				<a href="http://live.eclipse.org/node/293">
 				CDT 4.0 Webinar</a><br>
-				This webinar will walk through all of CDT�s features from new project creation, code editing, and source navigation, to build and debug with a special focus on what�s new in CDT 4.0.
+				This webinar will walk through all of CDT's features from new project creation, code editing, and source navigation, to build and debug with a special focus on what's new in CDT 4.0.
 			  </li>
 			  <li>
 				<a href="http://live.eclipse.org/node/197">

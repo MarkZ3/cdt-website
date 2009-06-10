@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+<plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml"
+      name="CDT">
+   <release projectid="tools.cdt" version="6.0"/>
+   <introduction>
+     <html:div>C/C++ Development Environment</html:div>
+   </introduction>
+   <release_deliverables>
+     <html:div>C/C++ Development Environment</html:div>
+   </release_deliverables>
+   <release_milestones>
+      <preamble>
+         <html:div>We have milestones</html:div>
+      </preamble>
+      <postamble><html:div>and we met them all</html:div></postamble>
+   </release_milestones>
+   <target_environments>
+     <html:div>We target them all.</html:div>
+     <internationalization>
+          <html:div>IBM does a lot of work on I18N for CDT.</html:div>
+     </internationalization>
+   </target_environments>
+   <compatibility_with_previous_releases>
+       <html:div>Compatibility is not guaranteed with previous releases.</html:div>
+   </compatibility_with_previous_releases>
+   <themes_and_priorities>
+     <preamble>
+         <html:div>We do not operate based on themes.</html:div>
+     </preamble>
+   </themes_and_priorities>	
+ </plan>

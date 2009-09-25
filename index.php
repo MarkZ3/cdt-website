@@ -49,7 +49,7 @@
 	<h2>News</h2>
 	
 	<p><b>CDT 6.0.1 Now Available</b> - September 25, 2009
-		- CDT 6.0.1 includes numerous fixes to CDT 6.0.  To download, please visit our Downloads page on the left.</p> 
+	<br>CDT 6.0.1 includes numerous fixes to CDT 6.0.  To download, please visit our Downloads page on the left.</p> 
 	
 	<p><b>CDT 6.0 Now Available</b> - June 24, 2009
 	<br>As part of the Galileo Simultaneous release, CDT 6.0 includes various new features.  Check out our <a href="http://wiki.eclipse.org/CDT/User/NewIn60">New and Noteworthy</a> page in the CDT Wiki.

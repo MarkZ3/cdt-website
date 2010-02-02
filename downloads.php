@@ -22,7 +22,18 @@
 		<p>One thing to note about the CDT is that, up to this point, we are very tied to specific versions of
 		the Eclipse Platform release. So please be careful how you are matching these versions.</p>
 		<p>As a minimum, you need to install the Eclipse Platform Runtime before installing the CDT</p>
-		
+		<!--
+		<h2>CDT 7.0.x</h2>	
+		<p>CDT 7.0 runs with Eclipse 3.6 and is part of the Eclipse Helios simultaneous release.
+		The main CDT feature can be installed from the Helios Update Site. This feature as well as all other
+		CDT 7.0 features can also be installed from the CDT Helios Update Site with the following URL.</p>
+		<ul>
+			<li><a href="http://download.eclipse.org/tools/cdt/releases/helios">
+			  http://download.eclipse.org/tools/cdt/releases/helios</a></li>
+		</ul>
+		<p>A single zip file containing all of the CDT features for off-line installation is also available by
+		clicking the link above.</p>
+		-->
 		<h2>CDT 6.0.x</h2>	
 		<p>CDT 6.0 runs with Eclipse 3.5 and is part of the Eclipse Galileo simultaneous release.
 		The main CDT feature can be installed from the Galileo Update Site. This feature as well as all other

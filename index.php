@@ -48,13 +48,21 @@
 
 	<h2>News</h2>
 	
-	<p><b>CDT 6.0.1 Now Available</b> - September 25, 2009
-	<br>CDT 6.0.1 includes numerous fixes to CDT 6.0.  To download, please visit our Downloads page on the left.</p> 
+	<p><b>CDT 7.0 M5 Now Available</b> - February 2, 2010
+	<br>As part of the Helios Simultaneous release, CDT 7.0 includes various new features.  
+	To download, please visit our <a href="http://download.eclipse.org/tools/cdt/builds/7.0.0/index.html">nightly build</a> page.</p>
 	
 	<p><b>CDT 6.0 Now Available</b> - June 24, 2009
 	<br>As part of the Galileo Simultaneous release, CDT 6.0 includes various new features.  Check out our <a href="http://wiki.eclipse.org/CDT/User/NewIn60">New and Noteworthy</a> page in the CDT Wiki.
 	To download, please visit our Downloads page on the left.</p>
-
+	
+	<p><b>CDT 6.0.1 Now Available</b> - September 25, 2009
+	<br>CDT 6.0.1 includes numerous fixes to CDT 6.0.  To download, please visit our Downloads page on the left.</p> 
+	<!--
+	<p><b>CDT 6.0 Now Available</b> - June 24, 2009
+	<br>As part of the Galileo Simultaneous release, CDT 6.0 includes various new features.  Check out our <a href="http://wiki.eclipse.org/CDT/User/NewIn60">New and Noteworthy</a> page in the CDT Wiki.
+	To download, please visit our Downloads page on the left.</p>
+	-->
 	<hr class="clearer" />
 
 	<div class="homeitem">

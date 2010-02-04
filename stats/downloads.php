@@ -1,6 +1,6 @@
 <?php
 
-	function getCount($filename, $from, $to, $dbh) {
+	function getCount($filename, $dbh) {
 		#get the file id
 		$sql = "SELECT file_id
 				FROM download_file_index
@@ -11,32 +11,10 @@
 		
 		$sql = "SELECT COUNT(file_id) as count
 				FROM downloads
-				WHERE file_id = $fileid
-					AND download_date BETWEEN \"$from\" AND \"$to\"";
+				WHERE file_id = $fileid";
 		$rs = mysql_query($sql, $dbh);
 		$myrow = mysql_fetch_assoc($rs);
 		return $myrow['count'];
-	}
-	
-	function printHeader() {
-		echo "<table>";
-		echo "<tr>";
-		echo "<th>Month</th>";
-		echo "<th>Release</th>";
-		echo "<th>Platform</th>";
-		echo "<th>Type</th>";
-		echo "<th>Count</th>";
-		echo "</tr>";
-	}
-	
-	function printRow($month, $release, $platform, $type, $count) {
-		echo "<tr>";
-		echo "<td>$month</td>";
-		echo "<td>$release</td>";
-		echo "<td>$platform</td>";
-		echo "<td>$type</td>";
-		echo "<td>$count</td>";
-		echo "</tr>";
 	}
 	
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
@@ -49,238 +27,33 @@
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
 		
-		$months = array(
-#			"1/1/2006,2006-01-01,2006-01-31",
-#			"2/1/2006,2006-02-01,2006-02-28",
-#			"3/1/2006,2006-03-01,2006-03-31",
-#			"4/1/2006,2006-04-01,2006-04-30",
-#			"5/1/2006,2006-05-01,2006-05-31",
-#			"6/1/2006,2006-06-01,2006-06-30",
-#			"7/1/2006,2006-07-01,2006-07-31",
-#			"8/1/2006,2006-08-01,2006-08-31",
-#			"9/1/2006,2006-09-01,2006-09-30",
-#			"10/1/2006,2006-10-01,2006-10-31",
-#			"11/1/2006,2006-11-01,2006-11-30",
-#			"12/1/2006,2006-12-01,2006-12-31",
-#			"1/1/2007,2007-01-01,2007-01-31",
-#			"2/1/2007,2007-02-01,2007-02-28",
-#			"3/1/2007,2007-03-01,2007-03-31",
-			"4/1/2007,2007-04-01,2007-04-30"
-		);
-		
 		$files = array(
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.aix_3.0.0.jar,3.0.0,aix,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.ia64_3.0.0.jar,3.0.0,linux.ia64,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.ppc_3.0.0.jar,3.0.0,linux.ppc,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.x86_3.0.0.jar,3.0.0,linux.x86,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.x86_64_3.0.0.jar,3.0.0,linux.x86_64,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.macosx_3.0.0.jar,3.0.0,macosx,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.qnx_3.0.0.jar,3.0.0,qnx,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.solaris_3.0.0.jar,3.0.0,solaris,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.win32_3.0.0.jar,3.0.0,win32,update",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-aix.ppc.tar.gz,3.0.0,aix,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.ia64.tar.gz,3.0.0,linux.ia64,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.ppc.tar.gz,3.0.0,linux.ppc,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.x86.tar.gz,3.0.0,linux.x86,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-linux.x86_64.tar.gz,3.0.0,linux.x86_64,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-macosx.ppc.tar.gz,3.0.0,macosx,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-qnx.x86.tar.gz,3.0.0,qnx,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-solaris.sparc.tar.gz,3.0.0,solaris,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt-3.0.0-win32.x86.zip,3.0.0,win32,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-aix.ppc.tar.gz,3.0.0,aix,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-linux.ia64.tar.gz,3.0.0,linux.ia64,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-linux.ppc.tar.gz,3.0.0,linux.ppc,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-linux.x86.tar.gz,3.0.0,linux.x86,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-linux.x86_64.tar.gz,3.0.0,linux.x86_64,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-macosx.ppc.tar.gz,3.0.0,macosx,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-qnx.x86.tar.gz,3.0.0,qnx,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-solaris.sparc.tar.gz,3.0.0,solaris,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.0/org.eclipse.cdt.sdk-3.0.0-win32.x86.zip,3.0.0,win32,sdk",
-			
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.aix_3.0.1.jar,3.0.1,aix,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.ia64_3.0.1.jar,3.0.1,linux.ia64,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.ppc_3.0.1.jar,3.0.1,linux.ppc,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.x86_3.0.1.jar,3.0.1,linux.x86,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.x86_64_3.0.1.jar,3.0.1,linux.x86_64,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.macosx_3.0.1.jar,3.0.1,macosx,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.qnx_3.0.1.jar,3.0.1,qnx,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.solaris_3.0.1.jar,3.0.1,solaris,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.win32_3.0.1.jar,3.0.1,win32,update",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-aix.ppc.tar.gz,3.0.1,aix,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-linux.ia64.tar.gz,3.0.1,linux.ia64,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-linux.ppc.tar.gz,3.0.1,linux.ppc,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-linux.x86.tar.gz,3.0.1,linux.x86,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-linux.x86_64.tar.gz,3.0.1,linux.x86_64,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-macosx.ppc.tar.gz,3.0.1,macosx,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-qnx.x86.tar.gz,3.0.1,qnx,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-solaris.sparc.tar.gz,3.0.1,solaris,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt-3.0.1-win32.x86.zip,3.0.1,win32,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-aix.ppc.tar.gz,3.0.1,aix,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-linux.ia64.tar.gz,3.0.1,linux.ia64,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-linux.ppc.tar.gz,3.0.1,linux.ppc,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-linux.x86_64.tar.gz,3.0.1,linux.x86_64,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-linux.x86.tar.gz,3.0.1,linux.x86,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-macosx.ppc.tar.gz,3.0.1,macosx,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-qnx.x86.tar.gz,3.0.1,qnx,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-solaris.sparc.tar.gz,3.0.1,solaris,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.1/org.eclipse.cdt.sdk-3.0.1-win32.x86.zip,3.0.1,win32,sdk",
-			
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.aix_3.0.2.jar,3.0.2,aix,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.ia64_3.0.2.jar,3.0.2,linux.ia64,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.ppc_3.0.2.jar,3.0.2,linux.ppc,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.x86_3.0.2.jar,3.0.2,linux.x86,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.linux.x86_64_3.0.2.jar,3.0.2,linux.x86_64,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.macosx_3.0.2.jar,3.0.2,macosx,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.qnx_3.0.2.jar,3.0.2,qnx,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.solaris_3.0.2.jar,3.0.2,solaris,update",
-			"/tools/cdt/releases/eclipse3.1/plugins/org.eclipse.cdt.core.win32_3.0.2.jar,3.0.2,win32,update",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-aix.ppc.tar.gz,3.0.2,aix,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-linux.ia64.tar.gz,3.0.2,linux.ia64,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-linux.ppc.tar.gz,3.0.2,linux.ppc,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-linux.x86_64.tar.gz,3.0.2,linux.x86_64,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-linux.x86.tar.gz,3.0.2,linux.x86,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-macosx.ppc.tar.gz,3.0.2,macosx,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-qnx.x86.tar.gz,3.0.2,qnx,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-solaris.sparc.tar.gz,3.0.2,solaris,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt-3.0.2-win32.x86.zip,3.0.2,win32,runtime",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-aix.ppc.tar.gz,3.0.2,aix,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-linux.ia64.tar.gz,3.0.2,linux.ia64,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-linux.ppc.tar.gz,3.0.2,linux.ppc,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-linux.x86_64.tar.gz,3.0.2,linux.x86_64,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-linux.x86.tar.gz,3.0.2,linux.x86,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-macosx.ppc.tar.gz,3.0.2,macosx,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-qnx.x86.tar.gz,3.0.2,qnx,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-solaris.sparc.tar.gz,3.0.2,solaris,sdk",
-			"/tools/cdt/releases/eclipse3.1/dist/3.0.2/org.eclipse.cdt.sdk-3.0.2-win32.x86.zip,3.0.2,win32,sdk",
-						
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.aix_3.1.0.200606261600.jar,3.1.0,aix,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.ia64_3.1.0.200606261600.jar,3.1.0,linux.ia64,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.ppc_3.1.0.200606261600.jar,3.1.0,linux.ppc,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.x86_3.1.0.200606261600.jar,3.1.0,linux.x86,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.x86_64_3.1.0.200606261600.jar,3.1.0,linux.x86_64,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.macosx_3.1.0.200606261600.jar,3.1.0,macosx,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.qnx_3.1.0.200606261600.jar,3.1.0,qnx,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.solaris_3.1.0.200606261600.jar,3.1.0,solaris,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.win32_3.1.0.200606261600.jar,3.1.0,win32,update",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.aix_3.1.0.200606261600.jar,3.1.0,aix,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.ia64_3.1.0.200606261600.jar,3.1.0,linux.ia64,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.ppc_3.1.0.200606261600.jar,3.1.0,linux.ppc,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.x86_3.1.0.200606261600.jar,3.1.0,linux.x86,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.x86_64_3.1.0.200606261600.jar,3.1.0,linux.x86_64,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.macosx_3.1.0.200606261600.jar,3.1.0,macosx,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.qnx_3.1.0.200606261600.jar,3.1.0,qnx,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.solaris_3.1.0.200606261600.jar,3.1.0,solaris,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.win32_3.1.0.200606261600.jar,3.1.0,win32,callisto",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-aix.ppc.tar.gz,3.1.0,aix,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-linux.ia64.tar.gz,3.1.0,linux.ia64,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-linux.ppc.tar.gz,3.1.0,linux.ppc,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-linux.x86_64.tar.gz,3.1.0,linux.x86_64,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-linux.x86.tar.gz,3.1.0,linux.x86,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-macosx.ppc.tar.gz,3.1.0,macosx,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-qnx.x86.tar.gz,3.1.0,qnx,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-solaris.sparc.tar.gz,3.1.0,solaris,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt-3.1.0-win32.x86.zip,3.1.0,win32,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-aix.ppc.tar.gz,3.1.0,aix,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-linux.ia64.tar.gz,3.1.0,linux.ia64,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-linux.ppc.tar.gz,3.1.0,linux.ppc,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-linux.x86_64.tar.gz,3.1.0,linux.x86_64,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-linux.x86.tar.gz,3.1.0,linux.x86,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-macosx.ppc.tar.gz,3.1.0,macosx,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-qnx.x86.tar.gz,3.1.0,qnx,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-solaris.sparc.tar.gz,3.1.0,solaris,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.0/org.eclipse.cdt.sdk-3.1.0-win32.x86.zip,3.1.0,win32,sdk",
-			
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.aix_3.1.1.200609270800.jar,3.1.1,aix,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.ia64_3.1.1.200609270800.jar,3.1.1,linux.ia64,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.ppc_3.1.1.200609270800.jar,3.1.1,linux.ppc,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.x86_3.1.1.200609270800.jar,3.1.1,linux.x86,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.x86_64_3.1.1.200609270800.jar,3.1.1,linux.x86_64,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.macosx_3.1.1.200609270800.jar,3.1.1,macosx,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.qnx_3.1.1.200609270800.jar,3.1.1,qnx,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.solaris_3.1.1.200609270800.jar,3.1.1,solaris,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.win32_3.1.1.200609270800.jar,3.1.1,win32,update",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.aix_3.1.1.200609270800.jar,3.1.1,aix,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.ia64_3.1.1.200609270800.jar,3.1.1,linux.ia64,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.ppc_3.1.1.200609270800.jar,3.1.1,linux.ppc,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.x86_3.1.1.200609270800.jar,3.1.1,linux.x86,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.x86_64_3.1.1.200609270800.jar,3.1.1,linux.x86_64,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.macosx_3.1.1.200609270800.jar,3.1.1,macosx,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.qnx_3.1.1.200609270800.jar,3.1.1,qnx,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.solaris_3.1.1.200609270800.jar,3.1.1,solaris,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.win32_3.1.1.200609270800.jar,3.1.1,win32,callisto",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-aix.ppc.tar.gz,3.1.1,aix,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-linux.ia64.tar.gz,3.1.1,linux.ia64,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-linux.ppc.tar.gz,3.1.1,linux.ppc,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-linux.x86_64.tar.gz,3.1.1,linux.x86_64,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-linux.x86.tar.gz,3.1.1,linux.x86,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-macosx.ppc.tar.gz,3.1.1,macosx,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-qnx.x86.tar.gz,3.1.1,qnx,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-solaris.sparc.tar.gz,3.1.1,solaris,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt-3.1.1-win32.x86.zip,3.1.1,win32,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-aix.ppc.tar.gz,3.1.1,aix,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-linux.ia64.tar.gz,3.1.1,linux.ia64,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-linux.ppc.tar.gz,3.1.1,linux.ppc,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-linux.x86_64.tar.gz,3.1.1,linux.x86_64,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-linux.x86.tar.gz,3.1.1,linux.x86,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-macosx.ppc.tar.gz,3.1.1,macosx,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-qnx.x86.tar.gz,3.1.1,qnx,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-solaris.sparc.tar.gz,3.1.1,solaris,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.1/org.eclipse.cdt.sdk-3.1.1-win32.x86.zip,3.1.1,win32,sdk",
-
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.aix_3.1.2.200702150621.jar,3.1.2,aix,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.ia64_3.1.2.200702150621.jar,3.1.2,linux.ia64,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.ppc_3.1.2.200702150621.jar,3.1.2,linux.ppc,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.x86_3.1.2.200702150621.jar,3.1.2,linux.x86,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.linux.x86_64_3.1.2.200702150621.jar,3.1.2,linux.x86_64,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.macosx_3.1.2.200702150621.jar,3.1.2,macosx,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.qnx_3.1.2.200702150621.jar,3.1.2,qnx,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.solaris_3.1.2.200702150621.jar,3.1.2,solaris,update",
-			"/tools/cdt/releases/callisto/plugins/org.eclipse.cdt.core.win32_3.1.2.200702150621.jar,3.1.2,win32,update",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.aix_3.1.2.200702150621.jar,3.1.2,aix,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.ia64_3.1.2.200702150621.jar,3.1.2,linux.ia64,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.ppc_3.1.2.200702150621.jar,3.1.2,linux.ppc,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.x86_3.1.2.200702150621.jar,3.1.2,linux.x86,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.linux.x86_64_3.1.2.200702150621.jar,3.1.2,linux.x86_64,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.macosx_3.1.2.200702150621.jar,3.1.2,macosx,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.qnx_3.1.2.200702150621.jar,3.1.2,qnx,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.solaris_3.1.2.200702150621.jar,3.1.2,solaris,callisto",
-			"/callisto/releases/plugins/org.eclipse.cdt.core.win32_3.1.2.200702150621.jar,3.1.2,win32,callisto",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-aix.ppc.tar.gz,3.1.2,aix,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-linux.ia64.tar.gz,3.1.2,linux.ia64,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-linux.ppc.tar.gz,3.1.2,linux.ppc,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-linux.x86_64.tar.gz,3.1.2,linux.x86_64,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-linux.x86.tar.gz,3.1.2,linux.x86,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-macosx.ppc.tar.gz,3.1.2,macosx,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-qnx.x86.tar.gz,3.1.2,qnx,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-solaris.sparc.tar.gz,3.1.2,solaris,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt-3.1.2-win32.x86.zip,3.1.2,win32,runtime",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-aix.ppc.tar.gz,3.1.2,aix,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-linux.ia64.tar.gz,3.1.2,linux.ia64,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-linux.ppc.tar.gz,3.1.2,linux.ppc,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-linux.x86_64.tar.gz,3.1.2,linux.x86_64,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-linux.x86.tar.gz,3.1.2,linux.x86,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-macosx.ppc.tar.gz,3.1.2,macosx,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-qnx.x86.tar.gz,3.1.2,qnx,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-solaris.sparc.tar.gz,3.1.2,solaris,sdk",
-			"/tools/cdt/releases/callisto/dist/3.1.2/org.eclipse.cdt.sdk-3.1.2-win32.x86.zip,3.1.2,win32,sdk",
+			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-win32.tar.gz,Windows",
+			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-linux-gtk.tar.gz,Linux 32",
+			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-linux-gtk-x86_64.tar.gz,Linux 64",
+			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-macosx-carbon.tar.gz,Mac Carbon 32",
+			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-macosx-cocoa.tar.gz,Mac Cocoa 32",
+			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-macosx-cocoa-x86_64.tar.gz,Mac Cocoa 64",
 		);
 
-		printHeader();
+		echo "<h2>Galileo SR1 C/C++ IDE Downloads</h2>";
+		
+		echo "<table>";
+		echo "<tr>";
+		echo "<th>Platform</th>";
+		echo "<th>Downloads</th>";
+		echo "</tr>";
 
-		foreach ($months as $month) {
-			$monthex = explode(",", $month);
-			$monthdate = $monthex[0];
-			$monthfrom = $monthex[1];
-			$monthto = $monthex[2];
-			
-			foreach ($files as $file) {
+		foreach ($files as $file) {
 				$fileex = explode(",", $file);
 				$filename = $fileex[0];
-				$release = $fileex[1];
-				$platform = $fileex[2];
-				$type = $fileex[3];
-				$count = getCount($filename, $monthfrom, $monthto, $dbh);
-				printRow($monthdate, $release, $platform, $type, $count);
+				$platform = $fileex[1];
+				$count = getCount($filename, $dbh);
+				
+				echo "<tr>";
+				echo "<td>$platform</td>";
+				echo "<td>$count</td>";
+				echo "</tr>";
 			}
 		}
 		

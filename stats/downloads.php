@@ -61,7 +61,7 @@
 		
 		$dbc->disconnect();
 	} else {
-		echo "You are not authorized to access this page. (5)";
+		echo "You are not authorized to access this page. (1)";
 	}
 
 ?>

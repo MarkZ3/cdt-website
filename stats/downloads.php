@@ -45,16 +45,15 @@
 		echo "</tr>";
 
 		foreach ($files as $file) {
-				$fileex = explode(",", $file);
-				$filename = $fileex[0];
-				$platform = $fileex[1];
-				$count = getCount($filename, $dbh);
+			$fileex = explode(",", $file);
+			$filename = $fileex[0];
+			$platform = $fileex[1];
+			$count = getCount($filename, $dbh);
 				
-				echo "<tr>";
-				echo "<td>$platform</td>";
-				echo "<td>$count</td>";
-				echo "</tr>";
-			}
+			echo "<tr>";
+			echo "<td>$platform</td>";
+			echo "<td>$count</td>";
+			echo "</tr>";
 		}
 		
 		echo "</table>";

@@ -28,7 +28,7 @@
 		$dbh 	= $dbc->connect();
 		
 		$files = array(
-			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-win32.tar.gz,Windows",
+			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-win32.zip,Windows",
 			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-linux-gtk.tar.gz,Linux 32",
 			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-linux-gtk-x86_64.tar.gz,Linux 64",
 			"/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-macosx-carbon.tar.gz,Mac Carbon 32",
@@ -49,6 +49,7 @@
 			$filename = $fileex[0];
 			$platform = $fileex[1];
 			$count = getCount($filename, $dbh);
+			$total += $count;
 				
 			echo "<tr>";
 			echo "<td>$platform</td>";
@@ -58,9 +59,11 @@
 		
 		echo "</table>";
 		
+		echo "<p>Total: $total</p>";
+		
 		$dbc->disconnect();
 	} else {
-		echo "<p>You are not authorized to access this page. (2)</p>";
+		echo "<p>You are not authorized to access this page. (3)</p>";
 	}
 
 ?>

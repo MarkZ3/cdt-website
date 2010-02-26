@@ -48,6 +48,9 @@
 
 	<h2>News</h2>
 	
+	<p><b>CDT 6.0.2 Now Available</b> - February 26, 2010
+	<br>CDT 6.0.2 includes numerous fixes to CDT 6.0.1.  To download, please visit our Downloads page on the left.</p>
+	
 	<p><b>CDT 7.0 M5 Now Available</b> - February 2, 2010
 	<br>As part of the Helios Simultaneous release, CDT 7.0 includes various new features.  
 	To download, please visit our <a href="http://download.eclipse.org/tools/cdt/builds/7.0.0/index.html">nightly build</a> page.</p>

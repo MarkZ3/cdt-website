@@ -58,7 +58,6 @@
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/dsf-gdb/org.eclipse.cdt.tests.dsf.gdb,org.eclipse.cdt.tests.dsf.gdb"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.ui,org.eclipse.cdt.ui"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.ui.tests,org.eclipse.cdt.ui.tests"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.ui.tests,org.eclipse.cdt.ui.tests"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.gdb,org.eclipse.cdt.gdb"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.gdb.ui,org.eclipse.cdt.gdb.ui"/>
 </provider>

@@ -35,7 +35,7 @@
     <div id="marginLeft">
         <h1>Eclipse C/C++ Development Tooling - CDT</h1>
     </div>
-	<div id="LeftImage">
+	<div id="LeftImage" height="366"/>
 	   <img src="images/cdt_logo_with_name.jpg" alt="CDT" border="0"/>
 	</div>
 	<h2>Welcome to the Eclipse CDT Project</h2>

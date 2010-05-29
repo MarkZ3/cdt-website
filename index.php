@@ -30,13 +30,13 @@
 <div id="maincontent">
 
     <div id="RightImage">
-       <img src="images/CDT2.png" height="192" width="224" border="0"/>
+       <img src="images/snapshots.gif" alt="" height="366" width="269" border="0"/>
     </div>
     <div id="marginLeft">
         <h1>Eclipse C/C++ Development Tooling - CDT</h1>
     </div>
 	<div id="LeftImage">
-	   <img src="images/snapshots.gif" alt="" height="366" width="269" border="0"/>
+	   <img src="images/cdt_logo_with_name.jpg" alt="CDT" height="192" width="224" border="0"/>
 	</div>
 	<h2>Welcome to the Eclipse CDT Project</h2>
 	<p>The CDT (C/C++ Development Tools) Project provides a fully functional C and C++ Integrated Development Environment (IDE) for the Eclipse platform.

@@ -15,6 +15,10 @@
 	$html  = <<<EOHTML
 <div id="midcolumn">
 <h2>$pageTitle</h2>
+<p>Being an open source project, CDT support is provided by the community
+	on a volunteer basis.
+	Use the following mechanisms to reach that community.</p>
+
 <h3>CDT Forum</h3>
 <p>As questions on the
 	<a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=80">CDT Forum</a>.</p>

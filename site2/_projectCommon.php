@@ -30,7 +30,7 @@
 	$Nav->addCustomNav("Documentation", "/cdt/site2/documentation.php", "_self", 3);
 	$Nav->addCustomNav("Support", "/cdt/site2/support.php", "_self", 3);
 	$Nav->addCustomNav("Getting Involved", "/cdt/site2/developers.php", "_self", 3);
-    $Nav->addCustomNav("Project Stats", "/projects/project_summary.php?projectid=tools.cdt", "_self", 3);
+	#$Nav->addCustomNav("Project Stats", "/projects/project_summary.php?projectid=tools.cdt", "_self", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "eclipse, cdt, c++";

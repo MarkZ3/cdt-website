@@ -37,27 +37,24 @@
 </div>
 
 <div id="midcolumn">
-<h3>MyProject - use this header describe what it does</h3>
+<h3>Eclipse CDT (C/C++ Development Tooling)</h3>
 <div id="introText">
 
-<p class="left">MyProject is a framework for development of cool stuff and
-more cool stuff. Just describe your project here very briefly. Use the center 
-section below for a screenshot, a screenshot collage or a screencast.</p>
+<p>The CDT Project provides a fully functional C and C++ Integrated Development Environment
+based on the Eclipse platform.
+Features include: support for project creation and managed build for various toolchains,
+standard make build, source navigation, various source knowledge tools, such as type hierarchy,
+call graph, include browser, macro definition browser, code editor with syntax highlighting,
+folding and hyperlink navigation, source code refactoring and code generation,
+visual debugging tools, including memory, registers, and disassembly viewers.
+</p>
 
-<p class="right"> This project was just provisioned.  You can see the proposal 
-<a href="/proposals/myproject">here</a>
-
+<p>
+<img src="/cdt/images/snapshots.gif" alt="" border="0"/>
 </p>
 
 </div>
 
-<div id="screencast">
-<object width="640" height="480"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=8260921&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=DBD7EF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=8260921&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=DBD7EF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="480"></embed></object>
-</div>
-
-<!-- 
-<h3>...and yet powerful</h3>
- -->
 <div id="feature_1">
 
 <h4>Some cool feature</h4>

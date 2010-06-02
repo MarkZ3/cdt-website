@@ -27,6 +27,11 @@ a strong {
 	text-decoration: underline;
 }
 
+#image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #novaContent {
 	background: url("images/backgroundMain.png") no-repeat white;

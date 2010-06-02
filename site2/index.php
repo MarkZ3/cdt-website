@@ -49,9 +49,9 @@ folding and hyperlink navigation, source code refactoring and code generation,
 visual debugging tools, including memory, registers, and disassembly viewers.
 </p>
 
-<p>
-<img src="/cdt/images/snapshots.gif" alt="" border="0"/>
-</p>
+<div id="image">
+<img src="/cdt/images/snapshots.gif" alt="CDT Snapshots" border="0"/>
+</div>
 
 </div>
 

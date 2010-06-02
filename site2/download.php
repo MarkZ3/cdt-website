@@ -26,14 +26,22 @@
 <h3>CDT 6.0.2 for Eclipse Galileo</h3>
 <p><b><a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/galileosr2">
 	Eclipse C/C++ IDE Galileo SR2</a></b></p>
-<p><b>p2 repository:</b> http://download.eclipse.org/cdt/releases/galileo</p>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/galileo">
+	http://download.eclipse.org/tools/cdt/releases/galileo</a></p>
 
-<h3>Helios - Eclipse 3.6 (unreleased)</h3>
-<p><b>Update site:</b> http://download.eclipse.org/myproject/<br />
-<b>ZIP file: </b><a href="/downloads/download.php?file=/myproject/file.zip">file.zip</a> (10 MiB)</p>
+<h3>Development Builds</h3>
+<p>Development builds of the Eclipse C/C++ IDE can be found on the
+	<a href="http://www.eclipse.org/downloads">Eclipse Downloads page</a>
+	by clicking on the Development Builds tab</p>
 
+<p>CDT nightly builds used for testing are availab from the 
+	<a href="http://download.eclipse.org/tools/cdt/builds">CDT Nightly Build page</a></p>
+
+<p>Bleeding edge continuous builds are available from the
+	<a href="https://build.eclipse.org/hudson/job/cdt-nightly">cdt-nightly Hudson build page</a></p>
+	
 <h3>Additional Distributions</h3>
-<p>The CDT may be installed as part of commercial products or from the following open source
+<p>The CDT can be installed as part of many commercial products or from the following open source
 	distributions.</p>
 	
 <h4>Linux</h4>

@@ -26,10 +26,11 @@
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("CDT", 	"/cdt/site2");
-	$Nav->addCustomNav("Download", "/cdt/site2/download.php", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/cdt/site2/documentation.php", "_blank", 3);
-	$Nav->addCustomNav("Support", "/cdt/site2/support.php", "_blank", 3);
-	$Nav->addCustomNav("Getting Involved", "/cdt/site2/developers.php", "_blank", 3);
+   	$Nav->addCustomNav("Download", "/cdt/site2/download.php", "_self", 3);
+	$Nav->addCustomNav("Documentation", "/cdt/site2/documentation.php", "_self", 3);
+	$Nav->addCustomNav("Support", "/cdt/site2/support.php", "_self", 3);
+	$Nav->addCustomNav("Getting Involved", "/cdt/site2/developers.php", "_self", 3);
+    $Nav->addCustomNav("Project Stats", "/projects/project_summary.php?projectid=tools.cdt", "_self", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "eclipse, cdt, c++";
@@ -43,6 +44,7 @@
 	$Menu->addMenuItem("Documentation", "/cdt/site2/documentation.php", "_self");
 	$Menu->addMenuItem("Support", "/cdt/site2/support.php", "_self");
 	$Menu->addMenuItem("Developers", "/cdt/site2/developers.php", "_self");
+    $Menu->addMenuItem("Stats", "/projects/project_summary.php?projectid=tools.cdt", "_self");
 	
 	# To define additional CSS or other pre-body headers
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/cdt/site2/style.css"/>');

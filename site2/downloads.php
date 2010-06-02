@@ -24,9 +24,9 @@
 	repository URLs listed below.</p>
 
 <h3>CDT 6.0.2 for Eclipse Galileo</h3>
-<p><b>Eclipse package: 
+<p>Eclipse package: 
 	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/galileosr2">
-	Eclipse C/C++ IDE Galileo SR2</a></b>.</p>
+	Eclipse C/C++ IDE Galileo SR2</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/galileo">
 	http://download.eclipse.org/tools/cdt/releases/galileo</a>.</p>
 

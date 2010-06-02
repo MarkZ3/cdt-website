@@ -26,10 +26,10 @@
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("CDT", 	"/cdt/site2");
-   	$Nav->addCustomNav("Download", "/cdt/site2/download.php", "_self", 3);
+   	$Nav->addCustomNav("Download", "/cdt/site2/downloads.php", "_self", 3);
 	$Nav->addCustomNav("Documentation", "/cdt/site2/documentation.php", "_self", 3);
 	$Nav->addCustomNav("Support", "/cdt/site2/support.php", "_self", 3);
-	$Nav->addCustomNav("Getting Involved", "/cdt/site2/developer.php", "_self", 3);
+	$Nav->addCustomNav("Getting Involved", "/cdt/site2/developers.php", "_self", 3);
     $Nav->addCustomNav("Project Stats", "/projects/project_summary.php?projectid=tools.cdt", "_self", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
@@ -40,7 +40,7 @@
 	# To override and replace the navigation with your own, uncomment the line below.
 	$Menu->setMenuItemList(array());
 	$Menu->addMenuItem("Home", "/cdt/site2", "_self");
-	$Menu->addMenuItem("Download", "/cdt/site2/download.php", "_self");
+	$Menu->addMenuItem("Download", "/cdt/site2/downloads.php", "_self");
 	$Menu->addMenuItem("Documentation", "/cdt/site2/documentation.php", "_self");
 	$Menu->addMenuItem("Support", "/cdt/site2/support.php", "_self");
 	$Menu->addMenuItem("Developers", "/cdt/site2/developers.php", "_self");

@@ -18,8 +18,8 @@
 	$Nav->addCustomNav("Getting Involved", "/egit/developers/", "_self", 3);
 	
 	$pageKeywords	= "eclipse, egit, git, vcs";
-	$pageAuthor		= "Chris Aniszczyk";
-	$pageTitle 		= "EGit";
+	$pageAuthor		= "Doug Schaefer";
+	$pageTitle 		= "CDT";
 
 	$Menu->setMenuItemList(array());
 	$Menu->addMenuItem("Home", "/egit/", "_self");

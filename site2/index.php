@@ -21,7 +21,7 @@
 	$pageTitle 		= "Eclipse CDT";
 	
 	// 	# Paste your HTML content between the EOHTML markers!
-	$html = <<EOHTML
+	$html = <<<EOHTML
 <div id="bigbuttons">
 <h3>Primary Links</h3>
 <ul>

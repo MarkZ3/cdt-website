@@ -25,29 +25,27 @@
 	# $Nav->setLinkList(array());
 	
 	# Break the navigation into sections
-	$Nav->addNavSeparator("MyProject", 	"/default");
-	$Nav->addCustomNav("Download", "/project/download.php", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/project/documentation.php", "_blank", 3);
-	$Nav->addCustomNav("Support", "/project/support.php", "_blank", 3);
-	$Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
+	$Nav->addNavSeparator("CDT", 	"/cdt/site2");
+	$Nav->addCustomNav("Download", "/cdt/site2/download.php", "_self", 3);
+	$Nav->addCustomNav("Documentation", "/cdt/site2/documentation.php", "_blank", 3);
+	$Nav->addCustomNav("Support", "/cdt/site2/support.php", "_blank", 3);
+	$Nav->addCustomNav("Getting Involved", "/cdt/site2/developers.php", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
-	$pageKeywords	= "xtext, dsl, modeling, domain specific language, textual";
-	$pageAuthor		= "Your name";
-	# $pageTitle 		= "Xtext";
-
+	$pageKeywords	= "eclipse, cdt, c++";
+	$pageAuthor		= "Doug Schaefer";
 
 	# top navigation bar
 	# To override and replace the navigation with your own, uncomment the line below.
-	# $Menu->setMenuItemList(array());
-	# $Menu->addMenuItem("Home", "/project", "_self");
-	# $Menu->addMenuItem("Download", "/project/download.php", "_self");
-	# $Menu->addMenuItem("Documentation", "/project/documentation.php", "_self");
-	# $Menu->addMenuItem("Support", "/project/support.php", "_self");
-	# $Menu->addMenuItem("Developers", "/project/developers", "_self");
+	$Menu->setMenuItemList(array());
+	$Menu->addMenuItem("Home", "/cdt/site2", "_self");
+	$Menu->addMenuItem("Download", "/cdt/site2/download.php", "_self");
+	$Menu->addMenuItem("Documentation", "/cdt/site2/documentation.php", "_self");
+	$Menu->addMenuItem("Support", "/cdt/site2/support.php", "_self");
+	$Menu->addMenuItem("Developers", "/cdt/site2/developers.php", "_self");
 	
 	# To define additional CSS or other pre-body headers
-	# $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/default/style.css"/>');
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/cdt/site2/style.css"/>');
 	
 	# To enable occasional Eclipse Foundation Promotion banners on your pages (EclipseCon, etc)
 	$App->Promotion = TRUE;

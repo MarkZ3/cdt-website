@@ -78,7 +78,7 @@
 	Covers CDT 3.0 and earlier.
 </li>
 </ul>
-<div>
+</div>
 EOHTML;
 
 	# Generate the web page

@@ -27,7 +27,7 @@ a strong {
 	text-decoration: underline;
 }
 
-#image {
+img.displayed {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;

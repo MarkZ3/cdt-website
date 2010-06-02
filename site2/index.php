@@ -38,6 +38,7 @@
 
 <div id="midcolumn">
 <h3>Eclipse CDT (C/C++ Development Tooling)</h3>
+
 <div id="introText">
 
 <p>The CDT Project provides a fully functional C and C++ Integrated Development Environment
@@ -53,42 +54,13 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 
 </div>
 
-<div id="feature_1">
-
-<h4>Some cool feature</h4>
-<p>MyProject has this really cool feature that you describe here in few words, just as a teaser.</p>
-</div>
-
-<div id="feature_2">
-<h4>Another Feature</h4>
-<p>When working with MyProject, great things happen, and one of them is described here.</p>
-</div>
-
-<div id="feature_3">
-<h4>Another Feature</h4>
-<p>When working with MyProject, great things happen, and one of them is described here.</p>
-</div>
-
-<div id="feature_4">
-<h4>User Experience</h4>
-<p>
-Experiment with style.css to create columns for text, just the way you want it. This section 
-is a bit wider and can contain more words, even small logos or graphics to describe a neat feature in more detail.</p>
-</div>
-
-<div id="feature_more">
-<h4>and much more...</h4>
-<p>Read the MyProject <a href="/project/documentation.php">documentation</a> and join the discussion at the <a href="http://www.eclipse.org/forums/eclipse.newsgroup.name">forum</a> to understand how powerful MyProject is.</p>
-<p> Want to know more? <a href="/projects/project_summary.php?projectid=my.project">About This Project</a>
-</div>
-
 </div>
 
 <div id="rightcolumn">
 
 <div>
 <h3>Current Status</h3>
-<p>Update this section occasionally to let your community know what's new and exciting with your project....</p>
+<p>We are quickly approaching the release of CDT 7.0 for Eclipse Helios.</p>
 </div>
 
 <div id="headlines">

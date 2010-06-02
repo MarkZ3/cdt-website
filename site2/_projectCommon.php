@@ -22,7 +22,7 @@
 	$pageTitle 		= "CDT";
 
 	$Menu->setMenuItemList(array());
-	$Menu->addMenuItem("Home", "/egit/", "_self");
+	$Menu->addMenuItem("Home", "/cdt/", "_self");
 	$Menu->addMenuItem("Download", "/egit/download/", "_self");
 	$Menu->addMenuItem("Documentation", "/egit/documentation/", "_self");
 	$Menu->addMenuItem("Support", "/egit/support/", "_self");

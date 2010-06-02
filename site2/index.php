@@ -60,19 +60,10 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 </div>
 
 <div id="headlines">
-<h3>New and Noteworthy</h3>
-<p>... or a link to your new and noteworthy.</p>
+<h3>CDT 6.0.2 Now Available</h3>
+<p>Check the Downloads link on how to get yours.</p>
 </div>
 
-<div id="headlines">
-<h3>Headlines on the web</h3>
-<p>Project headlines...</p>
-</div>
-
-<div id="headlines">
-<h3>Another announcement</h3>
-<p>MyProject is pleased to announce...</p>
-</div>
 </div>
 EOHTML;
 

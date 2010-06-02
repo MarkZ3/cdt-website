@@ -39,7 +39,8 @@
 	# top navigation bar
 	# To override and replace the navigation with your own, uncomment the line below.
 	$Menu->setMenuItemList(array());
-	$Menu->addMenuItem("Home", "/cdt/site2", "_self");
+	$Menu->addMenuItem("Eclipse", "/", "_self");
+	$Menu->addMenuItem("CDT", "/cdt/site2", "_self");
 	$Menu->addMenuItem("Download", "/cdt/site2/downloads.php", "_self");
 	$Menu->addMenuItem("Documentation", "/cdt/site2/documentation.php", "_self");
 	$Menu->addMenuItem("Support", "/cdt/site2/support.php", "_self");

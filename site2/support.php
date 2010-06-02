@@ -21,7 +21,7 @@
 
 <h3>Bugzilla</h3>
 <p>Report defects and ask for enhancements in
-	<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=CDT>Bugzilla</a>.</p>
+	<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=CDT">Bugzilla</a>.</p>
 
 </div>
 EOHTML;

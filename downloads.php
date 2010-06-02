@@ -1,162 +1,61 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+/*******************************************************************************
+ * Copyright (c) 2010
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *    
+ *******************************************************************************/
 
-	$pageTitle 		= "CDT Downloads Page";
-	$pageKeywords	= "CDT, downloads";
-	$pageAuthor		= "Doug Schaefer";
+	$pageTitle 		= "CDT Downloads";
+
+	$html  = <<<EOHTML
+<div id="midcolumn">
+<h2>$pageTitle</h2>
+<p>All downloads are provided under the terms and conditions of the
+	<a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a>
+	unless otherwise specified.</p>
+
+<p>The CDT can either be installed as part of the Eclipse C/C++ IDE packaged zip file or installed
+	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
+	repository URLs listed below.</p>
+
+<h3>CDT 6.0.2 for Eclipse Galileo</h3>
+<p>Eclipse package: 
+	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/galileosr2">
+	Eclipse C/C++ IDE Galileo SR2</a>.</p>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/galileo">
+	http://download.eclipse.org/tools/cdt/releases/galileo</a>.</p>
+
+<h3>Development Builds</h3>
+<p>Development builds of the Eclipse C/C++ IDE can be found on the
+	<a href="http://www.eclipse.org/downloads">Eclipse Downloads page</a>
+	by clicking on the Development Builds tab.</p>
+
+<p>CDT nightly builds used for testing are available from the 
+	<a href="http://download.eclipse.org/tools/cdt/builds">CDT Nightly Build page</a>.</p>
+
+<p>Bleeding edge continuous builds are available from the
+	<a href="https://build.eclipse.org/hudson/job/cdt-nightly">cdt-nightly Hudson build page</a>.</p>
 	
-	# Add page-specific Nav bars here
-	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
-	# $Nav->addNavSeparator("My Page Links", 	"downloads.php");
-	# $Nav->addCustomNav("My Link", "mypage.php", "_self", 3);
-	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank", 3);
+<h3>Additional Distributions</h3>
+<p>The CDT can be installed as part of many commercial products or from the following open source
+	distributions.</p>
+	
+<h4>Linux</h4>
+<p>Most major Linux distributions include packages for Eclipse and the CDT.
+	Check your package manager for availability.</p>
 
-	# End: page-specific settings
-	#
-		
-	# Paste your HTML content between the EOHTML markers!	
-	$html = <<<EOHTML
+<h4>Wascana Eclipse C/C++ IDE for Windows</h4>
+<p>The <a href="http://www.eclipselabs.org/p/wascana">Wascana</a> project maintains a distribution
+	of the Eclipse C/C++ IDE with the MinGW GNU toolchain and libraries for building Windows
+	applications. See their site for more information.</p>
 
-<div id="maincontent">
-	<div id="midcolumn">
-		<h1>$pageTitle</h1>
-		<p>One thing to note about the CDT is that, up to this point, we are very tied to specific versions of
-		the Eclipse Platform release. So please be careful how you are matching these versions.</p>
-		<p>As a minimum, you need to install the Eclipse Platform Runtime before installing the CDT</p>
-		<!--
-		<h2>CDT 7.0.x</h2>	
-		<p>CDT 7.0 runs with Eclipse 3.6 and is part of the Eclipse Helios simultaneous release.
-		The main CDT feature can be installed from the Helios Update Site. This feature as well as all other
-		CDT 7.0 features can also be installed from the CDT Helios Update Site with the following URL.</p>
-		<ul>
-			<li><a href="http://download.eclipse.org/tools/cdt/releases/helios">
-			  http://download.eclipse.org/tools/cdt/releases/helios</a></li>
-		</ul>
-		<p>A single zip file containing all of the CDT features for off-line installation is also available by
-		clicking the link above.</p>
-		-->
-		<h2>CDT 6.0.x</h2>	
-		<p>CDT 6.0 runs with Eclipse 3.5 and is part of the Eclipse Galileo simultaneous release.
-		The main CDT feature can be installed from the Galileo Update Site. This feature as well as all other
-		CDT 6.0 features can also be installed from the CDT Galileo Update Site with the following URL.</p>
-		<ul>
-			<li><a href="http://download.eclipse.org/tools/cdt/releases/galileo">
-			  http://download.eclipse.org/tools/cdt/releases/galileo</a></li>
-		</ul>
-		<p>A single zip file containing all of the CDT features for off-line installation is also available by
-		clicking the link above.</p>
-		
-		<p>Bugs fixed in:</p>
-		<ul>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=6.0&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      6.0</a></li>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=6.0.1&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      6.0.1</a></li>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=6.0.2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      6.0.2</a></li>
-		</ul>
-		
-		<h2>CDT 5.0.x</h2>
-		<p>CDT 5.0 runs with Eclipse 3.4 and is part of the Eclipse Ganymede simultaneous release.
-		The main CDT feature can be installed from the Ganymede Discovery Site. This feature as well as all other
-		CDT 5.0 features can also be installed from the CDT Ganymede Update Site with the following URL.</p>
-		<ul>
-			<li><a href="http://download.eclipse.org/tools/cdt/releases/ganymede">
-			  http://download.eclipse.org/tools/cdt/releases/ganymede</a></li>
-		</ul>
-		<p>A single zip file containing all of the CDT features for off-line installation is also available by
-		clicking the link above.</p>
-		
-		<p>Bugs fixed in:</p>
-		<ul>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=5.0&target_milestone=5.0+M6&target_milestone=5.0+M7&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      5.0</a></li>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=5.0.1&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      5.0.1</a></li>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=5.0.2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      5.0.2</a></li>
-		</ul>
-		
-		<h2>CDT 4.0.x</h2>
-		<p>CDT 4.0 runs with Eclipse 3.3 and is part of the Eclipse Europa simultaneous release.
-		The main CDT feature can be installed from the Europa Discovery Site. This feature as well as all other
-		CDT 4.0 features can also be installed from the CDT Europa Update Site with the following URL.</p>
-		<ul>
-			<li><a href="http://download.eclipse.org/tools/cdt/releases/europa">
-			  http://download.eclipse.org/tools/cdt/releases/europa</a></li>
-		</ul>
-		<p>A single zip file containing all of the CDT features for off-line installation is also available by
-		clicking the link above.</p>
-		<p>Bugs fixed in:</p>
-		<ul>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0&target_milestone=4.0+M4&target_milestone=4.0+M5&target_milestone=4.0+M6&target_milestone=4.0+M7&target_milestone=4.0+RC0&target_milestone=4.0+RC2&target_milestone=4.0+RC3&target_milestone=4.0+RC4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      4.0.0</a></li>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0.1&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      4.0.1</a></li>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0.2&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      4.0.2</a></li>
-		    <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=4.0.3&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-		      4.0.3</a></li>
-		</ul>
-
-		<h2>CDT 3.1.x</h2>
-		<p>CDT 3.1 runs with Eclipse 3.2. It can be installed from the Callisto Discovery Site or the CDT Update Site.
-		The CDT Update Site is avalable by entering the following URL as the Remote Site in the Update Manager.
-		The Callisto Discovery Site should already be there. Note that the CDT SDK feature which is used if you
-		are building plugins that extend the CDT is only available from the CDT Update Site.</p>
-		<ul>
-			<li>http://download.eclipse.org/tools/cdt/releases/callisto</li>
-		</ul>
-		<p>The CDT can also be downloaded in a single file form the following pages</p>
-		<ul>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.2">
-					CDT 3.1.2 (February 15, 2007)
-				</a>
-				-
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=3.1.2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved in 3.1.2
-				</a>
-			</li>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.1">
-					CDT 3.1.1 (September 29, 2006)
-				</a>
-				-
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=3.1.1&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved in 3.1.1
-				</a>
-			</li>
-			<li>
-				<a href="http://download.eclipse.org/tools/cdt/releases/callisto/dist/3.1.0">
-					CDT 3.1.0 (June 30, 2006)
-				</a>
-				-
-				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Tools&product=CDT&target_milestone=3.1&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&query_based_on=&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					Bugs resolved in 3.1.0
-				</a>
-			</li>
-		</ul>
-		
-		<h2>CDT 3.1.x Language Pack</h2>
-		<p>IBM has donated translations from their products to Eclipse. The language pack groups translations for 
-		several languages into a single download which are distributed as a set of features which you can install 
-		by extracting over your Eclipse directory and restarting Eclipse.</p>
-		<p>These translations are based on the CDT 3.1.1 build but should work with all subsequent 3.1.x maintenance 
-		releases. If new strings are added to CDT after 3.1.1, they will not show up as translated in the 3.1.x stream 
-		when you install this language pack.</p>
-		<ul>
-			<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/callisto/NL_language_packs/CDT_NL_3.1.1.zip">CDT 3.1.x Language Pack</a>
-			� Contains the NL fragments and the NL features that contain those fragments for: German, Spanish, French, 
-			Italian, Japanese, Korean, Portuguese (Brazil), Traditional Chinese and Simplified Chinese.</li>
-		</ul>
-		
-		<br>
-	</div>
 </div>
-
-
 EOHTML;
-
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);

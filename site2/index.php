@@ -21,14 +21,14 @@
 <div id="bigbuttons">
 <h3>Primary Links</h3>
 <ul>
-	<li><a id="buttonDownload" href="download.php" title="Download">Eclipse
-	Distribution, Update Site, Dropins</a></li>
-	<li><a id="buttonDocumentation" href="midcolumn_example.php"
-		title="Documentation">Tutorials, Examples, Videos, Reference Documentation</a></li>
-	<li><a id="buttonSupport" href="midcolumn_example.php" title="Download">Bug
-	Tracker, Newsgroup, Professional Support</a></li>
-	<li><a id="buttonInvolved" href="midcolumn_example.php" title="Getting Involved">CVS,
-	Workspace Setup, Wiki, Committers</a></li>
+<li><a id="buttonDownload" href="download.php" title="Download">
+	Eclipse C/C++ IDE Distribution, Software Install Site</a></li>
+<li><a id="buttonDocumentation" href="documentation.php" title="Documentation">
+	Tutorials, Examples, Videos, Reference Documentation</a></li>
+<li><a id="buttonSupport" href="support.php" title="Support">
+	Bug Tracker, Newsgroup</a></li>
+<li><a id="buttonInvolved" href="developer.php" title="Getting Involved">
+	CVS, Workspace Setup, Wiki, Committers</a></li>
 </ul>
 </div>
 

@@ -21,24 +21,25 @@
 
 <p>The CDT can either be installed as part of the Eclipse C/C++ IDE packaged zip file or installed
 	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
-	repository URLs listed below</p>
+	repository URLs listed below.</p>
 
 <h3>CDT 6.0.2 for Eclipse Galileo</h3>
-<p><b><a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/galileosr2">
-	Eclipse C/C++ IDE Galileo SR2</a></b></p>
+<p><b>Eclipse package: 
+	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/galileosr2">
+	Eclipse C/C++ IDE Galileo SR2</a></b>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/galileo">
-	http://download.eclipse.org/tools/cdt/releases/galileo</a></p>
+	http://download.eclipse.org/tools/cdt/releases/galileo</a>.</p>
 
 <h3>Development Builds</h3>
 <p>Development builds of the Eclipse C/C++ IDE can be found on the
 	<a href="http://www.eclipse.org/downloads">Eclipse Downloads page</a>
-	by clicking on the Development Builds tab</p>
+	by clicking on the Development Builds tab.</p>
 
-<p>CDT nightly builds used for testing are availab from the 
-	<a href="http://download.eclipse.org/tools/cdt/builds">CDT Nightly Build page</a></p>
+<p>CDT nightly builds used for testing are available from the 
+	<a href="http://download.eclipse.org/tools/cdt/builds">CDT Nightly Build page</a>.</p>
 
 <p>Bleeding edge continuous builds are available from the
-	<a href="https://build.eclipse.org/hudson/job/cdt-nightly">cdt-nightly Hudson build page</a></p>
+	<a href="https://build.eclipse.org/hudson/job/cdt-nightly">cdt-nightly Hudson build page</a>.</p>
 	
 <h3>Additional Distributions</h3>
 <p>The CDT can be installed as part of many commercial products or from the following open source
@@ -51,7 +52,7 @@
 <h4>Wascana</h4>
 <p>The <a href="http://www.eclipselabs.org/p/wascana">Wascana</a> project maintains a distribution
 	of the Eclipse C/C++ IDE with the MinGW GNU toolchain and libraries for building Windows
-	applications. See their site for more information</p>
+	applications. See their site for more information.</p>
 
 </div>
 EOHTML;

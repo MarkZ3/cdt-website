@@ -21,6 +21,10 @@
 	Getting started with CDT Development</a>
 </li>
 <li>
+	<a href="http://download.eclipse.org/tools/cdt/builds/7.0.0/index.html">
+	Download CDT 7.0</a><br>Be a beta tester for newest CDT release
+</li>
+<li>
 	<a href="http://wiki.eclipse.org/CDT/Developer/FAQ">CDT Developers FAQ</a>
 </li>
 <li>

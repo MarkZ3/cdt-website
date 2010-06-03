@@ -61,7 +61,7 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 
 <div id="headlines">
 <h3>CDT 6.0.2 Now Available</h3>
-<p>Check the Downloads link on how to get yours.</p>
+<p>Check the <a href="downloads.php">Download</a> link on how to get yours.</p>
 </div>
 
 </div>

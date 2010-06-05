@@ -45,7 +45,7 @@
 	$Menu->addMenuItem("Documentation", "/cdt/documentation.php", "_self");
 	$Menu->addMenuItem("Support", "/cdt/support.php", "_self");
 	$Menu->addMenuItem("Developers", "/cdt/developers.php", "_self");
-    $Menu->addMenuItem("Stats", "/projects/project_summary.php?projectid=tools.cdt", "_self");
+    $Menu->addMenuItem("About", "http://www.eclipse.org/projects/project_summary.php?projectid=tools.cdt", "_self");
 	
 	# To define additional CSS or other pre-body headers
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/cdt/style.css"/>');

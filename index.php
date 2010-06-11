@@ -60,7 +60,7 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 <p>Release review material is now available. See the
 	<a href="releases/cdt7.0/CDT_Helios_Review.pdf">Review Slides</a>
 	and the
-	<a href="releases/cdt7.0/CDT_Helios_Approved_IP_Log.pdf">Approved IP log</a>
+	<a href="releases/cdt7.0/CDT_Helios_Approved_IP_Log.pdf">Approved IP log</a>.
 </p>
 </div>
 

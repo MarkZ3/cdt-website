@@ -57,6 +57,11 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 <div>
 <h3>Current Status</h3>
 <p>We are quickly approaching the release of CDT 7.0 for Eclipse Helios.</p>
+<p>Release review material is now available. See the
+	<a href="releases/cdt7.0/CDT_Helios_Review.pdf">Review Slides</a>
+	and the
+	<a href="releases/cdt7.0/CDT_Helios_Approved_IP_Log.pdf">Approved IP log</a>
+</p>
 </div>
 
 <div id="headlines">

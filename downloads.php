@@ -23,6 +23,13 @@
 	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
 	repository URLs listed below.</p>
 
+<h3>CDT 7.0 for Eclipse Helios</h3>
+<p>Eclipse package:
+	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/heliosr">
+	Eclipse C/C++ IDE Helios</a>.</p>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/galileo">
+	http://download.eclipse.org/tools/cdt/releases/galileo</a>.</p>
+
 <h3>CDT 6.0.2 for Eclipse Galileo</h3>
 <p>Eclipse package: 
 	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/galileosr2">

@@ -27,8 +27,8 @@
 <p>Eclipse package:
 	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/heliosr">
 	Eclipse C/C++ IDE Helios</a>.</p>
-<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/galileo">
-	http://download.eclipse.org/tools/cdt/releases/galileo</a>.</p>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/helios">
+	http://download.eclipse.org/tools/cdt/releases/helios</a>.</p>
 
 <h3>CDT 6.0.2 for Eclipse Galileo</h3>
 <p>Eclipse package: 

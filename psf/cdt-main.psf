@@ -59,6 +59,10 @@
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.ui.tests,org.eclipse.cdt.ui.tests"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.gdb,org.eclipse.cdt.gdb"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.gdb.ui,org.eclipse.cdt.gdb.ui"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.gdb-feature,org.eclipse.cdt.gdb-feature"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/p2/org.eclipse.cdt.p2,org.eclipse.cdt.p2"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/p2/org.eclipse.cdt.p2-feature,org.eclipse.cdt.p2-feature"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/p2/org.eclipse.cdt.p2.generator,org.eclipse.cdt.p2.generator"/>
 
 <!-- Removed because this plugin has a dependency on a platform test plugin. See http://dev.eclipse.org/mhonarc/lists/cdt-dev/msg20131.html 
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/dsf/org.eclipse.cdt.tests.dsf,org.eclipse.cdt.tests.dsf"/>

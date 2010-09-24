@@ -23,6 +23,18 @@
 	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
 	repository URLs listed below.</p>
 
+<h3>CDT 7.0.1 for Eclipse Helios</h3>
+<p>Eclipse package:
+	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/heliossr1">
+	Eclipse C/C++ IDE Helios SR1</a>.</p>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/helios">
+	http://download.eclipse.org/tools/cdt/releases/helios</a>.</p>
+
+<p>Please note that there is a known problem with installing the optional GDB Hardware Debugging feature in CDT 7.0.1 
+(<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326176">Bug 326176</a>).
+To install the optional GDB Hardware Debugging feature, please use this build: 
+<a href="http://download.eclipse.org/tools/cdt/builds/7.0.1/I.I201009241320/index.html">cdt-master-7.0.1-I201009241320</a>.</p>
+
 <h3>CDT 7.0 for Eclipse Helios</h3>
 <p>Eclipse package:
 	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/heliosr">

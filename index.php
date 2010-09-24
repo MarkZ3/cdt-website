@@ -62,6 +62,12 @@ as well as CDT 8.0 for Eclipse Indigo in June 2011.
 </div>
 
 <div id="headlines">
+<h3>CDT 7.0.1 Now Available</h3>
+<p><i>September 24, 2010 -</i> CDT 7.0.1 is the latest and last release in the 7.0.x series that released with Eclipse Helios. 
+Check the <a href="downloads.php">Download</a> link on how to get yours.</p>
+</div>
+
+<div id="headlines">
 <h3>CDT 7.0 Now Available</h3>
 <p><i>June 23, 2010 -</i> Check the <a href="downloads.php">Download</a> link on how to get yours.</p>
 </div>

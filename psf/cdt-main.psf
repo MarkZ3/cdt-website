@@ -15,6 +15,15 @@
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.core.solaris,org.eclipse.cdt.core.solaris"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.core.tests,org.eclipse.cdt.core.tests"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.core.win32,org.eclipse.cdt.core.win32"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan-feature,org.eclipse.cdt.codan-feature"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan.checkers,org.eclipse.cdt.codan.checkers"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan.checkers.ui,org.eclipse.cdt.codan.checkers.ui"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan.core,org.eclipse.cdt.codan.core"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan.core.cxx,org.eclipse.cdt.codan.core.cxx"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan.core.test,org.eclipse.cdt.codan.core.test"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan.ui,org.eclipse.cdt.codan.ui"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan.ui.cfgview,org.eclipse.cdt.codan.ui.cfgview"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/codan/org.eclipse.cdt.codan.ui.cxx,org.eclipse.cdt.codan.ui.cxx"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.debug.core,org.eclipse.cdt.debug.core"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/all/org.eclipse.cdt.debug.core.tests,org.eclipse.cdt.debug.core.tests"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.cdt/jtag/org.eclipse.cdt.debug.gdbjtag,org.eclipse.cdt.debug.gdbjtag"/>

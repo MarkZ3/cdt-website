@@ -23,6 +23,13 @@
 	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
 	repository URLs listed below.</p>
 
+<h3>CDT 7.0.2 for Eclipse Helios</h3>
+<p>Eclipse package:
+	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/heliossr2">
+	Eclipse C/C++ IDE Helios SR2</a>.</p>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/helios">
+	http://download.eclipse.org/tools/cdt/releases/helios</a>.</p>
+
 <h3>CDT 7.0.1 for Eclipse Helios</h3>
 <p>Eclipse package:
 	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/heliossr1">

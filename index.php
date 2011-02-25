@@ -56,14 +56,19 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 
 <div>
 <h3>Current Status</h3>
-<p>We have split the streams working towards the first maintenance release 7.0.1 for September 2010
-as well as CDT 8.0 for Eclipse Indigo in June 2011.
+<p>CDT 7.0.2 has been released with Eclipse Helios SR2 - our last release with Eclipse Helios.  We are working towards CDT 8.0 for Eclipse Indigo in June 2011.
 </p>
 </div>
 
 <div id="headlines">
+<h3>CDT 7.0.2 Now Available</h3>
+<p><i>February 25, 2011 -</i> CDT 7.0.2 is the latest and last release in the 7.0.x series that released with Eclipse Helios. 
+Check the <a href="downloads.php">Download</a> link on how to get yours.</p>
+</div>
+
+<div id="headlines">
 <h3>CDT 7.0.1 Now Available</h3>
-<p><i>September 24, 2010 -</i> CDT 7.0.1 is the latest and last release in the 7.0.x series that released with Eclipse Helios. 
+<p><i>September 24, 2010 -</i> CDT 7.0.1 is the latest release in the 7.0.x series that released with Eclipse Helios. 
 Check the <a href="downloads.php">Download</a> link on how to get yours.</p>
 </div>
 

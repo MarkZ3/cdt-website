@@ -22,11 +22,6 @@
 	IBM developerWorks article.
 </li>
 <li>
-	<a href="http://wascana.sourceforge.net/">
-	Wascana Desktop Developer</a><br>
-	CDT based distribution for Windows development.
-</li>
-<li>
 	<a href=" http://www.ibm.com/developerworks/opensource/library/os-ecc/?S_TACT=105AGX44&S_CMP=ART">
 	C/C++ development with the Eclipse Platform</a><br>
 	IBM developerWorks article.

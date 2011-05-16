@@ -75,11 +75,6 @@ To install the optional GDB Hardware Debugging feature, please use this build:
 <p>Most major Linux distributions include packages for Eclipse and the CDT.
 	Check your package manager for availability.</p>
 
-<h4>Wascana Eclipse C/C++ IDE for Windows</h4>
-<p>The <a href="http://www.eclipselabs.org/p/wascana">Wascana</a> project maintains a distribution
-	of the Eclipse C/C++ IDE with the MinGW GNU toolchain and libraries for building Windows
-	applications. See their site for more information.</p>
-
 </div>
 EOHTML;
 

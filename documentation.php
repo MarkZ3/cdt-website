@@ -17,7 +17,7 @@
 <h2>$pageTitle</h2>
 <ul>
 <li>
-	<a href="releases/index.html">Eclipse Release Documentation</a><br>
+	<a href="releases">Eclipse Release Documentation</a><br>
 	Formal Eclipse release review documentation and IP Logs for the latest CDT releases.
 </li>
 <li>

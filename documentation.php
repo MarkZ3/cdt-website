@@ -17,6 +17,10 @@
 <h2>$pageTitle</h2>
 <ul>
 <li>
+	<a href="releases/index.html">Eclipse Release Documentation</a><br>
+	Formal Eclipse release review documentation and IP Logs for the latest CDT releases.
+</li>
+<li>
 	<a href="http://www.ibm.com/developerworks/opensource/library/os-eclipse-stlcdt/">
 	Developing applications using the Eclipse C/C++ Development Toolkit </a><br>
 	IBM developerWorks article.

@@ -25,7 +25,7 @@
 
 <h3>CDT 8.0 for Eclipse Indigo</h3>
 <p>Eclipse package:
-	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-linux-developers-includes-incubating-components/indigor">
+	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers-includes-incubating-components/indigor">
 	Eclipse C/C++ IDE Indigo</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/indigo">
 	http://download.eclipse.org/tools/cdt/releases/indigo</a>.</p>

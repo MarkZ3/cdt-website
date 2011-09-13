@@ -23,14 +23,28 @@
 	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
 	repository URLs listed below.</p>
 
+<h3>CDT 8.0.1 Candidate for Eclipse Indigo</h3>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/indigo/sr1">
+	http://download.eclipse.org/tools/cdt/builds/indigo/sr1</a>.</p>
+<p>Source links:
+<ul>
+<li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.git/commit/?id=e9ecee92a0ce5a0d34b6988c18664d064637c19b">
+    org.eclipse.cdt.git commit:e9ecee92a0ce5a0d34b6988c18664d064637c19b</a></li>
+<li><a href="http://dev.eclipse.org/viewcvs/viewvc.cgi/branches/0.4.0/?root=DSDP_TM.TCF&pathrev=2113">
+	org.eclipse.tm.tcf svn revision:2113</a></li>
+<li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.edc.git/commit/?id=2e76747f2747144a7dcd7d4ac90d51f220560735">
+	org.eclipse.cdt.edc.git commit:2e76747f2747144a7dcd7d4ac90d51f220560735</a></li>
+<li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.master.git/commit/?id=22891ae22e8be61489bee52b848152da72e7fd45">
+	org.eclipse.cdt.master.git commit:22891ae22e8be61489bee52b848152da72e7fd45</a></li>
+</ul>
+</p>
+
 <h3>CDT 8.0 for Eclipse Indigo</h3>
 <p>Eclipse package:
 	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers-includes-incubating-components/indigor">
 	Eclipse C/C++ IDE Indigo</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/indigo">
 	http://download.eclipse.org/tools/cdt/releases/indigo</a>.</p>
-
-
 
 <h3>CDT 7.0.2 for Eclipse Helios</h3>
 <p>Eclipse package:

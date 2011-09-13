@@ -27,15 +27,15 @@
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/indigo/sr1">
 	http://download.eclipse.org/tools/cdt/builds/indigo/sr1</a>.</p>
 <p>Source links:
-<ul style="margin-top:0;">
+<ul>
 <li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.git/commit/?id=e9ecee92a0ce5a0d34b6988c18664d064637c19b">
-    org.eclipse.cdt.git commit: e9ecee92a0ce5a0d34b6988c18664d064637c19b</a></li>
+    CDT main git commit: e9ecee92a0ce5a0d34b6988c18664d064637c19b</a></li>
 <li><a href="http://dev.eclipse.org/viewcvs/viewvc.cgi/branches/0.4.0/?root=DSDP_TM.TCF&pathrev=2113">
-	org.eclipse.tm.tcf svn revision: 2113</a></li>
+	TCF svn revision: 2113</a></li>
 <li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.edc.git/commit/?id=2e76747f2747144a7dcd7d4ac90d51f220560735">
-	org.eclipse.cdt.edc.git commit: 2e76747f2747144a7dcd7d4ac90d51f220560735</a></li>
+	EDC git commit: 2e76747f2747144a7dcd7d4ac90d51f220560735</a></li>
 <li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.master.git/commit/?id=22891ae22e8be61489bee52b848152da72e7fd45">
-	org.eclipse.cdt.master.git commit: 22891ae22e8be61489bee52b848152da72e7fd45</a></li>
+	CDT master git commit: 22891ae22e8be61489bee52b848152da72e7fd45</a></li>
 </ul>
 </p>
 

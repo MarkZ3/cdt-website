@@ -27,7 +27,7 @@
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/indigo/sr1">
 	http://download.eclipse.org/tools/cdt/builds/indigo/sr1</a>.</p>
 <p>Source links:
-<ul style="margin-top:0px">
+<ul style="margin-top:0px;">
 <li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.git/commit/?id=e9ecee92a0ce5a0d34b6988c18664d064637c19b">
     org.eclipse.cdt.git commit: e9ecee92a0ce5a0d34b6988c18664d064637c19b</a></li>
 <li><a href="http://dev.eclipse.org/viewcvs/viewvc.cgi/branches/0.4.0/?root=DSDP_TM.TCF&pathrev=2113">

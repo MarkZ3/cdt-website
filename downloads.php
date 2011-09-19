@@ -28,8 +28,8 @@
 	http://download.eclipse.org/tools/cdt/builds/indigo/sr1</a>.</p>
 <p>Source links:
 <ul>
-<li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.git/commit/?id=e9ecee92a0ce5a0d34b6988c18664d064637c19b">
-    CDT main git commit: e9ecee92a0ce5a0d34b6988c18664d064637c19b</a></li>
+<li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.git/commit/?id=88411c52f862f7e919ada110983ad07c3724de0f">
+    CDT main git commit: 88411c52f862f7e919ada110983ad07c3724de0f</a></li>
 <li><a href="http://dev.eclipse.org/viewcvs/viewvc.cgi/branches/0.4.0/?root=DSDP_TM.TCF&pathrev=2113">
 	TCF svn revision: 2113</a></li>
 <li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.edc.git/commit/?id=2e76747f2747144a7dcd7d4ac90d51f220560735">

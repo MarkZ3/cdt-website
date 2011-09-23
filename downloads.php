@@ -31,8 +31,8 @@
 	http://download.eclipse.org/tools/cdt/releases/indigo</a>.</p>
 <p>Archived p2 repos:
 <ul>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/cdt-master-8.0.1.zip">cdt-master-8.0.1.zip</a></li>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/cdt-master-8.0.0.zip">cdt-master-8.0.0.zip</a></li>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/dist/cdt-master-8.0.1.zip">cdt-master-8.0.1.zip</a></li>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/dist/cdt-master-8.0.0.zip">cdt-master-8.0.0.zip</a></li>
 </ul>
 </p>
 <p>Source links:
@@ -54,6 +54,13 @@
 	Eclipse C/C++ IDE Helios SR2</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/helios">
 	http://download.eclipse.org/tools/cdt/releases/helios</a>.</p>
+<p>Archived p2 repos:
+<ul>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/helios/dist/cdt-master-7.0.2.zip">cdt-master-7.0.2.zip</a></li>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/helios/dist/cdt-master-7.0.1.zip">cdt-master-7.0.1.zip</a></li>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/helios/dist/cdt-master-7.0.0.zip">cdt-master-7.0.0.zip</a></li>
+</ul>
+</p>
 
 <h3>CDT 6.0.2 for Eclipse Galileo</h3>
 <p>Eclipse package: 
@@ -61,6 +68,13 @@
 	Eclipse C/C++ IDE Galileo SR2</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/galileo">
 	http://download.eclipse.org/tools/cdt/releases/galileo</a>.</p>
+<p>Archived p2 repos:
+<ul>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/galileo/dist/cdt-master-6.0.2.zip">cdt-master-6.0.2.zip</a></li>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/galileo/dist/cdt-master-6.0.1.zip">cdt-master-6.0.1.zip</a></li>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/galileo/dist/cdt-master-6.0.0.zip">cdt-master-6.0.0.zip</a></li>
+</ul>
+</p>
 
 <h3>Development Builds</h3>
 <p>Development builds of the Eclipse C/C++ IDE can be found on the

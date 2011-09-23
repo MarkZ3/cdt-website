@@ -31,8 +31,8 @@
 	http://download.eclipse.org/tools/cdt/releases/indigo</a>.</p>
 <p>Archived p2 repos:
 <ul>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/cdt-master-8.0.1.zip>cdt-master-8.0.1.zip</a></li>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/cdt-master-8.0.0.zip>cdt-master-8.0.0.zip</a></li>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/cdt-master-8.0.1.zip">cdt-master-8.0.1.zip</a></li>
+<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/cdt-master-8.0.0.zip">cdt-master-8.0.0.zip</a></li>
 </ul>
 </p>
 <p>Source links:

@@ -31,8 +31,8 @@
 	http://download.eclipse.org/tools/cdt/releases/indigo</a>.</p>
 <p>Archived p2 repos:
 <ul>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/dist/cdt-master-8.0.1.zip">cdt-master-8.0.1.zip</a></li>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/indigo/dist/cdt-master-8.0.0.zip">cdt-master-8.0.0.zip</a></li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/indigo/dist/cdt-master-8.0.1.zip">cdt-master-8.0.1.zip</a></li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/indigo/dist/cdt-master-8.0.0.zip">cdt-master-8.0.0.zip</a></li>
 </ul>
 </p>
 <p>Source links:
@@ -56,9 +56,9 @@
 	http://download.eclipse.org/tools/cdt/releases/helios</a>.</p>
 <p>Archived p2 repos:
 <ul>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/helios/dist/cdt-master-7.0.2.zip">cdt-master-7.0.2.zip</a></li>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/helios/dist/cdt-master-7.0.1.zip">cdt-master-7.0.1.zip</a></li>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/helios/dist/cdt-master-7.0.0.zip">cdt-master-7.0.0.zip</a></li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/helios/dist/cdt-master-7.0.2.zip">cdt-master-7.0.2.zip</a></li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/helios/dist/cdt-master-7.0.1.zip">cdt-master-7.0.1.zip</a></li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/helios/dist/cdt-master-7.0.0.zip">cdt-master-7.0.0.zip</a></li>
 </ul>
 </p>
 
@@ -70,9 +70,9 @@
 	http://download.eclipse.org/tools/cdt/releases/galileo</a>.</p>
 <p>Archived p2 repos:
 <ul>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/galileo/dist/cdt-master-6.0.2.zip">cdt-master-6.0.2.zip</a></li>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/galileo/dist/cdt-master-6.0.1.zip">cdt-master-6.0.1.zip</a></li>
-<li><a href="http://download.eclipse.org/tools/cdt/releases/galileo/dist/cdt-master-6.0.0.zip">cdt-master-6.0.0.zip</a></li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/galileo/dist/cdt-master-6.0.2.zip">cdt-master-6.0.2.zip</a></li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/galileo/dist/cdt-master-6.0.1.zip">cdt-master-6.0.1.zip</a></li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/galileo/dist/cdt-master-6.0.0.zip">cdt-master-6.0.0.zip</a></li>
 </ul>
 </p>
 

@@ -35,18 +35,7 @@
 <li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/indigo/dist/cdt-master-8.0.0.zip">cdt-master-8.0.0.zip</a></li>
 </ul>
 </p>
-<p>Source links:
-<ul>
-<li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.git/commit/?id=88411c52f862f7e919ada110983ad07c3724de0f">
-    CDT main git commit: 88411c52f862f7e919ada110983ad07c3724de0f</a></li>
-<li><a href="http://dev.eclipse.org/viewcvs/viewvc.cgi/branches/0.4.0/?root=DSDP_TM.TCF&pathrev=2113">
-	TCF svn revision: 2113</a></li>
-<li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.edc.git/commit/?id=2e76747f2747144a7dcd7d4ac90d51f220560735">
-	EDC git commit: 2e76747f2747144a7dcd7d4ac90d51f220560735</a></li>
-<li><a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.master.git/commit/?id=22891ae22e8be61489bee52b848152da72e7fd45">
-	CDT master git commit: 22891ae22e8be61489bee52b848152da72e7fd45</a></li>
-</ul>
-</p>
+<p>The git repos have been tagged with the CDT_8_0_1 tag. You can download the source from the web interface.</p>
 
 <h3>CDT 7.0.2 for Eclipse Helios</h3>
 <p>Eclipse package:

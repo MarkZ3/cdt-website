@@ -29,13 +29,13 @@
 	Eclipse C/C++ IDE Indigo SR-1</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/indigo">
 	http://download.eclipse.org/tools/cdt/releases/indigo</a>.</p>
+<p>The git repos have been tagged with the CDT_8_0_1 tag. You can download the source from the web interface.</p>
 <p>Archived p2 repos:
 <ul>
 <li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/indigo/dist/cdt-master-8.0.1.zip">cdt-master-8.0.1.zip</a></li>
 <li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/indigo/dist/cdt-master-8.0.0.zip">cdt-master-8.0.0.zip</a></li>
 </ul>
 </p>
-<p>The git repos have been tagged with the CDT_8_0_1 tag. You can download the source from the web interface.</p>
 
 <h3>CDT 7.0.2 for Eclipse Helios</h3>
 <p>Eclipse package:

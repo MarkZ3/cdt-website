@@ -26,7 +26,7 @@
 <h3>CDT 8.0.2 for Eclipse Indigo</h3>
 <p>Eclipse package:
 	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers-includes-incubating-components/indigosr2">
-	Eclipse C/C++ IDE Indigo SR-2</a>.</p>
+	Eclipse C/C++ IDE Indigo SR2</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/indigo">
 	http://download.eclipse.org/tools/cdt/releases/indigo</a>.</p>
 <p>The git repos have been tagged with the CDT_8_0_2 tag. You can download the source from the web interface.</p>

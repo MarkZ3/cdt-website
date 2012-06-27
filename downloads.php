@@ -23,6 +23,19 @@
 	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
 	repository URLs listed below.</p>
 
+<h3>CDT 8.1.0 for Eclipse Juno</h3>
+<p>Eclipse package:
+	<a href="http://www.eclipse.org/downloads/packages/node/818">
+	Eclipse C/C++ IDE for Juno</a>.</p>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/juno">
+	http://download.eclipse.org/tools/cdt/releases/juno</a>.</p>
+<p>The git repos have been tagged with the CDT_8_1_0 tag. You can download the source from the web interface.</p>
+<p>Archived p2 repos:
+<ul>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/juno/r/cdt-master-8.1.0.zip">cdt-master-8.1.0.zip</a></li>
+</ul>
+</p>
+
 <h3>CDT 8.0.2 for Eclipse Indigo</h3>
 <p>Eclipse package:
 	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers-includes-incubating-components/indigosr2">

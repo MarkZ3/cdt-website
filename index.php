@@ -56,6 +56,12 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 
 <div>
 <h3>Current Status</h3>
+
+<div id="headlines">
+<h3>CDT 8.1.1 Now Available</h3>
+<p><i>September 28, 2012 -</i> CDT 8.1.1 for Eclipse Juno. Check the <a href="downloads.php">Download</a> link on how to get yours.</p>
+</div>
+
 <p>CDT 8.1 has been released with Eclipse Juno!</p>
 <p>Development is underway for the CDT 8.1.1 due September 2012,
 and for the next Eclipse simultaneous release, Kepler, due June 2013.</p> 
@@ -66,11 +72,6 @@ and for the next Eclipse simultaneous release, Kepler, due June 2013.</p>
 <p><i>June 25, 2012 -</i> CDT 8.1 for Eclipse Juno. Check the <a href="downloads.php">Download</a> link on how to get yours.</p>
 </div>
 
-<div id="headlines">
-<h3>CDT 8.0.2 Now Available</h3>
-<p><i>February 25, 2012 -</i> CDT 8.0.2 is the latest and last release in the 8.0.x series that released with Eclipse Indigo. 
-Check the <a href="downloads.php">Download</a> link on how to get yours.</p>
-</div>
 
 </div>
 EOHTML;

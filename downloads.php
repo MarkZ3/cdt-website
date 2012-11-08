@@ -85,11 +85,15 @@
 	<a href="http://www.eclipse.org/downloads">Eclipse Downloads page</a>
 	by clicking on the Development Builds tab.</p>
 
-<p>CDT nightly builds used for testing are available from the 
-	<a href="http://download.eclipse.org/tools/cdt/builds">CDT Nightly Build page</a>.</p>
-
 <p>Bleeding edge continuous builds are available from the
-	<a href="https://build.eclipse.org/hudson/job/cdt-nightly">cdt-nightly Hudson build page</a>.</p>
+	<a href="https://hudson.eclipse.org/hudson/job/cdt-nightly">cdt-nightly Hudson build page</a> and the p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/kepler/nightly">
+http://download.eclipse.org/tools/cdt/builds/kepler/nightly</a>.</p>
+
+<p>Milestones p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/kepler/milestones">
+http://download.eclipse.org/tools/cdt/builds/kepler/milestones</a>.</p>
+
+<p>Some older builds are available in the old
+	<a href="http://download.eclipse.org/tools/cdt/builds">CDT Nightly Build page</a>.</p>
 	
 <h3>Additional Distributions</h3>
 <p>The CDT can be installed as part of many commercial products or from the following open source

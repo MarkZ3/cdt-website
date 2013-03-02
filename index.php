@@ -28,7 +28,7 @@
 <li><a id="buttonSupport" href="support.php" title="Support">
 	Bug Tracker, Newsgroup</a></li>
 <li><a id="buttonInvolved" href="developers.php" title="Getting Involved">
-	CVS, Workspace Setup, Wiki, Committers</a></li>
+	git, Workspace Setup, Wiki, Committers</a></li>
 </ul>
 </div>
 

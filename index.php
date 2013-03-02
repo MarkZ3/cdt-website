@@ -61,7 +61,7 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 
 <div id="headlines">
 <h3>CDT 8.1.2 Now Available</h3>
-<p><i>March 2, 2012 -</i> CDT 8.1.2 for Eclipse Juno. Check the <a href="downloads.php">Download</a> link on how to get yours.</p> 
+<p><i>March 2, 2013 -</i> CDT 8.1.2 for Eclipse Juno. Check the <a href="downloads.php">Download</a> link on how to get yours.</p> 
 </div>
 
 </div>

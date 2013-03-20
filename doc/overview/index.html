@@ -81,13 +81,24 @@
 					</section>
 					<section>
 						<h2>By the Numbers</h2>
-						<p>!Picture of Juno SR-1 download number!</p>
+						<img class="fragment" width="60%" height="30%" src="img/HeliosSR1.png" alt="Helios SR1 Stats">
+						<h3 class="fragment">Number 3 Package with downloads increasing yearly<h3>
+						<img class="fragment" width="60%" height="30%" src="img/IndigoSR1.png" alt="Indigo SR1 Stats">
+					</section>
+					<section>
+						<h3>And about to break the million mark!<h3>
+						<img class="fragment" width="100%" height="60%" src="img/JunoSR1.png" alt="Juno SR1 Stats">
 					</section>
 					<section>
 						<h2>CDT in Eclipse</h2>
 						<p>Mylyn Bridge</p>
 						<p>Linux Tools Project</p>
 						<p>Parallel Tools Project</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Code Analysis - Codan</h2>
 					</section>
 				</section>
 				<section>
@@ -129,20 +140,94 @@
 					<section>
 						<h2>OS Resources view</h2>
 						<p class="fragment">Sometimes examining OS Resources can help solve bugs.</p>
-						<img class="fragment" width="100%" height="80%" src="img/OSResources.png" alt="OS Resources">
+						<div><img class="fragment" width="100%" height="80%" src="img/OSResources.png" alt="OS Resources"></div>
+						<div>
+						<li><p class="fragment">All Processes</p></li>
+						<li><p>All Threads</p></li>
+						<li><p class="fragment">Semaphores</p></li>
+						<li><p>Sockets</p></li>
+						<li><p class="fragment">Kernel Modules</p></li>
+						<li><p>File Descriptors</p></li>
+						<li><p class="fragment">Message queues</p></li>
+						<li><p>Shared Memory Segments</p></li>
+						</div>
 					</section>
 					<section>
 						<h2>Multicore Visualizer</h2>
-						<img class="fragment" width="100%" height="100%" src="img/MulticoreVisualizerTriplet.png" alt="MulticoreVisualizer">
+						<img class="fragment" width="100%" height="100%" src="img/MulticoreVisualizerTriplet.png" alt="Multicore Visualizer">
 					</section>
 					<section>
-						<h2>CPU Load Meters</h2>
+						<h2>Multicore Visualizer CPU Load Meters</h2>
+						<img class="fragment" width="60%" height="60%" src="img/MulticoreVisualizerLoad.png" alt="Multicore Visualizer CPU Load">
 					</section>
+					<section>
+						<h2>Multicore Visualizer Filtering</h2>
+						<img class="fragment" width="40%" height="60%" src="img/MulticoreVisualizer24.png" alt="Multicore Visualizer Full">
+						<img class="fragment" width="40%" height="60%" src="img/MulticoreVisualizer24Selection.png" alt="Multicore Visualizer Selection">
+						<img class="fragment" src="img/MulticoreVisualizer4Filtered.png" alt="Multicore Visualizer Filtered">
+						<li><p class="fragment">Focus on interesting parts</p></li>
+						<li><p class="fragment">Allow for more information to be displayed</p></li>
+					</section>
+<!--					<section>
+						<h2>2 Multicore Visualizer Filtering</h2>
+						<br><br><br><br><br><br><br><br>
+						<div style="position: absolute;left: -200px;top: 100px"><img class="fragment" width="60%" height="60%" src="img/MulticoreVisualizer24.png" alt="Multicore Visualizer Full"></div>
+						<br><br><br>
+
+						<div style="position: absolute;left: -200px;top: 100px"><img class="fragment" width="60%" height="60%" src="img/MulticoreVisualizer24Selection.png" alt="Multicore Visualizer Selection">
+						<br><br><br>
+						<div style="position: absolute;left:700px;width: 60%;top: 50px"><img class="fragment" src="img/MulticoreVisualizer4Filtered.png" alt="Multicore Visualizer Filtered"></div>
+						<div>
+							<li><p class="fragment">Focus on interesting parts</p></li>
+							<li><p class="fragment">Allow for more information to be displayed</p></li>
+						</div>
+					</section>
+-->
 					<section>
 						<h2>Dynamic-Printf</h2>
 						<li><p class="fragment">No re-compiling</p></li>
 						<li><p class="fragment">No re-deploying</p></li>
 						<li><p class="fragment">No need to keep debugger connected</p></li>
+					</section>
+					<section>
+						<h2>Step Into Selection</h2>
+						<pre><code>void compute(int a, float b) {
+	MyInt three = new MyInt(3);
+	MyFloat floatArg = new MyFloat(b);
+
+	substract(multiply(new MyInt(a), floatArg), three);
+}						</code></pre>
+
+						<p class="fragment">Step-into:</p>
+						<pre class="fragment"><code>MyInt(int value) {
+	fValue = value;
+}						</code></pre>
+
+						<p class="fragment">Return and Step-into again:</p>
+						<pre class="fragment"><code>MyFloat multiply(MyInt arg1, MyFloat arg2) {
+	return arg1 * arg2;
+}						</code></pre>
+
+						<p class="fragment">Return and Step-into yet again to finally get to:</p>
+						<pre class="fragment"><code>MyFloat substract(MyFloat arg1, MyInt arg2) {
+	return arg1 - arg2;
+}						 </code></pre>
+						<H4 class="fragment">Five stepping operations!</h4>
+
+					</section>
+					<section>
+						<h2>Step Into Selection</h2>
+						<pre><code>void compute(int a, float b) {
+	MyInt three = new MyInt(3);
+	MyFloat floatArg = new MyFloat(b);
+
+	substract(multiply(new MyInt(a), floatArg), three);
+}						</code></pre>
+						<p class="fragment">Single Step-into selection:</p>
+						<pre class="fragment"><code>MyFloat substract(MyFloat arg1, MyInt arg2) {
+	return arg1 - arg2;
+}						 </code></pre>
+						<H4 class="fragment">Just one stepping operation!</h4>
 					</section>
 				</section>
 			</div>

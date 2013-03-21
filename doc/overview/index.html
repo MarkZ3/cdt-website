@@ -1,4 +1,4 @@
-<!doctype html>
+!doctype html>
 <html lang="en">
 
 	<head>
@@ -99,6 +99,31 @@
 				<section>
 					<section>
 						<h2>Code Analysis - Codan</h2>
+						<p class="fragment">Framework to integrate different static analysis tools</p>
+						<p class="fragment">Out-of-the-box static analysis rules and checkers</p>
+					</section>
+					<section>
+						<h2>Codan Customizations</h2>
+						<img class="fragment" src="img/CodanCustomize.png" alt="Customizing Rules">
+						<p class="fragment">Ability to enable or disable existing rules</p>
+						<p class="fragment">Ability to modify properties of existing rules</p>
+						<p class="fragment">Ability to modify severity of rules</p>
+					</section>
+					<section>
+						<h2>Codan Triggers</h2>
+						<img class="fragment" style="float: left;" src="img/CodanRun.png" alt="Running Rules">
+						<p class="fragment">Run upon user request</p>
+						<img class="fragment" style="float: left;" height="350px" src="img/CodanTrigger.png" alt="Rules Triggers">
+						<p class="fragment">Run when project is built</p>
+						<p class="fragment">Run as you type!</p>
+					</section>
+					<section>
+						<h2>Codan Reporting</h2>
+						<p class="fragment">Entries in Problems view</p>
+						<img class="fragment" src="img/CodanProblem.png" alt="Problems view">
+						<p class="fragment">Problem markers in Editor</p>
+						<img class="fragment" src="img/CodanQuickFix.png" alt="Quick Fix">
+						<p class="fragment">Quick Fix available!</p>
 					</section>
 				</section>
 				<section>
@@ -107,17 +132,20 @@
 					</section>
 					<section>
 						<h2>Project-less Debugging</h2>
+						<p class="fragment">Want to use Eclipse just to debug?</p>
+						<img class="fragment" height="600px" src="img/DebugNoProject.png" alt="Project-less Debugging">
 					</section>
 					<section>
 						<h2>Pretty-Printing of Data Structures</h2>
-						<img class="fragment" width="100%" height="100%" src="img/PrettyPrintTogether.png" alt="Pretty Printing">
+						<img class="fragment" src="img/PrettyPrintTogether.png" alt="Pretty Printing">
 					</section>
 					<section>
 						<h2>Reverse Debugging</h2>
-						<li><p class="fragment">Step or Resume forwards AND backwards</p></li>
-						<li><p class="fragment">Go back in time, change data and re-write history</p></li>
-						<li><p class="fragment">Use breakpoints to enable/disable recording</p></li>
-						</li>
+					<ul>
+						<p class="fragment">Step or Resume forwards AND backwards</p>
+						<p class="fragment">Go back in time, change data and re-write history</p>
+						<p class="fragment">Use breakpoints to enable/disable recording</p>
+					</ul>
 					</section>
 					<section>
 						<h2>Reverse Debugging</h2>
@@ -129,65 +157,75 @@
 					</section>
 					<section>
 						<h2>Enhanced Expressions and Groups</h2>
-						<li><p class="fragment">Grouping expressions</p></li>
-						<li><p class="fragment">Pattern matching expressions</p></li>
-						<li><p class="fragment">Sorting expressions</p></li>
+						<ul>
+							<p class="fragment">Glob-pattern matching with '=' prefix</p>
+							<ul>
+								<pre class="fragment"><code class="no-highlight">=var*</code></pre>
+								<pre class="fragment"><code class="no-highlight">=myArray[20-30]</code></pre>
+								<pre class="fragment"><code class="no-highlight">=$e?x</code></pre>
+							</ul>
+	
+							<p class="fragment">Sorted matches</p>
+							<ul>
+								<pre class="fragment"><code class="no-highlight">=* or *</code></pre>
+								<pre class="fragment"><code class="no-highlight">=$* or $*</code></pre>
+							</ul>
+	
+							<p class="fragment">Grouping using ';' separator</p>
+							<ul>
+								<pre class="fragment"><code class="no-highlight">myVar;=myArray[20,24]</code></pre>
+								<pre class="fragment"><code class="no-highlight">myVar;$eax</code></pre>
+							</ul>
+						</ul>
 					</section>
 					<section>
 						<h2>Enhanced Expressions and Groups</h2>
-						<img class="fragment" width="100%" height="80%" src="img/EnhancedExpressions.png" alt="Enhanced Expressions">
+						<img height="600px" src="img/EnhancedExpressions.png" alt="Enhanced Expressions">
 					</section>
 					<section>
 						<h2>OS Resources view</h2>
 						<p class="fragment">Sometimes examining OS Resources can help solve bugs.</p>
-						<div><img class="fragment" width="100%" height="80%" src="img/OSResources.png" alt="OS Resources"></div>
-						<div>
-						<li><p class="fragment">All Processes</p></li>
-						<li><p>All Threads</p></li>
-						<li><p class="fragment">Semaphores</p></li>
-						<li><p>Sockets</p></li>
-						<li><p class="fragment">Kernel Modules</p></li>
-						<li><p>File Descriptors</p></li>
-						<li><p class="fragment">Message queues</p></li>
-						<li><p>Shared Memory Segments</p></li>
-						</div>
+						<br>
+						<img style="float: left;" class="fragment" width="600px" src="img/OSResources.png" alt="OS Resources">
+						<ul class="fragment">
+							<p>All Processes</p>
+							<p>All Threads</p>
+							<p>Semaphores</p>
+							<p>Sockets</p>
+							<p>Kernel Modules</p>
+							<p>File Descriptors</p>
+							<p>Message queues</p>
+							<p>Memory Segments</p>
+						</ul>
 					</section>
 					<section>
 						<h2>Multicore Visualizer</h2>
-						<img class="fragment" width="100%" height="100%" src="img/MulticoreVisualizerTriplet.png" alt="Multicore Visualizer">
+						<img class="fragment" src="img/MulticoreVisualizerTriplet.png" alt="Multicore Visualizer">
+						<p class="fragment">Monitor entire system at a glance</p>
+						<p class="fragment">Control program execution from Visualizer</p>
 					</section>
 					<section>
 						<h2>Multicore Visualizer CPU Load Meters</h2>
-						<img class="fragment" width="60%" height="60%" src="img/MulticoreVisualizerLoad.png" alt="Multicore Visualizer CPU Load">
+						<img class="fragment" width="500px" src="img/MulticoreVisualizerLoad.png" alt="Multicore Visualizer CPU Load">
+						<p class="fragment">Optionally monitor your target</p>
 					</section>
 					<section>
 						<h2>Multicore Visualizer Filtering</h2>
-						<img class="fragment" width="40%" height="60%" src="img/MulticoreVisualizer24.png" alt="Multicore Visualizer Full">
-						<img class="fragment" width="40%" height="60%" src="img/MulticoreVisualizer24Selection.png" alt="Multicore Visualizer Selection">
-						<img class="fragment" src="img/MulticoreVisualizer4Filtered.png" alt="Multicore Visualizer Filtered">
-						<li><p class="fragment">Focus on interesting parts</p></li>
-						<li><p class="fragment">Allow for more information to be displayed</p></li>
-					</section>
-<!--					<section>
-						<h2>2 Multicore Visualizer Filtering</h2>
-						<br><br><br><br><br><br><br><br>
-						<div style="position: absolute;left: -200px;top: 100px"><img class="fragment" width="60%" height="60%" src="img/MulticoreVisualizer24.png" alt="Multicore Visualizer Full"></div>
-						<br><br><br>
-
-						<div style="position: absolute;left: -200px;top: 100px"><img class="fragment" width="60%" height="60%" src="img/MulticoreVisualizer24Selection.png" alt="Multicore Visualizer Selection">
-						<br><br><br>
-						<div style="position: absolute;left:700px;width: 60%;top: 50px"><img class="fragment" src="img/MulticoreVisualizer4Filtered.png" alt="Multicore Visualizer Filtered"></div>
-						<div>
-							<li><p class="fragment">Focus on interesting parts</p></li>
-							<li><p class="fragment">Allow for more information to be displayed</p></li>
+						<div style="position: relative;width: 450px;height: 375px">
+							<img style="position: absolute;left:50px;top: 0px" class="fragment" data-fragment-index="1" width="400px" height="375px" src="img/MulticoreVisualizer24.png" alt="Multicore Visualizer Full">
+							<img style="position: absolute;left:50px;top: 0px" class="fragment" data-fragment-index="3" width="400px" height="375px" src="img/MulticoreVisualizer24Selection.png" alt="Multicore Visualizer Selection">
+							<img style="position: absolute;left:500px;top: 0px" class="fragment" data-fragment-index="5" height="375px" src="img/MulticoreVisualizer4Filtered.png" alt="Multicore Visualizer Filtered">
 						</div>
+					<ul style="padding-top: 20px">
+						<p class="fragment" data-fragment-index="2">Focus on interesting parts</p>
+						<p class="fragment" data-fragment-index="4">Allow for more information to be displayed</p>
+					</ul>
 					</section>
--->
 					<section>
 						<h2>Dynamic-Printf</h2>
-						<li><p class="fragment">No re-compiling</p></li>
-						<li><p class="fragment">No re-deploying</p></li>
-						<li><p class="fragment">No need to keep debugger connected</p></li>
+						<p class="fragment">No re-compiling</p>
+						<p class="fragment">No re-deploying</p>
+						<p class="fragment">No need to keep debugger connected</p>
 					</section>
 					<section>
 						<h2>Step Into Selection</h2>
@@ -195,7 +233,7 @@
 	MyInt three = new MyInt(3);
 	MyFloat floatArg = new MyFloat(b);
 
-	substract(multiply(new MyInt(a), floatArg), three);
+	subtract(multiply(new MyInt(a), floatArg), three);
 }						</code></pre>
 
 						<p class="fragment">Step-into:</p>
@@ -209,7 +247,7 @@
 }						</code></pre>
 
 						<p class="fragment">Return and Step-into yet again to finally get to:</p>
-						<pre class="fragment"><code>MyFloat substract(MyFloat arg1, MyInt arg2) {
+						<pre class="fragment"><code>MyFloat subtract(MyFloat arg1, MyInt arg2) {
 	return arg1 - arg2;
 }						 </code></pre>
 						<H4 class="fragment">Five stepping operations!</h4>
@@ -221,13 +259,28 @@
 	MyInt three = new MyInt(3);
 	MyFloat floatArg = new MyFloat(b);
 
-	substract(multiply(new MyInt(a), floatArg), three);
+	subtract(multiply(new MyInt(a), floatArg), three);
 }						</code></pre>
+						<p class="fragment">Select the "subtract" method call</p>
 						<p class="fragment">Single Step-into selection:</p>
-						<pre class="fragment"><code>MyFloat substract(MyFloat arg1, MyInt arg2) {
+						<pre class="fragment"><code>MyFloat subtract(MyFloat arg1, MyInt arg2) {
 	return arg1 - arg2;
 }						 </code></pre>
+						<p class="fragment">All other method calls are stepped-over automatically</p>
 						<H4 class="fragment">Just one stepping operation!</h4>
+					</section>
+					<section>
+						<h2>More Debug?</h2>
+						<br>
+						<ul>
+							<p><a class="fragment" href="http://wiki.eclipse.org/CDT/User/NewIn82#Debug">New&Noteworthy 8.2</a></p>
+							<p><a class="fragment" href="http://wiki.eclipse.org/CDT/User/FAQ#Debugging_C.2FC.2B.2B_Projects">FAQ</a></p>
+							<br>
+							<div class="fragment">
+								<p><a href="http://wiki.eclipse.org/CDT/User/NewIn81#Debug">New&Noteworthy 8.1</a></p>
+								<p><a href="http://wiki.eclipse.org/CDT/User/NewIn80#Debug">New&Noteworthy 8.0</a></p>
+							</div>
+						</ul>
 					</section>
 				</section>
 			</div>

@@ -145,11 +145,28 @@
 				</section>
 				
 				<section>
-					<section>
-						<h2>Refactoring</h2>
-						<p class="fragment"></p>
-					</section>
+					<h2>Editor</h2>
+					<ul>
+						<li>Syntax Highlighting</li>
+						<li>Semantic Highlighting</li>
+						<li>Outline View</li>
+						<li>Content Assist</li>
+						<li>Formatting</li>
+						<li>Block Selection</li>
+					</ul>
 				</section>
+				
+				<section>
+					<h2>Parser and Indexer</h2>
+					<ul>
+						<li>Full C and C++ parser producing AST</li>
+						<li>C++ parser progressing on C++11 support</li>
+						<li>Indexer captures symbols, definitions and references</li>
+						<li>Index used to spead up parsing a la pch</li>
+						<li>Available as API for advanced Tooling.</li>
+					</ul>
+				</section>
+				
 				<section>
 					<section>
 						<h2>Code Analysis - Codan</h2>
@@ -180,6 +197,49 @@
 						<p class="fragment">Quick Fix available!</p>
 					</section>
 				</section>
+				
+				<section>
+					<section>
+						<h2>Refactoring</h2>
+						<ul>
+							<li>Rename, of course</li>
+							<li>Extract Constant</li>
+							<li>Extract Local Varaible</li>
+							<li>Extract Function</li>
+							<li>Toggle Function Definition</li>
+							<li>Hide Method</li>
+							<li>Implement Method</li>
+							<li>Generate Getters and Setters</li>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Discovering Build Environment</h2>
+					<ul>
+						<li>Required for parser to find header files</li>
+						<li>Include Paths</li>
+						<li>Macro Definitions</li>
+						<li>Other advanced build options that impact parsing</li>
+						<li>Compiler built-ins</li>
+						<li>Most popular: scanning build output</li>
+						<li>Extensible mechanism to plug in other methods</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Project and Build</h2>
+					<p>!notes</p>
+					<ul>
+						<li>New project wizard</li>
+						<li>managed build versus standard</li>
+						<li>extending managed build with new toolchains</li>
+						<li>standard build integrations</li>
+						<li>Makefile project</li>
+						<li>Built-in Toolchain support: gcc, msvc, clang</li>
+					</ul>
+				</section>
+				
 				<section>
 					<section>
 						<h2>Debug</h2>
@@ -337,6 +397,7 @@
 						</ul>
 					</section>
 				</section>
+				
 				<section>
 					<section>
 						<h2>C/C++ Unit Testing</h2>
@@ -368,10 +429,25 @@
 						</ul>
 					</section>
 				</section>
+				
+				<section>
+					<h2>Qt Support</h2>
+					<ul>
+						<li>qmake build integration</li>
+						<li>Slots and Signals</li>
+						<li>"Syntax" highlighting</li>
+						<li>finding slots and signals in connect statements</li>
+					</ul>
+				</section>
+				
 				<section>
 					<section>
 						<h2>Future Plans</h2>
-						<p class="fragment"></p>
+						<ul>
+							<li>Improve Qt support to first class</li>
+							<li>Adavanced Makefile projects for cmake, qmake</li>
+							<li>LLVM for code analysis</li>
+						</ul>
 					</section>
 				</section>
 			</div>

@@ -251,7 +251,6 @@
 
 				<section>
 					<h2>Project and Build</h2>
-					<p>!notes</p>
 					<ul>
 						<li>New project wizard</li>
 						<li>managed build versus standard</li>
@@ -376,11 +375,11 @@
 					</section>
 					<section>
 						<h2>Step Into Selection</h2>
-						<pre><code>void compute(int a, float b) {
+						<pre class="fragment"><code>void compute(int a, float b) {
 	subtract(multiply(add(a, b), 3));
 }						</code></pre>
 
-						<h4 class="fragment">How many operations to step-int subtract()?</h4>
+						<h4 class="fragment">How many operations to step into subtract()?</h4>
 						<p class="fragment">Step-into:</p>
 						<pre class="fragment"><code>int add(int arg1, int arg2) {
 	return arg1 + arg2;
@@ -404,7 +403,7 @@
 	subtract(multiply(add(a, b), 3));
 }						</code></pre>
 						<p class="fragment">Select the "subtract" method call in the Editor</p>
-						<p class="fragment">Single Step-into selection:</p>
+						<p class="fragment">Choose the Step-Into-Selection operation:</p>
 						<pre class="fragment"><code>int subtract(int arg1, int arg2) {
 	return arg1 - arg2;
 }						 </code></pre>
@@ -416,8 +415,8 @@
 						<h2>More Debug?</h2>
 						<br>
 						<ul>
-							<li><a class="fragment" href="http://wiki.eclipse.org/CDT/User/NewIn82#Debug">New&Noteworthy 8.2</a></li>
-							<li><a class="fragment" href="http://wiki.eclipse.org/CDT/User/FAQ#Debugging_C.2FC.2B.2B_Projects">FAQ</a></li>
+							<li class="fragment"><a href="http://wiki.eclipse.org/CDT/User/NewIn82#Debug">New&Noteworthy 8.2</a></li>
+							<li class="fragment"><a href="http://wiki.eclipse.org/CDT/User/FAQ#Debugging_C.2FC.2B.2B_Projects">FAQ</a></li>
 							<br>
 							<div class="fragment">
 								<li><a href="http://wiki.eclipse.org/CDT/User/NewIn81#Debug">New&Noteworthy 8.1</a></li>
@@ -482,11 +481,16 @@
 							</ul>
 							<li class="fragment">Global Breakpoints</li>
 							<li class="fragment">Per-target Breakpoints</li>
+							<li class="fragment">Grouping of Debug view elements</li>
+                            <br>
 							<li class="fragment">Improve Qt support to first class</li>
 							<li class="fragment">Advanced Makefile projects for cmake, qmake</li>
 							<li class="fragment">LLVM for code analysis</li>
 						</ul>
 					</section>
+				</section>
+				<section>
+						<h2>Q&A</h2>
 				</section>
 			</div>
 

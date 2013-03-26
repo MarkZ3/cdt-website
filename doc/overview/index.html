@@ -48,12 +48,12 @@
 					<h2>Agenda</h2>
 					<ul>
 						<li>Introductions</li>
+						<li>Project and Build</li>
 						<li>Editor</li>
 						<li>Parser and Indexer</li>
-						<li>Code Analysis</li>
 						<li>Refactoring</li>
+						<li>Code Analysis</li>
 						<li>Scanner Discovery</li>
-						<li>Project and Build</li>
 						<li>Qt</li>
 						<li>Debug</li>
 						<li>Unit Testing</li>
@@ -145,6 +145,22 @@
 				</section>
 				
 				<section>
+					<h2>Project and Build</h2>
+					<p>!notes</p>
+					<ul>
+						<li>New project wizard</li>
+						<li>managed build versus standard</li>
+						<li>extending managed build with new toolchains</li>
+						<li>standard build integrations</li>
+						<li>Makefile project</li>
+						<li>Built-in Toolchain support: gcc, msvc, clang</li>
+					</ul>
+				</section>
+				
+				<section>
+					<section>
+						<h2>The Editor</h2>
+					</section>
 					<section>
 						<h2>Outline View</h2>
 						<img src="img/OutlineView.png" alt="Outline View"/>
@@ -180,6 +196,23 @@
 						<li>Index used to spead up parsing a la pch</li>
 						<li>Available as API for advanced Tooling.</li>
 					</ul>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Refactoring and other cool tricks</h2>
+						<ul>
+							<li>Rename Refactoring, of course</li>
+							<li>Extract Constant</li>
+							<li>Extract Local Varaible</li>
+							<li>Extract Function</li>
+							<li>Toggle Function Definition</li>
+							<li>Hide Method</li>
+							<li>Implement Method</li>
+							<li>Generate Getters and Setters</li>
+							<li>Organize Imports</li>
+						</ul>
+					</section>
 				</section>
 				
 				<section>
@@ -225,33 +258,15 @@
 				</section>
 				
 				<section>
-					<section>
-						<h2>Refactoring and other cool tricks</h2>
-						<ul>
-							<li>Formatting</li>
-							<li>Rename, of course</li>
-							<li>Extract Constant</li>
-							<li>Extract Local Varaible</li>
-							<li>Extract Function</li>
-							<li>Toggle Function Definition</li>
-							<li>Hide Method</li>
-							<li>Implement Method</li>
-							<li>Generate Getters and Setters</li>
-							<li>Organize Imports</li>
-						</ul>
-					</section>
-				</section>
-				
-				<section>
 					<h2>Discovering Build Environment</h2>
 					<ul>
-						<li>Required for parser to find header files</li>
-						<li>Include Paths</li>
-						<li>Macro Definitions</li>
-						<li>Other advanced build options that impact parsing</li>
-						<li>Compiler built-ins</li>
-						<li>Most popular: scanning build output</li>
-						<li>Extensible mechanism to plug in other methods</li>
+						<li class="fragment">Required for parser to find header files</li>
+						<li class="fragment">Include Paths</li>
+						<li class="fragment">Macro Definitions</li>
+						<li class="fragment">Other advanced build options that impact parsing</li>
+						<li class="fragment">Compiler built-ins</li>
+						<li class="fragment">Most popular: scanning build output</li>
+						<li class="fragment">Extensible mechanism to plug in other methods</li>
 					</ul>
 				</section>
 
@@ -270,10 +285,11 @@
 				<section>
 					<h2>Qt Support</h2>
 					<ul>
-						<li>qmake build integration</li>
-						<li>Slots and Signals</li>
+						<li>New project template for qmake</li>
+						<li>Slots and Signals content assist and search</li>
 						<li>"Syntax" highlighting</li>
-						<li>finding slots and signals in connect statements</li>
+						<li>Templates for Qt classes and methods</li>
+						<li>Project file editor</li>
 					</ul>
 				</section>
 				

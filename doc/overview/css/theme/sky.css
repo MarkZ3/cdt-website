@@ -14,13 +14,13 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #add9e4;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
-  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: #F3F7FF; /*#add9e4;*/
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #F3F7FF 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #F3F7FF));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #F3F7FF 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #F3F7FF 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #F3F7FF 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #F3F7FF 100%);
   background-color: #f7fbfc; }
 
 .reveal {
@@ -28,8 +28,11 @@ body {
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
-  color: #333333; }
+  color: #111111; /*#333333;*/ }
 
+.reveal li {
+  margin: 0 0 7px 0; }
+  
 ::selection {
   color: white;
   background: #134674;
@@ -44,8 +47,8 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
-  color: #333333;
+  margin: 0 0 30px 0;
+  color: #111111;
   font-family: "Quicksand", sans-serif;
   line-height: 0.9em;
   letter-spacing: -0.08em;

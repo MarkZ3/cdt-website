@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>This is not your father's CDT</title>
+		<title>Eclipse CDT</title>
 
-		<meta name="description" content="CDT Overview talk given at EclipseCon 2013">
-		<meta name="author" content="Marc Khouzam (Ericsson) and Doug Schaefer (QNX/BlackBerry)">
+		<meta name="description" content="CDT Overview talk first given at EclipseCon 2013">
+		<meta name="author" content="Marc Khouzam (Ericsson) and Doug Schaefer (BlackBerry/QNX)">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -32,7 +32,11 @@
 
 	<body>
 		<div style="float: left">
-			<img src="img/cdt_logo_icon.png"/>
+			<img src="img/eclipse.png"/>
+		</div>
+		
+		<div style="float: right">
+			<img hspace="25px" vspace="7px" height="64px" src="img/cdt_logo_icon.png"/>
 		</div>
 		
 		<div class="reveal">
@@ -40,24 +44,21 @@
 			<div class="slides">
 
 				<section>
-					<h1>This is not your<br>father's CDT</h1>
-					<h3>But it could be yours...</h3>
+					<h1>Eclipse CDT</h1>
+					<br><br>
+					<h3>The C/C++ IDE for Everyone</h3>
 					<p>
-						<small>Marc Khouzam (Ericsson) and Doug Schaefer (QNX/BlackBerry)</small>
+						<small>Doug Schaefer (BlackBerry/QNX) and Marc Khouzam (Ericsson)</small>
 					</p>
 				</section>
 
 				<section>
 					<h2>Agenda</h2>
 					<ul>
-						<li>Introductions</li>
-						<li>Project and Build</li>
-						<li>Editor</li>
-						<li>Parser and Indexer</li>
+						<li>What is the CDT?</li>
+						<li>C/C++ Projects</li>
+						<li>Getting to Know Your Code</li>
 						<li>Refactoring</li>
-						<li>Code Analysis</li>
-						<li>Scanner Discovery</li>
-						<li>Qt</li>
 						<li>Debug</li>
 						<li>Unit Testing</li>
 						<li>Future Plans</li>
@@ -66,7 +67,7 @@
 				
 				<section>
 					<section>
-						<h2>What is CDT?</h2>
+						<h2>What is the CDT?</h2>
 						<ul>
 							<li class="fragment">C/C++ Development Tooling (CDT)</li>
 							<li class="fragment">Tools for building applications in C/C++ using Eclipse</li>
@@ -75,9 +76,30 @@
 							<li class="fragment">A community of passionate tools developers</li>
 						</ul>
 					</section>
-				
+					
 					<section>
-						<h2>CDT - The Committers</h2>
+						<h2>Uses</h2>
+						<ul>
+							<li class="fragment">Embedded Systems</li>
+							<li class="fragment">Desktop Apps</li>
+							<li class="fragment">Mobile Apps</li>
+							<li class="fragment">Server-side</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>History</h2>
+						<ul>
+							<li class="fragment">Started in 2001 as QNX Momentics</li>
+							<li class="fragment">Opened source in 2002 at Eclipse</li>
+							<li class="fragment">Rational joined shortly after</li>
+							<li class="fragment">followed by TI, Intel, Symbian, Nokia, ...</li>
+							<li class="fragment">then Ericsson, Google, individual contributors</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>The Committers</h2>
 						<div style="float:left">
 							<ul>
 								<li>Andrew Gvozdev</li>
@@ -113,28 +135,33 @@
 					</section>
 	
 					<section>
-						<h2>Where do we come from?</h2>
+						<h3>Sibling Eclipse Communities</h3>
 						<ul>
-							<li class="fragment">Traditional IDE Vendors</li>
-							<li class="fragment">Internal Tooling Support Teams</li>
-							<li class="fragment">University Research Teams and Students</li>
-							<li class="fragment">Individuals out of the blue</li>
-						</ul>
-					</section>
-					
-					<section>
-						<h2>Related Eclipse Communities</h2>
-						<ul>
-							<li>Mylyn Bridge</li>
 							<li>Linux Tools Project</li>
 							<li>Parallel Tools Project</li>
+							<li>Mylyn</li>
 							<li>Automotive Working Group</li>
-							<li>M2M?</li>
+							<li>M2M, Internet of Things</li>
 						</ul>
 					</section>
 
 					<section>
-						<h2>Who uses the CDT?</h2>
+						<h2>Commercial Adopters</h2>
+						<ul>
+							<li>QNX Momentics & BlackBerry NDK</li>
+							<li>Wind River Workbench</li>
+							<li>Red Hat Enterprise Linux</li>
+							<li>IBM Rational Software Architect</li>
+							<li>Intel C++ Compiler for Linux</li>
+							<li>Freescale CodeWarrior</li>
+							<li>TI Code Composer Studio</li>
+							<li>Pretty much every silicon vendor</li>
+							<li>Pretty much every RTOS vendor</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Open Source Users</h2>
 						<p>Eclipse C/C++ IDE Downloads</p>
 						<ul>
 							<li class="fragment">Helios CDT 7.0.1 - 625,162 downlaods</li>
@@ -146,7 +173,16 @@
 				</section>
 				
 				<section>
-					<h2>What's in the CDT?</h2>
+					<h2>CDT Features</h2>
+					<ul>
+						<li class="fragment">Project and Build</li>
+						<li class="fragment">Full featured editor</li>
+						<li class="fragment">Source code navigation</li>
+						<li class="fragment">Refactoring</li>
+						<li class="fragment">Static code analysis</li>
+						<li class="fragment">Debugging</li>
+						<li class="fragment">Unit Test</li>
+					</ul>
 				</section>
 				
 				<section>
@@ -160,10 +196,10 @@
 					<section>
 						<h2>Build Systems</h2>
 						<ul>
-							<li class="fragment">Makefile Projects</li>
-							<li class="fragment">Managed Build</li>
+							<li class="fragment">Managed and not Managed</li>
 							<li class="fragment">Extensible for new toolchains</li>
 							<li class="fragment">Built-in Toolchain support: gcc, msvc, clang</li>
+							<li class="fragment">Major capability provided by RTOS and silicon vendors</li>
 						</ul>
 					</section>
 				</section>
@@ -181,19 +217,19 @@
 						<img height="375px" src="img/SyntaxHighlighting.png" alt="Syntax Highlighting"/>
 					</section>
 					<section>
-						<h2>Hover Help</h2>
-						<img height="375px" src="img/HoverHelp.png" alt="Hover Help"/>
-					</section>
-					<section>
 						<h2>Content Assist</h2>
 						<img height="375px" src="img/ContentAssist.png" alt="Content Assist"/>
+					</section>
+					<section>
+						<h2>Hover Help</h2>
+						<img height="375px" src="img/HoverHelp.png" alt="Hover Help"/>
 					</section>
 					<section>
 						<h2>Block Selection</h2>
 						<img height="375px" src="img/BlockSelection.png" alt="Block Selection"/>
 					</section>
 					<section>
-						<h2>Formattting</h2>
+						<h2>Formatting</h2>
 						<img height="375px" src="img/Formatter.png" alt="Formatter"/>
 					</section>
 				</section>
@@ -281,28 +317,6 @@
 					</ul>
 				</section>
 
-				<section>
-					<h2>Project and Build</h2>
-					<ul>
-						<li>New project template for qmake</li>
-						<li>Slots and Signals content assist and search</li>
-						<li>"Syntax" highlighting</li>
-						<li>Templates for Qt classes and methods</li>
-						<li>Project file editor</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Qt Support</h2>
-					<ul>
-						<li>New project template for qmake</li>
-						<li>Slots and Signals content assist and search</li>
-						<li>"Syntax" highlighting</li>
-						<li>Templates for Qt classes and methods</li>
-						<li>Project file editor</li>
-					</ul>
-				</section>
-				
 				<section>
 					<section>
 						<h2>Debug</h2>
@@ -500,6 +514,17 @@
 							<li class="fragment">Re-run selected tests</li>
 						</ul>
 					</section>
+				</section>
+				
+				<section>
+					<h2>Qt Support</h2>
+					<ul>
+						<li>New project template for qmake</li>
+						<li>Slots and Signals content assist and search</li>
+						<li>"Syntax" highlighting</li>
+						<li>Templates for Qt classes and methods</li>
+						<li>Project file editor</li>
+					</ul>
 				</section>
 				
 				<section>

@@ -141,14 +141,14 @@
 							<li>Parallel Tools Project</li>
 							<li>Mylyn</li>
 							<li>Automotive Working Group</li>
-							<li>M2M, Internet of Things</li>
+							<li>M2M WG, Internet of Things</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Commercial Adopters</h2>
 						<ul>
-							<li>QNX Momentics & BlackBerry NDK</li>
+							<li>QNX Momentics &amp; BlackBerry NDK</li>
 							<li>Wind River Workbench</li>
 							<li>Red Hat Enterprise Linux</li>
 							<li>IBM Rational Software Architect</li>
@@ -168,7 +168,7 @@
 							<li class="fragment">Indigo CDT 8.0.1 - 812,430 downloads</li>
 							<li class="fragment">Juno CDT 8.1.1?</li>
 						</ul>
-						<img class="fragment" width="100%" height="60%" src="img/JunoSR1.png" alt="Juno SR1 Stats">
+						<img class="fragment" width="100%" height="60%" src="img/JunoSR1.png" alt="Juno SR1 Stats"/>
 					</section>
 				</section>
 				
@@ -209,11 +209,7 @@
 						<h2>The Editor</h2>
 					</section>
 					<section>
-						<h2>Outline View</h2>
-						<img height="375px" src="img/OutlineView.png" alt="Outline View"/>
-					</section>
-					<section>
-						<h2>Syntax and Semantic Highlighting</h2>
+						<h2>Highlighting</h2>
 						<img height="375px" src="img/SyntaxHighlighting.png" alt="Syntax Highlighting"/>
 					</section>
 					<section>
@@ -232,6 +228,10 @@
 						<h2>Formatting</h2>
 						<img height="375px" src="img/Formatter.png" alt="Formatter"/>
 					</section>
+					<section>
+						<h2>Outline View</h2>
+						<img height="375px" src="img/OutlineView.png" alt="Outline View"/>
+					</section>
 				</section>
 				
 				<section>
@@ -240,43 +240,38 @@
 						<li class="fragment">Full C and C++ parser producing AST</li>
 						<li class="fragment">C++ parser progressing on C++11 support</li>
 						<li class="fragment">Indexer captures symbols, definitions and references</li>
-						<li class="fragment">Index used to spead up parsing a la pch</li>
-						<li class="fragment">Available as API for advanced Tooling.</li>
+						<li class="fragment">Parser uses index for speed, e.g. content assist</li>
+						<li class="fragment">Available as API for advanced tooling</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>Refactoring and other cool tricks</h3>
+					<ul>
+						<li class="fragment">Rename Refactoring</li>
+						<li class="fragment">Extract Constant</li>
+						<li class="fragment">Extract Local Variable</li>
+						<li class="fragment">Extract Function</li>
+						<li class="fragment">Toggle Function Definition</li>
+						<li class="fragment">Hide Method</li>
+						<li class="fragment">Implement Method</li>
+						<li class="fragment">Generate Getters and Setters</li>
+						<li class="fragment">Organize Imports</li>
 					</ul>
 				</section>
 				
 				<section>
 					<section>
-						<h2>Refactoring and other cool tricks</h2>
-						<ul>
-							<li>Rename Refactoring, of course</li>
-							<li>Extract Constant</li>
-							<li>Extract Local Varaible</li>
-							<li>Extract Function</li>
-							<li>Toggle Function Definition</li>
-							<li>Hide Method</li>
-							<li>Implement Method</li>
-							<li>Generate Getters and Setters</li>
-							<li>Organize Imports</li>
-						</ul>
-					</section>
-				</section>
-				
-				<section>
-					<section>
 						<h2>Code Analysis - Codan</h2>
-					</section>
-					<section>
-						<h2>Codan</h2>
 						<ul>
-							<li>Framework to integrate different static analysis tools</li>
-							<li>Out-of-the-box static analysis rules and checkers</li>
+							<li class="fragment">Framework for static analysis</li>
+							<li class="fragment">Out-of-the-box static analysis rules and checkers</li>
 						</ul>
 					</section>
 					<section>
 						<h2>Codan Customizations</h2>
+						<img src="img/CodanCustomize.png" alt="Customizing Rules">
 						<ul>
-							<img class="fragment" src="img/CodanCustomize.png" alt="Customizing Rules">
 							<li class="fragment">Ability to enable or disable existing rules</li>
 							<li class="fragment">Ability to modify properties of existing rules</li>
 							<li class="fragment">Ability to modify severity of rules</li>
@@ -284,35 +279,35 @@
 					</section>
 					<section>
 						<h2>Codan Triggers</h2>
-						<img class="fragment" data-fragment-index="1" style="float: left;" src="img/CodanRun.png" alt="Running Rules">
+						<img style="float: left;" src="img/CodanRun.png" alt="Running Rules">
 						<ul>
-							<li class="fragment" data-fragment-index="3">Run upon user request</li>
-							<li class="fragment" data-fragment-index="5">Run when project is built</li>
-							<li class="fragment" data-fragment-index="6">Run as you type!</li>
+							<li class="fragment">Run upon user request</li>
+							<li class="fragment">Run when project is built</li>
+							<li class="fragment">Run as you type!</li>
 						</ul>
-						<img class="fragment" sdata-fragment-index="3" tyle="float: left;" height="350px" src="img/CodanTrigger.png" alt="Rules Triggers">
+						<img style="float: left;" height="350px" src="img/CodanTrigger.png" alt="Rules Triggers">
 					</section>
 					<section>
 						<h2>Codan Reporting</h2>
 						<ul>
-							<li class="fragment">Entries in Problems view</li>
-							<img class="fragment" src="img/CodanProblem.png" alt="Problems view">
-							<li class="fragment">Problem markers in Editor</li>
-							<img class="fragment" src="img/CodanQuickFix.png" alt="Quick Fix">
-							<li class="fragment">Quick Fix available!</li>
+							<li class="fragment">Entries in Problems view<br>
+							<img src="img/CodanProblem.png" alt="Problems view"></li>
+							<li class="fragment">Problem markers in Editor<br>
+							<img src="img/CodanQuickFix.png" alt="Quick Fix"></li>
+							<li class="fragment">Some checkers support Quick Fix!</li>
 						</ul>
 					</section>
 				</section>
 				
 				<section>
-					<h2>Discovering Build Environment</h2>
+					<h2>Discovering Parser Configuration</h2>
 					<ul>
 						<li class="fragment">Required for parser to find header files</li>
 						<li class="fragment">Include Paths</li>
 						<li class="fragment">Macro Definitions</li>
 						<li class="fragment">Other advanced build options that impact parsing</li>
-						<li class="fragment">Compiler built-ins</li>
-						<li class="fragment">Most popular: scanning build output</li>
+						<li class="fragment">Detects compiler built-ins</li>
+						<li class="fragment">Scans build output</li>
 						<li class="fragment">Extensible mechanism to plug in other methods</li>
 					</ul>
 				</section>
@@ -321,114 +316,140 @@
 					<section>
 						<h2>Debug</h2>
 					</section>
+					
+					<section>
+						<h2>Debug View</h2>
+						<img height="500px" src="img/DebugView.png"/>
+					</section>
+
+					<section>
+						<h2>Variables View</h2>
+						<img height="500px" src="img/VariablesView.png"/>
+					</section>
+					
+					<section>
+						<h2>Pretty-Printing</h2>
+						<img height="600px" src="img/PrettyPrintTogether.png" alt="Pretty Printing"/>
+					</section>
+					
+					<section>
+						<h2>Registers View</h2>
+						<img height="500px" src="img/RegistersView.png"/>
+					</section>
+					
+					<section>
+						<h2>Expressions View</h2>
+						<img height="500px" src="img/ExpressionsView.png"/>
+					</section>
+					
+					<section>
+						<h2>Enhanced Expressions</h2>
+						<ul>
+							<li>Glob-pattern matching with '=' prefix
+								<pre><code class="no-highlight">=var*</code></pre>
+								<pre><code class="no-highlight">=myArray[20-30]</code></pre>
+								<pre><code class="no-highlight">=$e?x</code></pre>
+							</li>
+	
+							<li class="fragment">Sorted matches
+								<pre><code class="no-highlight">=* or *</code></pre>
+								<pre><code class="no-highlight">=$* or $*</code></pre>
+							</li>
+	
+							<li class="fragment">Grouping using ';' separator
+								<pre><code class="no-highlight">myVar;=myArray[20,24]</code></pre>
+								<pre><code class="no-highlight">myVar;$eax</code></pre>
+							</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Enhanced Expressions</h2>
+						<img height="500px" src="img/EnhancedExpressions.png" alt="Enhanced Expressions"/>
+					</section>
+					
 					<section>
 						<h2>Project-less Debugging</h2>
-						<p>Want to use Eclipse just to debug?</p>
-						<img class="fragment" height="550px" src="img/DebugNoProject.png" alt="Project-less Debugging">
+						<img height="600px" src="img/DebugNoProject.png" alt="Project-less Debugging"/>
 					</section>
-					<section>
-						<h2>Pretty-Printing of Data Structures</h2>
-						<img class="fragment" src="img/PrettyPrintTogether.png" alt="Pretty Printing">
-					</section>
+					
 					<section>
 						<h2>Reverse Debugging</h2>
-					<ul>
-						<li>Step or Resume forwards AND backwards</li>
-						<li>Go back in time, change data and re-write history</li>
-						<li>Use breakpoints to enable/disable recording</li>
-					</ul>
-					</section>
-					<section>
-						<h2>Reverse Debugging</h2>
-						<img height="550px" src="img/ReverseDebugging.png" alt="Reverse Debugging">
-					</section>
-					<section>
-						<h2>Multi-Process Debugging</h2>
-						<img height="600px" src="img/MultiProcess.png" alt="Multi-Process Debugging">
-					</section>
-					<section>
-						<h2>Enhanced Expressions and Groups</h2>
 						<ul>
-							<p class="fragment">Glob-pattern matching with '=' prefix</p>
-							<ul>
-								<pre class="fragment"><code class="no-highlight">=var*</code></pre>
-								<pre class="fragment"><code class="no-highlight">=myArray[20-30]</code></pre>
-								<pre class="fragment"><code class="no-highlight">=$e?x</code></pre>
-							</ul>
-	
-							<p class="fragment">Sorted matches</p>
-							<ul>
-								<pre class="fragment"><code class="no-highlight">=* or *</code></pre>
-								<pre class="fragment"><code class="no-highlight">=$* or $*</code></pre>
-							</ul>
-	
-							<p class="fragment">Grouping using ';' separator</p>
-							<ul>
-								<pre class="fragment"><code class="no-highlight">myVar;=myArray[20,24]</code></pre>
-								<pre class="fragment"><code class="no-highlight">myVar;$eax</code></pre>
-							</ul>
+							<li>Step or Resume forwards AND backwards</li>
+							<li>Go back in time, change data and re-write history</li>
+							<li>Use breakpoints to enable/disable recording</li>
 						</ul>
 					</section>
+					
 					<section>
-						<h2>Enhanced Expressions and Groups</h2>
-						<img height="600px" src="img/EnhancedExpressions.png" alt="Enhanced Expressions">
+						<h2>Reverse Debugging</h2>
+						<img height="600px" src="img/ReverseDebugging.png" alt="Reverse Debugging"/>
 					</section>
+					
+					<section>
+						<h3>Multi-Process Debugging</h3>
+						<img height="600px" src="img/MultiProcess.png" alt="Multi-Process Debugging"/>
+					</section>
+					
 					<section>
 						<h2>OS Resources view</h2>
-						<p>Sometimes examining OS Resources can help solve bugs.</p>
-						<br>
-						<img style="float: left;" class="fragment" width="600px" src="img/OSResources.png" alt="OS Resources">
-						<ul class="fragment">
-							<li>All Processes</li>
-							<li>All Threads</li>
-							<li>Semaphores</li>
-							<li>Sockets</li>
-							<li>Kernel Modules</li>
-							<li>File Descriptors</li>
-							<li>Message queues</li>
-							<li>Memory Segments</li>
-						</ul>
+						<img style="float: left;" width="550px" src="img/OSResources.png" alt="OS Resources"/>
+						<div style="float: right;">
+							<ul>
+								<li>All Processes</li>
+								<li>All Threads</li>
+								<li>Semaphores</li>
+								<li>Sockets</li>
+								<li>Kernel Modules</li>
+								<li>File Descriptors</li>
+								<li>Message queues</li>
+								<li>Memory Segments</li>
+							</ul>
+						</div>
 					</section>
+					
 					<section>
 						<h2>Multicore Visualizer</h2>
-						<img src="img/MulticoreVisualizerTriplet.png" alt="Multicore Visualizer">
+						<img src="img/MulticoreVisualizerTriplet.png" alt="Multicore Visualizer"/>
 						<ul>
 							<li>Monitor entire system at a glance</li>
 							<li>Control program execution from Visualizer</li>
-						<ul>
+						</ul>
 					</section>
+					
 					<section>
-						<h2>Multicore Visualizer CPU Load Meters</h2>
-						<img width="500px" src="img/MulticoreVisualizerLoad.png" alt="Multicore Visualizer CPU Load">
+						<h3>Multicore Visualizer CPU Load Meters</h3>
+						<img width="500px" src="img/MulticoreVisualizerLoad.png" alt="Multicore Visualizer CPU Load"/>
 						<ul>
 							<li>Optionally monitor your target</li>
-						<ul>
+						</ul>
 					</section>
+					
 					<section>
 						<h2>Multicore Visualizer Filtering</h2>
 						<div style="position: relative;width: 450px;height: 375px">
-							<img style="position: absolute;left:50px;top: 0px" class="fragment" data-fragment-index="1" width="400px" height="375px" src="img/MulticoreVisualizer24.png" alt="Multicore Visualizer Full">
-							<img style="position: absolute;left:50px;top: 0px" class="fragment" data-fragment-index="3" width="400px" height="375px" src="img/MulticoreVisualizer24Selection.png" alt="Multicore Visualizer Selection">
-							<img style="position: absolute;left:500px;top: 0px" class="fragment" data-fragment-index="4" height="375px" src="img/MulticoreVisualizer4Filtered.png" alt="Multicore Visualizer Filtered">
+							<img style="position: absolute;left:50px;top: 0px" width="400px" height="375px" src="img/MulticoreVisualizer24.png" alt="Multicore Visualizer Full"/>
+							<img style="position: absolute;left:50px;top: 0px" class="fragment" data-fragment-index="3" width="400px" height="375px" src="img/MulticoreVisualizer24Selection.png" alt="Multicore Visualizer Selection"/>
+							<img style="position: absolute;left:500px;top: 0px" class="fragment" data-fragment-index="4" height="375px" src="img/MulticoreVisualizer4Filtered.png" alt="Multicore Visualizer Filtered"/>
 						</div>
-					<ul style="padding-top: 20px">
-						<li class="fragment" data-fragment-index="2">Focus on interesting parts</li>
-						<li class="fragment" data-fragment-index="5">Allow for more information to be displayed</li>
-					</ul>
+						<ul style="padding-top: 20px">
+							<li class="fragment" data-fragment-index="2">Focus on interesting parts</li>
+							<li class="fragment" data-fragment-index="5">Allow for more information to be displayed</li>
+						</ul>
 					</section>
+					
 					<section>
 						<h2>Dynamic-Printf</h2>
-						<div>
-						<img style="float: left;" class="fragment" data-fragment-index="1" width="400px" src="img/DynamicPrintf.png" alt="Dynamic Printf Type">
-						<br>
+						<img style="float: left;" width="400px" src="img/DynamicPrintf.png" alt="Dynamic Printf Type"/>
 						<ul>
 							<li class="fragment" data-fragment-index="3">No re-compiling</li>
 							<li class="fragment" data-fragment-index="4">No re-deploying</li>
 							<li class="fragment" data-fragment-index="5">Debugger can disconnect</li>
-						<ul>
-						</div>
-						<img class="fragment" data-fragment-index="2" width="600px" src="img/DynamicPrintfProperties.png" alt="Dynamic Printf Properties">
+						</ul>
+						<img width="600px" src="img/DynamicPrintfProperties.png" alt="Dynamic Printf Properties"/>
 					</section>
+					
 					<section>
 						<h2>Step Into Selection</h2>
 						<pre class="fragment"><code>void compute(int a, float b) {
@@ -450,9 +471,9 @@
 						<pre class="fragment"><code>int subtract(int arg1, int arg2) {
 	return arg1 - arg2;
 }						 </code></pre>
-						<H4 class="fragment">Five stepping operations!</h4>
-
+						<h4 class="fragment">Five stepping operations!</h4>
 					</section>
+					
 					<section>
 						<h2>Step Into Selection</h2>
 						<pre><code>void compute(int a, float b) {
@@ -462,23 +483,10 @@
 						<p class="fragment">Choose the Step-Into-Selection operation:</p>
 						<pre class="fragment"><code>int subtract(int arg1, int arg2) {
 	return arg1 - arg2;
-}						 </code></pre>
+}						</code></pre>
 						<p class="fragment">All other method calls are stepped-over automatically</p>
 						<br>
-						<H4 class="fragment">Just one stepping operation!</h4>
-					</section>
-					<section>
-						<h2>More Debug?</h2>
-						<br>
-						<ul>
-							<li class="fragment"><a href="http://wiki.eclipse.org/CDT/User/NewIn82#Debug">New&Noteworthy 8.2</a></li>
-							<li class="fragment"><a href="http://wiki.eclipse.org/CDT/User/FAQ#Debugging_C.2FC.2B.2B_Projects">FAQ</a></li>
-							<br>
-							<div class="fragment">
-								<li><a href="http://wiki.eclipse.org/CDT/User/NewIn81#Debug">New&Noteworthy 8.1</a></li>
-								<li><a href="http://wiki.eclipse.org/CDT/User/NewIn80#Debug">New&Noteworthy 8.0</a></li>
-							</div>
-						</ul>
+						<h4 class="fragment">Just one stepping operation!</h4>
 					</section>
 				</section>
 				
@@ -497,10 +505,10 @@
 					<section>
 						<h2>C/C++ Unit Testing</h2>
 						<ul>
-							<li class="fragment">Compile tests into executable binary</li>
-							<img class="fragment" src="img/CUnitTest-Launch.png" alt="Launching Unit Tests">
+							<li class="fragment">Compile tests into executable binary
+							<img class="fragment" src="img/CUnitTest-Launch.png" alt="Launching Unit Tests"></li>
 							<li class="fragment">Launch in Run or Debug mode</li>
-						<ul>
+						</ul>
 					</section>
 					<section>
 						<h2>C/C++ Unit Testing</h2>
@@ -531,15 +539,15 @@
 					<section>
 						<h2>Future Plans</h2>
 						<ul>
-							<li class="fragment">Multicore Visualizer</li>
-							<ul class="fragment">
-								<li>Memory Usage Monitoring</li>
-								<li>Automatic display of important information</li>
-							</ul>
+							<li class="fragment">Multicore Visualizer
+								<ul class="fragment">
+									<li>Memory Usage Monitoring</li>
+									<li>Automatic display of important information</li>
+								</ul>
+							</li>
 							<li class="fragment">Global Breakpoints</li>
 							<li class="fragment">Per-target Breakpoints</li>
 							<li class="fragment">Grouping of Debug view elements</li>
-                            <br>
 							<li class="fragment">Improve Qt support to first class</li>
 							<li class="fragment">Advanced Makefile projects for cmake, qmake</li>
 							<li class="fragment">LLVM for code analysis</li>
@@ -547,7 +555,7 @@
 					</section>
 				</section>
 				<section>
-						<h2>Q&A</h2>
+						<h2>Q&amp;A</h2>
 				</section>
 			</div>
 

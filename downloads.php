@@ -22,6 +22,19 @@
 <p>The CDT can either be installed as part of the Eclipse C/C++ IDE packaged zip file or installed
 	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
 	repository URLs listed below.</p>
+	
+<h3>CDT 8.2.0 for Eclipse Kepler</h3>
+<p>Eclipse package:
+	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/keplerr">
+	Eclipse C/C++ IDE for Kepler</a>.</p>
+<p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/kepler">
+	http://download.eclipse.org/tools/cdt/releases/kepler</a>.</p>
+<p>The git repos have been tagged with the CDT_8_2_0 tag. You can download the source from the web interface.</p>
+<p>Archived p2 repos:
+<ul>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/kepler/r/cdt-master-8.2.0.zip">cdt-master-8.2.0.zip</a></li>
+</ul>
+</p>
 
 <h3>CDT 8.1.2 for Eclipse Juno</h3>
 <p>Eclipse package:

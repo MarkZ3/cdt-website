@@ -56,7 +56,13 @@ visual debugging tools, including memory, registers, and disassembly viewers.
 
 <div>
 <h3>Current Status</h3>
-<p>Development is underway for the CDT 8.2 for Eclipse Kepler, due June 2013.</p>
+<p>Development is underway for the CDT 8.2.1 due September 2013,
+and for the next Eclipse simultaneous release, Luna, due June 2014.</p>
+</div>
+
+<div id="headlines">
+<h3>CDT 8.2 Now Available</h3>
+<p><i>June 26, 2013 -</i> CDT 8.2 for Eclipse Kepler. Check the <a href="downloads.php">Download</a> link on how to get yours.</p> 
 </div>
 
 <div id="headlines">

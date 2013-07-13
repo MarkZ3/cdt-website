@@ -94,7 +94,7 @@
 </ul>
 </p>
 
-<h3>Development Builds</h3>
+<h3><a id="DevelopmentBuilds">Development Builds</a></h3>
 <p>Development builds of the Eclipse C/C++ IDE can be found on the
 	<a href="http://www.eclipse.org/downloads">Eclipse Downloads page</a>
 	by clicking on the Development Builds tab.</p>

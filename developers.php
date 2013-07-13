@@ -21,18 +21,17 @@
 	Getting started with CDT Development</a>
 </li>
 <li>
-	<a href="http://download.eclipse.org/tools/cdt/builds/7.0.0/index.html">
-	Download CDT 7.0</a><br>Be a beta tester for newest CDT release
+    <a href="http://git.eclipse.org/c/cdt/org.eclipse.cdt.git">Browse the Git repository</a><br>
+</li>
+<li>
+	<a href="http://www.eclipse.org/cdt/downloads.php#DevelopmentBuilds">
+	Download CDT Development Builds</a><br>Be a beta tester for newest CDT release
 </li>
 <li>
 	<a href="http://wiki.eclipse.org/CDT/Developer/FAQ">CDT Developers FAQ</a>
 </li>
 <li>
     <a href="http://wiki.eclipse.org/CDT">Wiki</a><br>Source of all knowledge
-</li>
-<li>
-	<a href="http://download.eclipse.org/tools/cdt/builds">
-	Nightly Builds</a><br>Download CDT Nightly builds
 </li>
 <li>
     <a href="https://dev.eclipse.org/mailman/listinfo/cdt-dev">

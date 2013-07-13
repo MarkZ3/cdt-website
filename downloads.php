@@ -100,11 +100,11 @@
 	by clicking on the Development Builds tab.</p>
 
 <p>Bleeding edge continuous builds are available from the
-	<a href="https://hudson.eclipse.org/hudson/job/cdt-nightly">cdt-nightly Hudson build page</a> and the p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/kepler/nightly">
-http://download.eclipse.org/tools/cdt/builds/kepler/nightly</a>.</p>
+	<a href="https://hudson.eclipse.org/hudson/job/cdt-nightly">cdt-nightly Hudson build page</a> and the p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/luna/nightly">
+http://download.eclipse.org/tools/cdt/builds/luna/nightly</a></p>
 
-<p>Milestones p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/kepler/milestones">
-http://download.eclipse.org/tools/cdt/builds/kepler/milestones</a>.</p>
+<p>Milestones p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/luna/milestones">
+http://download.eclipse.org/tools/cdt/builds/luna/milestones</a> (not yet available)</p>
 
 <p>Some older builds are available in the old
 	<a href="http://download.eclipse.org/tools/cdt/builds">CDT Nightly Build page</a>.</p>

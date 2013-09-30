@@ -26,7 +26,7 @@
 <h3>CDT 8.2.1 for Eclipse Kepler</h3>
 <p>Eclipse package:
 	<a href="http://www.eclipse.org/downloads/packages/node/1079">
-	Eclipse C/C++ IDE for Kepler</a>.</p>
+	Eclipse C/C++ IDE for Kepler SR1</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/kepler">
 	http://download.eclipse.org/tools/cdt/releases/kepler</a>.</p>
 <p>The git repos have been tagged with the CDT_8_2_1 tag. You can download the source from the web interface.</p>

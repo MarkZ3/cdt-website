@@ -23,15 +23,16 @@
 	into an existing Eclipse using the "Install New Software..." dialog and entering the p2
 	repository URLs listed below.</p>
 	
-<h3>CDT 8.2.0 for Eclipse Kepler</h3>
+<h3>CDT 8.2.1 for Eclipse Kepler</h3>
 <p>Eclipse package:
-	<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/keplerr">
+	<a href="http://www.eclipse.org/downloads/packages/node/1079">
 	Eclipse C/C++ IDE for Kepler</a>.</p>
 <p>p2 software repository: <a href="http://download.eclipse.org/tools/cdt/releases/kepler">
 	http://download.eclipse.org/tools/cdt/releases/kepler</a>.</p>
-<p>The git repos have been tagged with the CDT_8_2_0 tag. You can download the source from the web interface.</p>
+<p>The git repos have been tagged with the CDT_8_2_1 tag. You can download the source from the web interface.</p>
 <p>Archived p2 repos:
 <ul>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/kepler/sr1/cdt-master-8.2.1.zip">cdt-master-8.2.1.zip</a></li>
 <li><a href="http://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/kepler/r/cdt-master-8.2.0.zip">cdt-master-8.2.0.zip</a></li>
 </ul>
 </p>

@@ -105,7 +105,7 @@
 http://download.eclipse.org/tools/cdt/builds/luna/nightly</a></p>
 
 <p>Milestones p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/luna/milestones">
-http://download.eclipse.org/tools/cdt/builds/luna/milestones</a> (not yet available)</p>
+http://download.eclipse.org/tools/cdt/builds/luna/milestones</a></p>
 
 <p>Some older builds are available in the old
 	<a href="http://download.eclipse.org/tools/cdt/builds">CDT Nightly Build page</a>.</p>

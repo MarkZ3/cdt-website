@@ -22,7 +22,7 @@
 </li>
 <li>
 	<a href="doc/overview">CDT Overview Presentation</a><br>
-	Given by Doug Schaefer and Marc Khouzam at EclipseCon 2012.
+	Given by Doug Schaefer and Marc Khouzam at EclipseCon 2013.
 </li>
 <li>
 	<a href="http://www.ibm.com/developerworks/opensource/library/os-eclipse-stlcdt/">

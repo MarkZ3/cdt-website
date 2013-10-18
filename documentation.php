@@ -21,6 +21,10 @@
 	Formal Eclipse release review documentation and IP Logs for the latest CDT releases.
 </li>
 <li>
+	<a href="doc/overview">CDT Overview Presentation</a><br>
+	Given by Doug Schaefer and Marc Khouzam at EclipseCon 2012.
+</li>
+<li>
 	<a href="http://www.ibm.com/developerworks/opensource/library/os-eclipse-stlcdt/">
 	Developing applications using the Eclipse C/C++ Development Toolkit </a><br>
 	IBM developerWorks article.

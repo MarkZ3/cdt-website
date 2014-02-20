@@ -101,8 +101,8 @@
 	by clicking on the Development Builds tab.</p>
 
 <p>Bleeding edge continuous builds are available from the
-	<a href="https://hudson.eclipse.org/cdt/job/cdt-master">cdt-master Hudson build page</a> and the p2 software repository: <a href="https://hudson.eclipse.org/cdt/job/cdt-master/lastSuccessfulBuild/artifact/releng/org.eclipse.cdt.repo/target/repository">
-https://hudson.eclipse.org/cdt/job/cdt-master/lastSuccessfulBuild/artifact/releng/org.eclipse.cdt.repo/target/repository</a></p>
+	<a href="https://hudson.eclipse.org/cdt/job/cdt-master">cdt-master Hudson build page</a> and the p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/8.4/nightly">
+http://download.eclipse.org/tools/cdt/builds/8.4/nightly</a></p>
 
 <p>Milestones p2 software repository: <a href="http://download.eclipse.org/tools/cdt/builds/luna/milestones">
 http://download.eclipse.org/tools/cdt/builds/luna/milestones</a></p>

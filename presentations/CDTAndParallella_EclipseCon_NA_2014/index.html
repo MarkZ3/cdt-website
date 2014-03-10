@@ -60,18 +60,34 @@
 				</section>
 
 				<section>
+					<h2>About us</h2>
+					<ul>
+						<li>Andreas Olofsson</li>
+						<ul>
+							<li>Founder and CEO of Adapteva</li>
+							<li>Creator of the Parallella</li>
+						</ul>
+						<li>Marc Khouzam</li>
+						<ul>
+							<li>CDT Committer, lead for Debug</li>
+							<li>Working on Multicore Debugging since the fall of 2010</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
 					<h2>Agenda</h2>
 					<ul>
-						<li class="fragment">Parallella and Epiphany</li>
-						<li class="fragment">Debugging Parallella with CDT</li>
-						<li class="fragment">Next steps for CDT and Parallella</li>
-						<li class="fragment">Other news for CDT Debug</li>
+						<li>Parallella and Epiphany</li>
+						<li>Debugging Parallella with CDT</li>
+						<li>Next steps for CDT and Parallella</li>
+						<li>Other news for CDT Debug</li>
+						<li>Debugging Parallella: live demo</li>
 					</ul>
 				</section>
 				
 				<section>
 					<section>
-						<h2>The Parallella and Epiphany</h2>
+						<h2>Parallella and Epiphany</h2>
 						<ul>
 							<li class="fragment">Something goes here</li>
 							<li class="fragment">Something else goes here</li>
@@ -81,41 +97,72 @@
 					
 				<section>
 					<section>
-						<h2>Debugging the Parallella with CDT</h2>
+						<h2>Debugging Parallella with CDT</h2>
+						<ul>
 							<li class="fragment">Ericsson (CDT) and Adapteva (Parallela) collaboration</li>
 							<li class="fragment">Provide open-source solution to a multicore open platform</li>
+						</ul>
 					</section>
 
 					<section>
 						<h2>Previous Debug Solution for Epiphany</h2>
+						<ul>
 							<li class="fragment">Tradional debugging on a single core</li>
 							<li class="fragment">Load program on a core and debug it</li>
 							<li class="fragment">No global perspective</li>
 							<li class="fragment">Needs one session per core to deal with entire system</li>
 							<li class="fragment">Does not scale past 16 cores, and even then</li>
+						</ul>
 					</section>
 
 					<section>
 						<h2>Implemented Enhancements</h2>
+						<ul>
 							<li class="fragment">Single session to debug the entire epiphany</li>
 							<li class="fragment">Connecting to a running system</li>
 							<li class="fragment">Tradional debugging for each core</li>
 							<li class="fragment">A <em>debug process</em> is a group of cores running the same binary</li>
 							<li class="fragment">A <em>debug thread</em> is a single core</li>
 							<li class="fragment">Support for Non-stop mode</li>
-					</section>
-
-					<section>
-						<h2>Debugging the Epiphany</h2>
-						<img src="img/EpiphanyDebug.png" alt="Traditional Debug of Epiphany"/>
-						<ul>
-							<li class="fragment">Debug entire Epiphany in a single session</li>
-							<li class="fragment">Connecting to a running system</li>
-							<li class="fragment">Tradional debugging for many cores at once</li>
-							<li class="fragment">Debug view does not scale very well</li>
 						</ul>
 					</section>
 
+					<section>
+						<h2>Debugging the main Parallella chip</h2>
+						<img width="800px" src="img/ParallellaDebug1.png" alt="Debug of Parallella main chip"/>
+						<ul>
+							<li class="fragment">Remote Debug of ARM chip (Ubuntu) with GDB/gdbserver</li>
+							<li class="fragment">Traditional debug operations for ARM program</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Multicore Debugging the Epiphany</h2>
+						<img height="600px" src="img/ParallellaDebug2.png" alt="Debug of Epiphany chip"/>
+						<ul>
+							<li class="fragment">Remote Multicore Debug Epiphany with e-GDB/e-server</li>
+							<li class="fragment">Traditional debug operations for all Epiphany cores</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Multicore Debugging Parallella</h2>
+						<ul>
+							<li class="fragment">Debug using both sessions</li>
+						</ul>
+						<img class="fragment" width="900px" src="img/ParallellaDebug3.png" alt="Debug of Parallella main chip"/>
+					</section>
+
+					<section>
+						<h2>Scaling issues</h2>
+						<img style="float:left;margin-left:200px" height="700px" class="fragment" src="img/ParallellaDebugScaling.png" alt="Debug view not scaling"/>
+						<ul>
+							<li class="fragment">Debug view with 64 cores</li>
+							<li class="fragment">Unmanageable!</li>
+							<li class="fragment">Need Visualization</li>
+						</ul>
+					</section>
+                    
 					<section>
 						<h2>Generic Multicore Visualizer</h2>
 						<img class="fragment" src="img/MulticoreVisualizerTriplet.png" alt="Generic Multicore Visualizer"/>
@@ -138,19 +185,58 @@
 					</section>
 
 					<section>
-						<h2>Program Distribution</h2>
-						<img width="800px" src="img/EpiphanyProcessDistribution.png" alt="Program Distribution"/>
+						<h2>Epiphany Multicore Visualizer Layout</h2>
+						<img width="600px" src="img/Epiphany16Layout.png" alt="Epiphany Visualizer Layout"/>
 					</section>
 
 					<section>
-						<h2>Network Load</h2>
-						<img width="800px" src="img/EpiphanyMockup.png" alt="Network Load"/>
+						<h2>Program Distribution and Load</h2>
+						<img width="600px" src="img/Epiphany16Load.png" alt="Program Distribution"/>
+					</section>
+
+					<section>
+						<h2>64-core Layout</h2>
+						<img width="600px" src="img/Epiphany64Layout.png" alt="Network Load"/>
+					</section>
+
+					<section>
+						<h2>64-core Load</h2>
+						<img width="600px" src="img/Epiphany64Load.png" alt="Network Load"/>
 					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>Next Step for CDT and Parallella</h2>
+						<ul>
+							<li class="fragment">State of individual cores</li>
+							<li class="fragment">Display of multiple thousands of cores</li>
+							<li class="fragment">Zooming</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Debugging thousands of cores</h2>
+						<img width="800px" src="img/Epiphany4096Layout.png" alt="Thousands of cores mockup"/>
+					</section>
+
+					<section>
+						<h2>Debugging thousands of cores</h2>
+						<h3>Possible solutions</h3>
+						<ul>
+							<li class="fragment">Use of colors to pin-point an issue</li>
+							<li class="fragment">Automatic issue detection</li>
+							<li class="fragment">Zooming</li>
+							<li class="fragment">Use of scrollbars</li>
+							<li class="fragment">Pin & Clone concept</li>
+							<ul>
+								<li class="fragment">Multiple Visualizer views</li>
+								<li class="fragment">One high-level view</li>
+								<li class="fragment">One or more zoomed views</li>
+							</ul>
+							<br>
+							<li class="fragment"><em>More study needed, more collaboration</em></li>
+						</ul>
 					</section>
 				</section>
 					
@@ -164,34 +250,33 @@
 						<h2>Return Values</h2>
 						<img width="900px" src="img/ReturnValues.png" alt="Display of Return Values"/>
 						<ul>
-							<li class="fragment" data-fragment-index="2">After a Step-Return</li>
-							<li class="fragment" data-fragment-index="3">Top element of Variables view</li>
-							<li class="fragment" data-fragment-index="4">Removed at next execution</li>
+							<li class="fragment">After a Step-Return</li>
+							<li class="fragment">Top element of Variables view</li>
+							<li class="fragment">Removed at next execution</li>
+							<li class="fragment">Plan to generalize for Step-Over</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Trace Control View</h2>
-						<img style="float: left" width="400px" src="img/Tracing1.png" alt="Tracing Experiment"/>
+						<img style="float:left" width="400px" src="img/Tracing1.png" alt="Tracing Experiment"/>
 						<ul>
-							<li class="fragment" data-fragment-index="3">Graphical view</li>
-							<li class="fragment" data-fragment-index="4">Optional automatic refresh</li>
-							<li class="fragment" data-fragment-index="5">Start and end time of trace</li>
-							<li class="fragment" data-fragment-index="6">Trace started by $user</li>
-							<li class="fragment" data-fragment-index="7">Circular Buffer</li>
-							<li class="fragment" data-fragment-index="8">Navigation Scrollbar</li>
-							<li class="fragment" data-fragment-index="9">Disconnected Tracing</li>
+							<li class="fragment">Graphical view</li>
+							<li class="fragment">Navigation Scrollbar</li>
+							<li class="fragment">Circular Buffer</li>
+							<li class="fragment">Disconnected Tracing</li>
+							<li class="fragment">Optional automatic refresh</li>
 						</ul>
 						<img width="450px" src="img/Tracing2.png" alt="Examining Tracing Result"/>
 					</section>
 
 					<section>
 						<h2>Dynamic-Printf</h2>
-						<img style="float: left;" width="450px" src="img/DPrintfSelect.png" alt="Dynamic Printf Type"/>
+						<img style="float:left" width="450px" src="img/DPrintfSelect.png" alt="Dynamic Printf Type"/>
 						<ul>
-							<li class="fragment" data-fragment-index="3">No re-compiling</li>
-							<li class="fragment" data-fragment-index="4">No re-deploying</li>
-							<li class="fragment" data-fragment-index="5">Debugger can disconnect</li>
+							<li class="fragment">No re-compiling</li>
+							<li class="fragment">No re-deploying</li>
+							<li class="fragment">Debugger can disconnect</li>
 						</ul>
 						<img width="550px" src="img/DPrintfProperties.png" alt="Dynamic Printf Properties"/>
 					</section>
@@ -206,35 +291,35 @@
 
 					<section>
 						<h2>New Launch UI</h2>
-						<img width="600px" src="img/.png" alt="New Launch UI"/>
-						<ul>
-							<li class="fragment"></li>
-						</ul>
+						<img width="900px" src="img/NewLaunchUI.png" alt="New Launch UI"/>
 					</section>
 
 					<section>
 						<h2>Standalone CDT Debugger</h2>
 						<img width="900px" src="img/StandaloneDebugger.png" alt="Standalone Debugger"/>
-						<ul>
-							<li class="fragment"></li>
-						</ul>
 					</section>
 				</section>
 
 				<section>
-						<h2>Resources</h2>
-							<a href="http://www.parallella.org/">Parallella</a><br>
-							<a href="https://wiki.eclipse.org/CDT/MultiCoreDebugWorkingGroup">Multicore Debug Workgroup</a><br>
-							<a href="https://wiki.eclipse.org/CDT/User/NewIn83#Debug">CDT 8.3 Debug New & Noteworthy</a><br>
-							<a href="https://wiki.eclipse.org/CDT/User/NewIn84#Debug">CDT 8.4 Debug New & Noteworthy</a><br>
-							<a href="https://wiki.eclipse.org/CDT/User/FAQ#Debugging_C.2FC.2B.2B_Projects">CDT Debug FAQ</a><br>
-							<a href="https://wiki.eclipse.org/CDT/StandaloneDebugger">CDT Standalone Debugger</a><br>
-							<a href="http://www.adapteva.com/">Adapteva</a><br>
-							<a href="http://www.ericsson.com/article/open_source_1714451213_c">Ericsson Open-Source</a><br>
+					<h2>Debugging Parallella: live demo</h2>
 				</section>
 
 				<section>
-						<h2>Q&amp;A</h2>
+					<h2>Resources</h2>
+					<ul>
+						<a href="http://www.parallella.org/">Parallella</a><br>
+						<a href="https://wiki.eclipse.org/CDT/MultiCoreDebugWorkingGroup">Multicore Debug Workgroup</a><br>
+						<a href="https://wiki.eclipse.org/CDT/User/NewIn83#Debug">CDT 8.3 Debug New & Noteworthy</a><br>
+						<a href="https://wiki.eclipse.org/CDT/User/NewIn84#Debug">CDT 8.4 Debug New & Noteworthy</a><br>
+						<a href="https://wiki.eclipse.org/CDT/User/FAQ#Debugging_C.2FC.2B.2B_Projects">CDT Debug FAQ</a><br>
+						<a href="https://wiki.eclipse.org/CDT/StandaloneDebugger">CDT Standalone Debugger</a><br>
+						<a href="http://www.adapteva.com/">Adapteva</a><br>
+						<a href="http://www.ericsson.com/article/open_source_1714451213_c">Ericsson Open-Source</a><br>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Q&amp;A</h2>
 				</section>
 				<section>
                     <h2>Themes</h2>

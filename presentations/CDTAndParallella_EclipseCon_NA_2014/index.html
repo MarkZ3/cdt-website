@@ -61,14 +61,16 @@
 
 				<section>
 					<h2>About us</h2>
+					<br>
 					<ul>
-						<li>Andreas Olofsson</li>
-						<ul>
+						<li class="fragment" data-fragment-index="1">Andreas Olofsson</li>
+						<ul class="fragment" data-fragment-index="1">
 							<li>Founder and CEO of Adapteva</li>
 							<li>Creator of the Parallella</li>
 						</ul>
-						<li>Marc Khouzam</li>
-						<ul>
+						<br>
+						<li class="fragment" data-fragment-index="2">Marc Khouzam</li>
+						<ul class="fragment" data-fragment-index="2">
 							<li>CDT Committer, lead for Debug</li>
 							<li>Working on Multicore Debugging since the fall of 2010</li>
 						</ul>
@@ -79,7 +81,7 @@
 					<ul>
 						<li>Parallella and Epiphany</li>
 						<li>Debugging Parallella with CDT</li>
-						<li>Next steps for CDT and Parallella</li>
+						<li>Possible Next steps for CDT and Parallella</li>
 						<li>Other news for CDT Debug</li>
 						<li>Debugging Parallella: live demo</li>
 					</ul>
@@ -207,40 +209,69 @@
 
 				<section>
 					<section>
-						<h2>Next Step for CDT and Parallella</h2>
+						<h2>Possible Next Steps</h2>
 						<ul>
-							<li class="fragment">State of individual cores</li>
-							<li class="fragment">Display of multiple thousands of cores</li>
-							<li class="fragment">Zooming</li>
+							<li class="fragment">State of individual cores in Visualizer</li>
+							<li class="fragment">Grouping</li>
+							<ul>
+								<li class="fragment">GDB IT sets support</li>
+								<li class="fragment">Run Control operations on group</li>
+								<li class="fragment">Breakpoints limited to group</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>User-selectable cores to debug</h2>
+						<img width="600px" src="img/SelectableCores.png" alt="Selecting cores to debug"/>
+						<ul>
+							<li class="fragment">Attach to a group/process to debug</li>
+							<li class="fragment">Debug view only shows attached groups</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Debugging thousands of cores</h2>
-						<img width="800px" src="img/Epiphany4096Layout.png" alt="Thousands of cores mockup"/>
+						<img width="700px" src="img/Epiphany4096Layout.png" alt="Thousands of cores mockup"/>
 					</section>
 
 					<section>
 						<h2>Debugging thousands of cores</h2>
 						<h3>Possible solutions</h3>
 						<ul>
+							<li class="fragment">Zooming</li>
 							<li class="fragment">Use of colors to pin-point an issue</li>
 							<li class="fragment">Automatic issue detection</li>
-							<li class="fragment">Zooming</li>
-							<li class="fragment">Use of scrollbars</li>
-							<li class="fragment">Pin & Clone concept</li>
+							<li class="fragment">Use of scrollbars or mouse drag</li>
+							<br>
+							<li class="fragment"><em>More study needed, more collaboration</em></li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Visualizer Zooming</h2>
+						<img style="float:left" class="fragment" height="450px" src="img/Zoom1.png" alt="Before zooming"/>
+						<img style="float:right" class="fragment" height="450px" src="img/Zoom2.png" alt="After zooming"/>
+						<ul>
+							<li class="fragment">Zoom directly</li>
+							<li class="fragment">Pin & Clone</li>
 							<ul>
 								<li class="fragment">Multiple Visualizer views</li>
 								<li class="fragment">One high-level view</li>
 								<li class="fragment">One or more zoomed views</li>
 							</ul>
-							<br>
-							<li class="fragment"><em>More study needed, more collaboration</em></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Visualizer Pin & Clone</h2>
+						<img class="fragment" width="900px" src="img/DoubleVisualizer.png" alt="Visualizing both chips"/>
+						<ul>
+							<li class="fragment">The entire Parallella: ARM and Epiphany chips</li>
 						</ul>
 					</section>
 				</section>
-					
-					
+
 				<section>
 					<section>
 						<h2>Other news for CDT Debug</h2>

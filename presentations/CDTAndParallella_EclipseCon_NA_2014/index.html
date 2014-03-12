@@ -81,7 +81,7 @@
 					<ul>
 						<li>Parallella and Epiphany</li>
 						<li>Debugging Parallella with CDT</li>
-						<li>Possible Next steps for CDT and Parallella</li>
+						<li>Possible next steps</li>
 						<li>Other news for CDT Debug</li>
 						<li>Debugging Parallella: live demo</li>
 					</ul>
@@ -90,10 +90,7 @@
 				<section>
 					<section>
 						<h2>Parallella and Epiphany</h2>
-						<ul>
-							<li class="fragment">Something goes here</li>
-							<li class="fragment">Something else goes here</li>
-						</ul>
+						<img class="fragment" width="800px" src="img/Parallella.png" alt="Parallella chip"/>
 					</section>
 				</section>
 					
@@ -101,15 +98,21 @@
 					<section>
 						<h2>Debugging Parallella with CDT</h2>
 						<ul>
-							<li class="fragment">Ericsson (CDT) and Adapteva (Parallela) collaboration</li>
-							<li class="fragment">Provide open-source solution to a multicore open platform</li>
+							<li class="fragment">Ericsson (CDT) and Adapteva (Parallella) collaboration</li>
+							<li class="fragment">Goals</li>
+							<ul>
+								<li class="fragment">Open-source multicore debug solution for Parallella</li>
+								<li class="fragment">Open example for multicore debug in CDT</li>
+								<li class="fragment">Easy access to multicore debugging for all</li>
+								<li class="fragment">Collaboration and exposure to improve multicore debug</li>
+							</ul>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Previous Debug Solution for Epiphany</h2>
 						<ul>
-							<li class="fragment">Tradional debugging on a single core</li>
+							<li class="fragment">Single-core traditional hardware debug using GDB</li>
 							<li class="fragment">Load program on a core and debug it</li>
 							<li class="fragment">No global perspective</li>
 							<li class="fragment">Needs one session per core to deal with entire system</li>
@@ -121,17 +124,18 @@
 						<h2>Implemented Enhancements</h2>
 						<ul>
 							<li class="fragment">Single session to debug the entire epiphany</li>
-							<li class="fragment">Connecting to a running system</li>
-							<li class="fragment">Tradional debugging for each core</li>
+							<li class="fragment">Connecting to an already running system</li>
 							<li class="fragment">A <em>debug process</em> is a group of cores running the same binary</li>
 							<li class="fragment">A <em>debug thread</em> is a single core</li>
+							<li class="fragment">Traditional debugging for each core</li>
+							<li class="fragment">Epiphany Multicore Visualizer</li>
 							<li class="fragment">Support for Non-stop mode</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Debugging the main Parallella chip</h2>
-						<img width="800px" src="img/ParallellaDebug1.png" alt="Debug of Parallella main chip"/>
+						<img class="fragment" width="800px" src="img/ParallellaDebug1.png" alt="Debug of Parallella main chip"/>
 						<ul>
 							<li class="fragment">Remote Debug of ARM chip (Ubuntu) with GDB/gdbserver</li>
 							<li class="fragment">Traditional debug operations for ARM program</li>
@@ -140,9 +144,9 @@
 
 					<section>
 						<h2>Multicore Debugging the Epiphany</h2>
-						<img height="600px" src="img/ParallellaDebug2.png" alt="Debug of Epiphany chip"/>
+						<img class="fragment" height="550px" src="img/ParallellaDebug2.png" alt="Debug of Epiphany chip"/>
 						<ul>
-							<li class="fragment">Remote Multicore Debug Epiphany with e-GDB/e-server</li>
+							<li class="fragment">Remote Multicore Debug of Epiphany with e-GDB/e-server</li>
 							<li class="fragment">Traditional debug operations for all Epiphany cores</li>
 						</ul>
 					</section>
@@ -158,6 +162,7 @@
 					<section>
 						<h2>Scaling issues</h2>
 						<img style="float:left;margin-left:200px" height="700px" class="fragment" src="img/ParallellaDebugScaling.png" alt="Debug view not scaling"/>
+						<br><br><br><br>
 						<ul>
 							<li class="fragment">Debug view with 64 cores</li>
 							<li class="fragment">Unmanageable!</li>
@@ -171,12 +176,12 @@
 						<ul>
 							<li class="fragment">Monitor entire system at a glance</li>
 							<li class="fragment">Control program execution from Visualizer</li>
+							<li class="fragment">Syncronized with Debug view</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Epiphany Multicore Visualizer</h2>
-						<img class="fragment" style="float: right" width="500px" src="img/EpiphanyVisualizer.png" alt="Epiphany Multicore Visualizer"/>
 						<ul>
 							<li class="fragment">Hardware layout</li>
 							<li class="fragment">Cores and network</li>
@@ -188,12 +193,26 @@
 
 					<section>
 						<h2>Epiphany Multicore Visualizer Layout</h2>
-						<img width="600px" src="img/Epiphany16Layout.png" alt="Epiphany Visualizer Layout"/>
+						<img style="float:left" width="500px" src="img/Epiphany16Layout.png" alt="Epiphany Visualizer Layout"/>
+						<br><br><br><br>
+						<ul>
+							<li class="fragment">Actual hardware layout</li>
+							<li class="fragment">Core IDs</li>
+							<li class="fragment">Color shows binary loaded</li>
+							<li class="fragment">Selection of cores</li>
+							<li class="fragment">Status bar info</li>
+						</ul>
 					</section>
 
 					<section>
 						<h2>Program Distribution and Load</h2>
-						<img width="600px" src="img/Epiphany16Load.png" alt="Program Distribution"/>
+						<img style="float:left" width="500px" src="img/Epiphany16Load.png" alt="Program Distribution"/>
+						<br><br><br><br>
+						<ul>
+							<li class="fragment">Layout with network</li>
+							<li class="fragment">Load per core</li>
+							<li class="fragment">Load per network link</li>
+						</ul>
 					</section>
 
 					<section>
@@ -209,30 +228,42 @@
 
 				<section>
 					<section>
-						<h2>Possible Next Steps</h2>
+						<h2>Possible next steps</h2>
+					</section>
+
+					<section>
+						<h2>Status reporting</h2>
 						<ul>
-							<li class="fragment">State of individual cores in Visualizer</li>
-							<li class="fragment">Grouping</li>
-							<ul>
-								<li class="fragment">GDB IT sets support</li>
-								<li class="fragment">Run Control operations on group</li>
-								<li class="fragment">Breakpoints limited to group</li>
-							</ul>
+							<li class="fragment">Running state per core in Visualizer</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Grouping</h2>
+						<ul>
+							<li class="fragment">GDB IT sets support</li>
+							<li class="fragment">Run Control operations on group</li>
+							<li class="fragment">Breakpoints limited to group</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>User-selectable cores to debug</h2>
-						<img width="600px" src="img/SelectableCores.png" alt="Selecting cores to debug"/>
+						<img width="500px" src="img/SelectableCores.png" alt="Selecting cores to debug"/>
 						<ul>
-							<li class="fragment">Attach to a group/process to debug</li>
+							<li class="fragment">Attach to a group/process to debug it</li>
 							<li class="fragment">Debug view only shows attached groups</li>
+							<li class="fragment">Attaching directly from Visualizer</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Debugging thousands of cores</h2>
-						<img width="700px" src="img/Epiphany4096Layout.png" alt="Thousands of cores mockup"/>
+						<ul>
+							<li class="fragment">4096 cores</li>
+						</ul>
+						<p>
+						<img class="fragment" width="600px" src="img/Epiphany4096Layout.png" alt="Thousands of cores mockup"/>
 					</section>
 
 					<section>

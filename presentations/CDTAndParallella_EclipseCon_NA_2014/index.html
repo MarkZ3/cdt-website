@@ -22,9 +22,15 @@
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
 		</script>
 
 		<!--[if lt IE 9]>
@@ -55,7 +61,8 @@
 					<h2>CDT and Parallella</h2>
 					<h3>Multicore Debugging for the Masses</h3>
 					<p>
-						<small>Marc Khouzam (Ericsson) and Andreas Olofsson (Adapteva)</small>
+					Andreas Olofsson (Adapteva)<p>
+					Marc Khouzam (Ericsson)
 					</p>
 				</section>
 
@@ -66,7 +73,7 @@
 						<li class="fragment" data-fragment-index="1">Andreas Olofsson</li>
 						<ul class="fragment" data-fragment-index="1">
 							<li>Founder and CEO of Adapteva</li>
-							<li>Creator of the Parallella</li>
+							<li>Creator of Parallella</li>
 						</ul>
 						<br>
 						<li class="fragment" data-fragment-index="2">Marc Khouzam</li>
@@ -83,7 +90,7 @@
 						<li>Debugging Parallella with CDT</li>
 						<li>Possible next steps</li>
 						<li>Other news for CDT Debug</li>
-						<li>Debugging Parallella: live demo</li>
+						<li>Q&A</li>
 					</ul>
 				</section>
 				
@@ -123,7 +130,7 @@
 					<section>
 						<h2>Implemented Enhancements</h2>
 						<ul>
-							<li class="fragment">Single session to debug the entire epiphany</li>
+							<li class="fragment">Single session to debug the entire Epiphany</li>
 							<li class="fragment">Connecting to an already running system</li>
 							<li class="fragment">A <em>debug process</em> is a group of cores running the same binary</li>
 							<li class="fragment">A <em>debug thread</em> is a single core</li>
@@ -271,9 +278,9 @@
 						<h3>Possible solutions</h3>
 						<ul>
 							<li class="fragment">Zooming</li>
+							<li class="fragment">Use of scrollbars or mouse drag</li>
 							<li class="fragment">Use of colors to pin-point an issue</li>
 							<li class="fragment">Automatic issue detection</li>
-							<li class="fragment">Use of scrollbars or mouse drag</li>
 							<br>
 							<li class="fragment"><em>More study needed, more collaboration</em></li>
 						</ul>
@@ -358,12 +365,9 @@
 
 					<section>
 						<h2>Standalone CDT Debugger</h2>
+						<pre><code>&gt; run-gdbstandalone.sh [-b &lt;build_log&gt;] -e &lt;binary&gt; [arg1 ... argn]</code></pre>
 						<img width="900px" src="img/StandaloneDebugger.png" alt="Standalone Debugger"/>
 					</section>
-				</section>
-
-				<section>
-					<h2>Debugging Parallella: live demo</h2>
 				</section>
 
 				<section>

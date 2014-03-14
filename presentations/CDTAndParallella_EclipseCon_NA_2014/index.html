@@ -96,8 +96,23 @@
 				
 				<section>
 					<section>
-						<h2>Parallella and Epiphany</h2>
-						<img class="fragment" width="800px" src="img/Parallella.png" alt="Parallella chip"/>
+						<h2>An Epiphany Introduction</h2>
+						<img width="1000px" src="img/Epiphany1.png" alt="Epiphany Architecture"/>
+					</section>
+					<section>
+						<h2>Massive Parallelism Has Arrived!</h2>
+						<img width="1000px" src="img/Epiphany2.png" alt="Massive Parallelism"/>
+						<ul>
+							<li><em>How in the ^**&#@ are we doing to program AND DEBUG this??</em></li>
+						</ul>
+					</section>
+					<section>
+						<h2>The Parallella Computer</h2>
+						<img width="1050px" src="img/Epiphany3.png" alt="Parallella computer"/>
+					</section>
+					<section>
+						<h2>Debugging for Massive Parallelism</h2>
+						<img width="1000px" src="img/Epiphany4.png" alt="Debugging issues"/>
 					</section>
 				</section>
 					
@@ -106,7 +121,7 @@
 						<h2>Debugging Parallella with CDT</h2>
 						<ul>
 							<li class="fragment">Ericsson (CDT) and Adapteva (Parallella) collaboration</li>
-							<li class="fragment">Goals</li>
+							<li class="fragment">Goals:</li>
 							<ul>
 								<li class="fragment">Open-source multicore debug solution for Parallella</li>
 								<li class="fragment">Open example for multicore debug in CDT</li>
@@ -142,7 +157,7 @@
 
 					<section>
 						<h2>Debugging the main Parallella chip</h2>
-						<img class="fragment" width="800px" src="img/ParallellaDebug1.png" alt="Debug of Parallella main chip"/>
+						<img class="fragment" width="900px" src="img/ParallellaDebug1.png" alt="Debug of Parallella main chip"/>
 						<ul>
 							<li class="fragment">Remote Debug of ARM chip (Ubuntu) with GDB/gdbserver</li>
 							<li class="fragment">Traditional debug operations for ARM program</li>
@@ -163,7 +178,7 @@
 						<ul>
 							<li class="fragment">Debug using both sessions</li>
 						</ul>
-						<img class="fragment" width="900px" src="img/ParallellaDebug3.png" alt="Debug of Parallella main chip"/>
+						<img class="fragment" width="1000px" src="img/ParallellaDebug3.png" alt="Debug of Parallella main chip"/>
 					</section>
 
 					<section>
@@ -200,7 +215,7 @@
 
 					<section>
 						<h2>Epiphany Multicore Visualizer Layout</h2>
-						<img style="float:left" width="500px" src="img/Epiphany16Layout.png" alt="Epiphany Visualizer Layout"/>
+						<img style="float:left" width="550px" src="img/Epiphany16Layout.png" alt="Epiphany Visualizer Layout"/>
 						<br><br><br><br>
 						<ul>
 							<li class="fragment">Actual hardware layout</li>
@@ -213,7 +228,7 @@
 
 					<section>
 						<h2>Program Distribution and Load</h2>
-						<img style="float:left" width="500px" src="img/Epiphany16Load.png" alt="Program Distribution"/>
+						<img style="float:left" width="550px" src="img/Epiphany16Load.png" alt="Program Distribution"/>
 						<br><br><br><br>
 						<ul>
 							<li class="fragment">Layout with network</li>
@@ -224,12 +239,12 @@
 
 					<section>
 						<h2>64-core Layout</h2>
-						<img width="600px" src="img/Epiphany64Layout.png" alt="Network Load"/>
+						<img width="700px" src="img/Epiphany64Layout.png" alt="Network Load"/>
 					</section>
 
 					<section>
 						<h2>64-core Load</h2>
-						<img width="600px" src="img/Epiphany64Load.png" alt="Network Load"/>
+						<img width="700px" src="img/Epiphany64Load.png" alt="Network Load"/>
 					</section>
 				</section>
 
@@ -256,7 +271,7 @@
 
 					<section>
 						<h2>User-selectable cores to debug</h2>
-						<img width="500px" src="img/SelectableCores.png" alt="Selecting cores to debug"/>
+						<img width="600px" src="img/SelectableCores.png" alt="Selecting cores to debug"/>
 						<ul>
 							<li class="fragment">Attach to a group/process to debug it</li>
 							<li class="fragment">Debug view only shows attached groups</li>
@@ -270,7 +285,7 @@
 							<li class="fragment">4096 cores</li>
 						</ul>
 						<p>
-						<img class="fragment" width="600px" src="img/Epiphany4096Layout.png" alt="Thousands of cores mockup"/>
+						<img class="fragment" width="700px" src="img/Epiphany4096Layout.png" alt="Thousands of cores mockup"/>
 					</section>
 
 					<section>
@@ -303,7 +318,7 @@
 
 					<section>
 						<h2>Visualizer Pin & Clone</h2>
-						<img class="fragment" width="900px" src="img/DoubleVisualizer.png" alt="Visualizing both chips"/>
+						<img class="ragment" width="1050px" src="img/DoubleVisualizer.png" alt="Visualizing both chips"/>
 						<ul>
 							<li class="fragment">The entire Parallella: ARM and Epiphany chips</li>
 						</ul>
@@ -317,50 +332,52 @@
 
 					<section>
 						<h2>Return Values</h2>
-						<img width="900px" src="img/ReturnValues.png" alt="Display of Return Values"/>
+						<img width="1000px" src="img/ReturnValues.png" alt="Display of Return Values"/>
 						<ul>
-							<li class="fragment">After a Step-Return</li>
-							<li class="fragment">Top element of Variables view</li>
-							<li class="fragment">Removed at next execution</li>
-							<li class="fragment">Plan to generalize for Step-Over</li>
+							<li>After a Step-Return</li>
+							<li>Top element of Variables view</li>
+							<li>Removed at next execution</li>
+							<li>Plan to generalize for Step-Over</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Trace Control View</h2>
-						<img style="float:left" width="400px" src="img/Tracing1.png" alt="Tracing Experiment"/>
+						<img style="float:left" width="500px" src="img/Tracing1.png" alt="Tracing Experiment"/>
+						<br><br>
 						<ul>
-							<li class="fragment">Graphical view</li>
-							<li class="fragment">Navigation Scrollbar</li>
-							<li class="fragment">Circular Buffer</li>
-							<li class="fragment">Disconnected Tracing</li>
-							<li class="fragment">Optional automatic refresh</li>
+							<li>Graphical view</li>
+							<li>Navigation Scrollbar</li>
+							<li>Circular Buffer</li>
+							<li>Disconnected Tracing</li>
+							<li>Optional automatic refresh</li>
 						</ul>
-						<img width="450px" src="img/Tracing2.png" alt="Examining Tracing Result"/>
+						<img width="550px" src="img/Tracing2.png" alt="Examining Tracing Result"/>
 					</section>
 
 					<section>
 						<h2>Dynamic-Printf</h2>
-						<img style="float:left" width="450px" src="img/DPrintfSelect.png" alt="Dynamic Printf Type"/>
+						<img style="float:left" width="475px" src="img/DPrintfSelect.png" alt="Dynamic Printf Type"/>
+						<br><br>
 						<ul>
-							<li class="fragment">No re-compiling</li>
-							<li class="fragment">No re-deploying</li>
-							<li class="fragment">Debugger can disconnect</li>
+							<li>No re-compiling</li>
+							<li>No re-deploying</li>
+							<li>Debugger can disconnect</li>
 						</ul>
-						<img width="550px" src="img/DPrintfProperties.png" alt="Dynamic Printf Properties"/>
+						<img width="575px" src="img/DPrintfProperties.png" alt="Dynamic Printf Properties"/>
 					</section>
 
 					<section>
 						<h2>Hardware and Temporary Breakpoints</h2>
-						<img width="600px" src="img/HardwareBp.png" alt="Breakpoint type"/>
+						<img width="800px" src="img/HardwareBp.png" alt="Breakpoint type"/>
 						<ul>
-							<li class="fragment"><em>Add Breakpoint</em> or <em>Breakpoint Properties</em></li>
+							<li>Through <em>Add Breakpoint</em> or <em>Breakpoint Properties</em></li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>New Launch UI</h2>
-						<img width="900px" src="img/NewLaunchUI.png" alt="New Launch UI"/>
+						<img width="1000px" src="img/NewLaunchUI.png" alt="New Launch UI"/>
 					</section>
 
 					<section>

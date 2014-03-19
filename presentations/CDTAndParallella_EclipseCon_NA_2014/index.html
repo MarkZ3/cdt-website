@@ -117,7 +117,7 @@
 					<section>
 						<h2>Debugging Parallella with CDT</h2>
 						<ul>
-							<li class="fragment">Ericsson (CDT) and Adapteva (Parallella) collaboration</li>
+							<li class="nofragment">Ericsson (CDT) and Adapteva (Parallella) collaboration</li>
 							<li class="fragment">Goals:</li>
 							<ul>
 								<li class="fragment">Open-source multicore debug solution for Parallella</li>
@@ -154,19 +154,19 @@
 
 					<section>
 						<h2>Debugging the main chip</h2>
-						<img class="fragment" width="900px" src="img/ParallellaDebug1.png" alt="Debug of Parallella main chip"/>
+						<img class="fragment" data-fragment-index="1" width="900px" src="img/ParallellaDebug1.png" alt="Debug of Parallella main chip"/>
 						<ul>
-							<li class="fragment">Remote Debug of ARM chip (Ubuntu) with GDB/gdbserver</li>
-							<li class="fragment">Traditional debug operations for ARM program</li>
+							<li class="fragment" data-fragment-index="1">Remote Debug of ARM chip (Ubuntu) with GDB/gdbserver</li>
+							<li class="fragment" data-fragment-index="1">Traditional debug operations for ARM program</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Multicore Debugging the Epiphany</h2>
-						<img class="fragment" height="550px" src="img/ParallellaDebug2.png" alt="Debug of Epiphany chip"/>
+						<img class="fragment" data-fragment-index="1" height="550px" src="img/ParallellaDebug2.png" alt="Debug of Epiphany chip"/>
 						<ul>
-							<li class="fragment">Remote Multicore Debug of Epiphany with e-GDB/e-server</li>
-							<li class="fragment">Traditional debug operations for all Epiphany cores</li>
+							<li class="fragment" data-fragment-index="1">Remote Multicore Debug of Epiphany with e-GDB/e-server</li>
+							<li class="fragment" data-fragment-index="1">Traditional debug operations for all Epiphany cores</li>
 						</ul>
 					</section>
 
@@ -180,33 +180,33 @@
 
 					<section>
 						<h2>Scaling issues</h2>
-						<img style="float:left;margin-left:200px" height="700px" class="fragment" src="img/ParallellaDebugScaling.png" alt="Debug view not scaling"/>
+						<img style="float:left;margin-left:200px" height="700px" class="fragment" data-fragment-index="1" src="img/ParallellaDebugScaling.png" alt="Debug view not scaling"/>
 						<br><br><br><br>
 						<ul>
-							<li class="fragment">Debug view with 64 cores</li>
-							<li class="fragment">Unmanageable!</li>
-							<li class="fragment">Need Visualization</li>
+							<li class="fragment" data-fragment-index="2">Debug view with 64 cores</li>
+							<li class="fragment" data-fragment-index="2">Unmanageable!</li>
+							<li class="fragment" data-fragment-index="2">Need Visualization</li>
 						</ul>
 					</section>
                     
 					<section>
 						<h2>Generic Multicore Visualizer</h2>
-						<img class="fragment" src="img/MulticoreVisualizerTriplet.png" alt="Generic Multicore Visualizer"/>
+						<img class="fragment" data-fragment-index="1" src="img/MulticoreVisualizerTriplet.png" alt="Generic Multicore Visualizer"/>
 						<ul>
-							<li class="fragment">Monitor entire system at a glance</li>
-							<li class="fragment">Control program execution from Visualizer</li>
-							<li class="fragment">Syncronized with Debug view</li>
+							<li class="fragment" data-fragment-index="1">Monitor entire system at a glance</li>
+							<li class="fragment" data-fragment-index="1">Control program execution from Visualizer</li>
+							<li class="fragment" data-fragment-index="1">Syncronized with Debug view</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Epiphany Multicore Visualizer</h2>
 						<ul>
-							<li class="fragment">Hardware layout</li>
-							<li class="fragment">Cores and network</li>
-							<li class="fragment">Process distribution</li>
-							<li class="fragment">Load of cores</li>
-							<li class="fragment">Load of network</li>
+							<li class="fragment" data-fragment-index="1">Hardware layout</li>
+							<li class="fragment" data-fragment-index="1">Cores and network</li>
+							<li class="fragment" data-fragment-index="1">Process distribution</li>
+							<li class="fragment" data-fragment-index="1">Load of cores</li>
+							<li class="fragment" data-fragment-index="1">Load of network</li>
 						</ul>
 					</section>
 
@@ -215,11 +215,11 @@
 						<img style="float:left" width="550px" src="img/Epiphany16Layout.png" alt="Epiphany Visualizer Layout"/>
 						<br><br><br><br>
 						<ul>
-							<li class="fragment">Actual hardware layout</li>
-							<li class="fragment">Core IDs</li>
-							<li class="fragment">Color shows binary loaded</li>
-							<li class="fragment">Selection of cores</li>
-							<li class="fragment">Status bar info</li>
+							<li class="fragment" data-fragment-index="1">Actual hardware layout</li>
+							<li class="fragment" data-fragment-index="1">Core IDs</li>
+							<li class="fragment" data-fragment-index="1">Color shows binary loaded</li>
+							<li class="fragment" data-fragment-index="1">Selection of cores</li>
+							<li class="fragment" data-fragment-index="1">Status bar info</li>
 						</ul>
 					</section>
 
@@ -228,9 +228,9 @@
 						<img style="float:left" width="550px" src="img/Epiphany16Load.png" alt="Program Distribution"/>
 						<br><br><br><br>
 						<ul>
-							<li class="fragment">Layout with network</li>
-							<li class="fragment">Load per core</li>
-							<li class="fragment">Load per network link</li>
+							<li class="fragment" data-fragment-index="1">Layout with network</li>
+							<li class="fragment" data-fragment-index="1">Load per core</li>
+							<li class="fragment" data-fragment-index="1">Load per network link</li>
 						</ul>
 					</section>
 
@@ -258,9 +258,9 @@
 					<section>
 						<h2>Grouping</h2>
 						<ul>
-							<li class="fragment">GDB IT sets support</li>
-							<li class="fragment">Run Control operations on group</li>
-							<li class="fragment">Breakpoints limited to group</li>
+							<li class="fragment" data-fragment-index="1">GDB IT sets support</li>
+							<li class="fragment" data-fragment-index="1">Run Control operations on group</li>
+							<li class="fragment" data-fragment-index="1">Breakpoints limited to group</li>
 						</ul>
 					</section>
 
@@ -268,9 +268,9 @@
 						<h2>User-selectable cores to debug</h2>
 						<img width="600px" src="img/SelectableCores.png" alt="Selecting cores to debug"/>
 						<ul>
-							<li class="fragment">Attach to a group/process to debug it</li>
-							<li class="fragment">Debug view only shows attached groups</li>
-							<li class="fragment">Attaching directly from Visualizer</li>
+							<li class="fragment" data-fragment-index="1">Attach to a group/process to debug it</li>
+							<li class="fragment" data-fragment-index="1">Debug view only shows attached groups</li>
+							<li class="fragment" data-fragment-index="1">Attaching directly from Visualizer</li>
 						</ul>
 					</section>
 
@@ -287,35 +287,35 @@
 						<h2>Debugging thousands of cores</h2>
 						<h3>Possible solutions</h3>
 						<ul>
-							<li class="fragment">Zooming</li>
-							<li class="fragment">Use of scrollbars or mouse drag</li>
-							<li class="fragment">Use of colors to pin-point an issue</li>
-							<li class="fragment">Automatic issue detection</li>
+							<li class="fragment" data-fragment-index="1">Zooming</li>
+							<li class="fragment" data-fragment-index="1">Use of scrollbars or mouse drag</li>
+							<li class="fragment" data-fragment-index="1">Use of colors to pin-point an issue</li>
+							<li class="fragment" data-fragment-index="1">Automatic issue detection</li>
 							<br>
-							<li class="fragment"><em>More study needed, more collaboration</em></li>
+							<li class="fragment" data-fragment-index="2"><em>More study needed, more collaboration</em></li>
 						</ul>
 					</section>
 					
 					<section>
 						<h2>Visualizer Zooming</h2>
-						<img style="float:left" class="fragment" height="450px" src="img/Zoom1.png" alt="Before zooming"/>
-						<img style="float:right" class="fragment" height="450px" src="img/Zoom2.png" alt="After zooming"/>
+						<img style="float:left" class="fragment" data-fragment-index="1" height="450px" src="img/Zoom1.png" alt="Before zooming"/>
+						<img style="float:right" class="fragment" data-fragment-index="2" height="450px" src="img/Zoom2.png" alt="After zooming"/>
 						<ul>
-							<li class="fragment">Zoom directly</li>
-							<li class="fragment">Pin & Clone</li>
+							<li class="fragment" data-fragment-index="3">Zoom directly</li>
+							<li class="fragment" data-fragment-index="4">Pin & Clone</li>
 							<ul>
-								<li class="fragment">Multiple Visualizer views</li>
-								<li class="fragment">One high-level view</li>
-								<li class="fragment">One or more zoomed views</li>
+								<li class="fragment" data-fragment-index="4">Multiple Visualizer views</li>
+								<li class="fragment" data-fragment-index="4">One high-level view</li>
+								<li class="fragment" data-fragment-index="4">One or more zoomed views</li>
 							</ul>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Visualizer Pin & Clone</h2>
-						<img class="ragment" width="1050px" src="img/DoubleVisualizer.png" alt="Visualizing both chips"/>
+						<img class="nofragment" width="1050px" src="img/DoubleVisualizer.png" alt="Visualizing both chips"/>
 						<ul>
-							<li class="fragment">The entire Parallella: ARM and Epiphany chips</li>
+							<li class="nofragment">The entire Parallella: ARM and Epiphany chips</li>
 						</ul>
 					</section>
 

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CDT and Parallella</title>
+
+		<meta name="description" content="Overview of how CDT approaches debugging the open-hardware Parallella board">
+		<meta name="author" content="Marc Khouzam (Ericsson) and Andreas Olofsson (Adapteva)">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme"> 
+        <!-- themes are: beige.css default.css night.css serif.css solarized.css
+                         blood.css moon.css simple.css sky.css sky2.css -->
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div style="float: left">
+			<img hspace="25px" vspace="18px" src="img/ericsson_logo.png"/>
+		</div>
+		<div style="float: left">
+			<img hspace="25px" vspace="10px" src="img/cdt_logo.png"/>
+		</div>
+		
+		<div style="float: right">
+			<img hspace="15px" vspace="15px" src="img/adapteva_logo.png"/>
+		</div>
+		<div style="float: right">
+			<img hspace="15px" vspace="15px" src="img/parallella_logo.png"/>
+		</div>
+		
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<h2>CDT and Parallella</h2>
+					<h3>Multicore Debugging for the Masses</h3>
+					<p>
+					Andreas Olofsson (Adapteva)<p>
+					Marc Khouzam (Ericsson)
+					</p>
+				</section>
+
+				<section>
+					<h2>About us</h2>
+					<br>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Andreas Olofsson</li>
+						<ul class="fragment" data-fragment-index="1">
+							<li>Founder and CEO of Adapteva</li>
+							<li>Creator of Parallella</li>
+						</ul>
+						<br>
+						<li class="fragment" data-fragment-index="2">Marc Khouzam</li>
+						<ul class="fragment" data-fragment-index="2">
+							<li>CDT Committer, lead for Debug</li>
+							<li>Working on Multicore Debugging since the fall of 2010</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Parallella and Epiphany</li>
+						<li>Debugging Parallella with CDT</li>
+						<li>Possible next steps</li>
+						<li>Other news for CDT Debug</li>
+						<li>Q&A</li>
+					</ul>
+				</section>
+				
+					<section>
+						<h2>An Epiphany Introduction</h2>
+						<img width="1000px" src="img/Epiphany1.png" alt="Epiphany Architecture"/>
+					</section>
+					<section>
+						<h2>Massive Parallelism Has Arrived!</h2>
+						<img width="1000px" src="img/Epiphany2.png" alt="Massive Parallelism"/>
+						<ul>
+							<li><em>How in the ^**&#@ are we doing to program AND DEBUG this??</em></li>
+						</ul>
+					</section>
+					<section>
+						<h2>The Parallella Computer</h2>
+						<img width="1050px" src="img/Epiphany3.png" alt="Parallella computer"/>
+					</section>
+					<section>
+						<h2>Debugging for Massive Parallelism</h2>
+						<img width="1000px" src="img/Epiphany4.png" alt="Debugging issues"/>
+					</section>
+					
+					<section>
+						<h2>Debugging Parallella with CDT</h2>
+						<ul>
+							<li class="nofragment">Ericsson (CDT) and Adapteva (Parallella) collaboration</li>
+							<li class="fragment" data-fragment-index="2">Goals:</li>
+							<ul>
+								<li class="fragment" data-fragment-index="2">Open-source multicore debug solution for Parallella</li>
+								<li class="fragment" data-fragment-index="2">Open example for multicore debug in CDT</li>
+								<li class="fragment" data-fragment-index="2">Easy access to multicore debugging for all</li>
+								<li class="fragment" data-fragment-index="2">Collaboration and exposure to improve multicore debug</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Previous Debug Solution for Epiphany</h2>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Single-core traditional hardware debug using GDB</li>
+							<li class="fragment" data-fragment-index="1">Load program on a core and debug it</li>
+							<li class="fragment" data-fragment-index="1">No global perspective</li>
+							<li class="fragment" data-fragment-index="1">Needs one session per core to deal with entire system</li>
+							<li class="fragment" data-fragment-index="1">Does not scale past 16 cores, and even then</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Implemented Enhancements</h2>
+						<ul>
+                            <br>
+							<li class="fragment" data-fragment-index="1">Single session to debug the entire Epiphany</li>
+							<li class="fragment" data-fragment-index="1">Connecting to an already running system</li>
+                            <br>
+							<li class="fragment" data-fragment-index="2">A <em>debug thread</em> is a single core</li>
+							<li class="fragment" data-fragment-index="2">A <em>debug process</em> is a group of cores running the same binary</li>
+							<li class="fragment" data-fragment-index="2">Traditional debugging for each core</li>
+                            <br>
+							<li class="fragment" data-fragment-index="3">Epiphany Multicore Visualizer</li>
+                            <br>
+							<li class="fragment" data-fragment-index="4">Support for Non-stop mode</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Debugging the main chip</h2>
+						<img class="fragment" data-fragment-index="1" width="900px" src="img/ParallellaDebug1.png" alt="Debug of Parallella main chip"/>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Remote Debug of ARM chip (Ubuntu) with GDB/gdbserver</li>
+							<li class="fragment" data-fragment-index="1">Traditional debug operations for ARM program</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Multicore Debugging the Epiphany</h2>
+						<img class="fragment" data-fragment-index="1" height="550px" src="img/ParallellaDebug2.png" alt="Debug of Epiphany chip"/>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Remote Multicore Debug of Epiphany with e-GDB/e-server</li>
+							<li class="fragment" data-fragment-index="1">Traditional debug operations for all Epiphany cores</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Multicore Debugging Parallella</h2>
+						<ul>
+							<li class="fragment">Debug using both sessions</li>
+						</ul>
+						<img class="fragment" width="1000px" src="img/ParallellaDebug3.png" alt="Debug of Parallella main chip"/>
+					</section>
+
+					<section>
+						<h2>Scaling issues</h2>
+						<img style="float:left;margin-left:200px" height="700px" class="fragment" data-fragment-index="1" src="img/ParallellaDebugScaling.png" alt="Debug view not scaling"/>
+						<br><br><br><br>
+						<ul>
+							<li class="fragment" data-fragment-index="2">Debug view with 64 cores</li>
+							<li class="fragment" data-fragment-index="2">Unmanageable!</li>
+							<li class="fragment" data-fragment-index="2">Need Visualization</li>
+						</ul>
+					</section>
+                    
+					<section>
+						<h2>Generic Multicore Visualizer</h2>
+						<img class="fragment" data-fragment-index="1" src="img/MulticoreVisualizerTriplet.png" alt="Generic Multicore Visualizer"/>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Monitor entire system at a glance</li>
+							<li class="fragment" data-fragment-index="1">Control program execution from Visualizer</li>
+							<li class="fragment" data-fragment-index="1">Synchronized with Debug view</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Epiphany Multicore Visualizer</h2>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Hardware layout</li>
+							<li class="fragment" data-fragment-index="1">Cores and network</li>
+							<li class="fragment" data-fragment-index="1">Process distribution</li>
+							<li class="fragment" data-fragment-index="1">Load of cores</li>
+							<li class="fragment" data-fragment-index="1">Load of network</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Epiphany Multicore Visualizer Layout</h2>
+						<img style="float:left" width="550px" src="img/Epiphany16Layout.png" alt="Epiphany Visualizer Layout"/>
+						<br><br><br><br>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Actual hardware layout</li>
+							<li class="fragment" data-fragment-index="1">Core IDs</li>
+							<li class="fragment" data-fragment-index="1">Color shows binary loaded</li>
+							<li class="fragment" data-fragment-index="1">Selection of cores</li>
+							<li class="fragment" data-fragment-index="1">Status bar info</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Program Distribution and Load</h2>
+						<img style="float:left" width="550px" src="img/Epiphany16Load.png" alt="Program Distribution"/>
+						<br><br><br><br>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Layout with network</li>
+							<li class="fragment" data-fragment-index="1">Load per core</li>
+							<li class="fragment" data-fragment-index="1">Load per network link</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>64-core Layout</h2>
+						<img width="700px" src="img/Epiphany64Layout.png" alt="Network Load"/>
+					</section>
+
+					<section>
+						<h2>64-core Load</h2>
+						<img width="700px" src="img/Epiphany64Load.png" alt="Network Load"/>
+					</section>
+
+					<section>
+						<h2>Possible next steps</h2>
+					</section>
+
+					<section>
+						<h2>Status reporting</h2>
+						<ul>
+							<li class="fragment">Running state per core in Visualizer</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Grouping</h2>
+						<ul>
+							<li class="fragment" data-fragment-index="1">GDB IT sets support</li>
+							<li class="fragment" data-fragment-index="1">Run Control operations on group</li>
+							<li class="fragment" data-fragment-index="1">Breakpoints limited to group</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>User-selectable cores to debug</h2>
+						<img width="600px" src="img/SelectableCores.png" alt="Selecting cores to debug"/>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Attach to a group/process to debug it</li>
+							<li class="fragment" data-fragment-index="1">Debug view only shows attached groups</li>
+							<li class="fragment" data-fragment-index="1">Attaching directly from Visualizer</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Debugging thousands of cores</h2>
+						<ul>
+							<li class="fragment">4096 cores</li>
+						</ul>
+						<p>
+						<img class="fragment" width="700px" src="img/Epiphany4096Layout.png" alt="Thousands of cores mockup"/>
+					</section>
+
+					<section>
+						<h2>Debugging thousands of cores</h2>
+						<h3>Possible solutions</h3>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Zooming</li>
+							<li class="fragment" data-fragment-index="1">Use of scrollbars or mouse drag</li>
+							<li class="fragment" data-fragment-index="1">Use of colors to pin-point an issue</li>
+							<li class="fragment" data-fragment-index="1">Automatic issue detection</li>
+							<br>
+							<li class="fragment" data-fragment-index="2"><em>More study needed, more collaboration</em></li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Visualizer Zooming</h2>
+						<img style="float:left" class="fragment" data-fragment-index="1" height="450px" src="img/Zoom1.png" alt="Before zooming"/>
+						<img style="float:right" class="fragment" data-fragment-index="2" height="450px" src="img/Zoom2.png" alt="After zooming"/>
+						<ul>
+							<li class="fragment" data-fragment-index="3">Zoom directly</li>
+							<li class="fragment" data-fragment-index="4">Pin & Clone</li>
+							<ul>
+								<li class="fragment" data-fragment-index="4">Multiple Visualizer views</li>
+								<li class="fragment" data-fragment-index="4">One high-level view</li>
+								<li class="fragment" data-fragment-index="4">One or more zoomed views</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Visualizer Pin & Clone</h2>
+						<img class="nofragment" width="1050px" src="img/DoubleVisualizer.png" alt="Visualizing both chips"/>
+						<ul>
+							<li class="nofragment">The entire Parallella: ARM and Epiphany chips</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Other news for CDT Debug</h2>
+					</section>
+
+					<section>
+						<h2>Return Values</h2>
+						<img width="1000px" src="img/ReturnValues.png" alt="Display of Return Values"/>
+						<ul>
+							<li>After a Step-Return</li>
+							<li>Top element of Variables view</li>
+							<li>Removed at next execution</li>
+							<li>Plan to generalize for Step-Over</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Trace Control View</h2>
+						<img style="float:left" width="500px" src="img/Tracing1.png" alt="Tracing Experiment"/>
+						<br><br>
+						<ul>
+							<li>Graphical view</li>
+							<li>Navigation Scrollbar</li>
+							<li>Circular Buffer</li>
+							<li>Disconnected Tracing</li>
+							<li>Optional automatic refresh</li>
+						</ul>
+						<img width="550px" src="img/Tracing2.png" alt="Examining Tracing Result"/>
+					</section>
+
+					<section>
+						<h2>Dynamic-Printf</h2>
+						<img style="float:left" width="475px" src="img/DPrintfSelect.png" alt="Dynamic Printf Type"/>
+						<br><br>
+						<ul>
+							<li>No re-compiling</li>
+							<li>No re-deploying</li>
+							<li>Debugger can disconnect</li>
+						</ul>
+						<img width="575px" src="img/DPrintfProperties.png" alt="Dynamic Printf Properties"/>
+					</section>
+
+					<section>
+						<h2>Hardware and Temporary Breakpoints</h2>
+						<img width="800px" src="img/HardwareBp.png" alt="Breakpoint type"/>
+						<ul>
+							<li>Through <em>Add Breakpoint</em> or <em>Breakpoint Properties</em></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>New Launch UI</h2>
+						<img width="1000px" src="img/NewLaunchUI.png" alt="New Launch UI"/>
+					</section>
+
+					<section>
+						<h2>Standalone CDT Debugger</h2>
+						<pre><code>&gt; run-gdbstandalone.sh [-b &lt;build_log&gt;] -e &lt;binary&gt; [arg1 ... argn]</code></pre>
+						<img width="900px" src="img/StandaloneDebugger.png" alt="Standalone Debugger"/>
+					</section>
+
+				<section>
+					<h2>Resources</h2>
+					<ul>
+						<a href="http://www.parallella.org/">Parallella</a><br>
+						<a href="https://wiki.eclipse.org/CDT/MultiCoreDebugWorkingGroup">Multicore Debug Workgroup</a><br>
+						<a href="https://wiki.eclipse.org/CDT/User/NewIn83#Debug">CDT 8.3 Debug New & Noteworthy</a><br>
+						<a href="https://wiki.eclipse.org/CDT/User/NewIn84#Debug">CDT 8.4 Debug New & Noteworthy</a><br>
+						<a href="https://wiki.eclipse.org/CDT/User/FAQ#Debugging_C.2FC.2B.2B_Projects">CDT Debug FAQ</a><br>
+						<a href="https://wiki.eclipse.org/CDT/StandaloneDebugger">CDT Standalone Debugger</a><br>
+						<a href="http://www.adapteva.com/">Adapteva</a><br>
+						<a href="http://www.ericsson.com/article/open_source_1714451213_c">Ericsson Open-Source</a><br>
+					</ul>
+				</section>
+
+				<section>
+                    <h2>Themes</h2>
+                    <p>
+                        Use the below links to change themes <br>
+                        <a href="?#/themes">Default</a> -
+                        <a href="?theme=sky#/themes">Sky</a> -
+                        <a href="?theme=sky2#/themes">Sky2</a> -
+                        <a href="?theme=blood#/themes">Blood</a> -
+                        <a href="?theme=beige#/themes">Beige</a> -
+                        <a href="?theme=simple#/themes">Simple</a> -
+                        <a href="?theme=serif#/themes">Serif</a> -
+                        <a href="?theme=night#/themes">Night</a> -
+                        <a href="?theme=moon#/themes">Moon</a> -
+                        <a href="?theme=solarized#/themes">Solarized</a>
+                    </p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

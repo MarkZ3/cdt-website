@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>CDT and Parallella</title>
+		<title>Eclipse CDT-Debug in Luna, Mars and Beyond</title>
 
-		<meta name="description" content="Overview of how CDT approaches debugging the open-hardware Parallella board">
-		<meta name="author" content="Marc Khouzam (Ericsson) and Andreas Olofsson (Adapteva)">
+		<meta name="description" content="Overview of the latest features in CDT">
+		<meta name="author" content="Alvaro Sanchez-Leon (Ericsson), Marc-André Laperle (Ericsson) and Marc Dumais (Ericsson)">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -45,12 +45,8 @@
 		<div style="float: left">
 			<img hspace="25px" vspace="10px" src="img/cdt_logo.png"/>
 		</div>
-		
 		<div style="float: right">
-			<img hspace="15px" vspace="15px" src="img/adapteva_logo.png"/>
-		</div>
-		<div style="float: right">
-			<img hspace="15px" vspace="15px" src="img/parallella_logo.png"/>
+			<p>_____Eclipse Day Montreal 2014_____</p>
 		</div>
 		
 		<div class="reveal">
@@ -58,42 +54,166 @@
 			<div class="slides">
 
 				<section>
-					<h2>CDT and Parallella</h2>
-					<h3>Multicore Debugging for the Masses</h3>
+					<h2>Eclipse CDT-Debug</h2>
+					<h3>in Luna, Mars and Beyond</h3>
+
 					<p>
-					Andreas Olofsson (Adapteva)<p>
-					Marc Khouzam (Ericsson)
+					Alvaro Sanchez-Leon (Ericsson)<p>
+					Marc-André Laperle (Ericsson)<p>
+                                        Marc Dumais (Ericsson)
 					</p>
 				</section>
 
 				<section>
-					<h2>About us</h2>
-					<br>
-					<ul>
-						<li class="fragment" data-fragment-index="1">Andreas Olofsson</li>
-						<ul class="fragment" data-fragment-index="1">
-							<li>Founder and CEO of Adapteva</li>
-							<li>Creator of Parallella</li>
-						</ul>
-						<br>
-						<li class="fragment" data-fragment-index="2">Marc Khouzam</li>
-						<ul class="fragment" data-fragment-index="2">
-							<li>CDT Committer, lead for Debug</li>
-							<li>Working on Multicore Debugging since the fall of 2010</li>
-						</ul>
-					</ul>
-				</section>
-				<section>
 					<h2>Agenda</h2>
 					<ul>
-						<li>Parallella and Epiphany</li>
+						<li>What is the CDT?</li>
+						<li>CDT Debug - Feature highlights</li>
 						<li>Debugging Parallella with CDT</li>
-						<li>Possible next steps</li>
-						<li>Other news for CDT Debug</li>
+						<li>Debugging with CDT - a use case Demo</li>
 						<li>Q&A</li>
 					</ul>
 				</section>
 				
+<!-- 
+What is the CDT?
+-->
+					<section>
+						<h2>What is the CDT?</h2>
+						<ul>
+							<li>C/C++ Development Tooling (CDT)</li>
+							<li>Tools for building applications in C/C++ using Eclipse</li>
+							<li>Platform used to create C/C++ IDEs</li>
+							<li>The Eclipse C/C++ IDE Package</li>
+							<li>A community of passionate tools developers</li>
+						</ul>
+					</section>
+
+<!-- 
+CDT Debug - Feature highlights
+-->
+					<section>
+						<h2>CDT Debug - Feature highlights</h2>
+					</section>
+					<section>
+						<h2>Reverse Debugging</h2>
+						<ul>
+							<li>Step or Resume forwards AND backwards</li>
+							<li>Go back in time, change data and re-write history</li>
+							<li>Use breakpoints to enable/disable recording</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Reverse Debugging</h2>
+						<img height="600px" src="img/ReverseDebugging.png" alt="Reverse Debugging"/>
+					</section>
+					
+					<section>
+						<h3>Multi-Process Debugging</h3>
+						<img height="600px" src="img/MultiProcess.png" alt="Multi-Process Debugging"/>
+					</section>
+					
+
+					<section>
+						<h2>Return Values</h2>
+						<img width="1000px" src="img/ReturnValues.png" alt="Display of Return Values"/>
+						<ul>
+							<li>After a Step-Return</li>
+							<li>Top element of Variables view</li>
+							<li>Removed at next execution</li>
+							<li>Plan to generalize for Step-Over</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step Into Selection</h2>
+						<pre class="fragment"><code>void compute(int a, float b) {
+	subtract(multiply(add(a, b), 3));
+}						</code></pre>
+
+						<h4 class="fragment">How many operations to step into subtract()?</h4>
+						<p class="fragment">Step-into:</p>
+						<pre class="fragment"><code>int add(int arg1, int arg2) {
+	return arg1 + arg2;
+}						</code></pre>
+
+						<p class="fragment">Return and Step-into again:</p>
+						<pre class="fragment"><code>int multiply(int arg1, int arg2) {
+	return arg1 * arg2;
+}						</code></pre>
+
+						<p class="fragment">Return and Step-into yet again to finally get to:</p>
+						<pre class="fragment"><code>int subtract(int arg1, int arg2) {
+	return arg1 - arg2;
+}						 </code></pre>
+						<h4 class="fragment">Five stepping operations!</h4>
+					</section>
+					
+					<section>
+						<h2>Step Into Selection</h2>
+						<pre><code>void compute(int a, float b) {
+	subtract(multiply(add(a, b), 3));
+}						</code></pre>
+						<p class="fragment">Select the "subtract" method call in the Editor</p>
+						<p class="fragment">Choose the Step-Into-Selection operation:</p>
+						<pre class="fragment"><code>int subtract(int arg1, int arg2) {
+	return arg1 - arg2;
+}						</code></pre>
+						<p class="fragment">All other method calls are stepped-over automatically</p>
+						<br>
+						<h4 class="fragment">Just one stepping operation!</h4>
+					</section>
+
+					<section>
+						<h2>Dynamic-Printf</h2>
+						<img style="float:left" width="475px" src="img/DPrintfSelect.png" alt="Dynamic Printf Type"/>
+						<br><br>
+						<ul>
+							<li>No re-compiling</li>
+							<li>No re-deploying</li>
+							<li>Debugger can disconnect</li>
+						</ul>
+						<img width="575px" src="img/DPrintfProperties.png" alt="Dynamic Printf Properties"/>
+					</section>
+
+					<section>
+						<h2>Standalone CDT Debugger</h2>
+						<pre><code>&gt; run-gdbstandalone.sh [-b &lt;build_log&gt;] -e &lt;binary&gt; [arg1 ... argn]</code></pre>
+						<img width="900px" src="img/StandaloneDebugger.png" alt="Standalone Debugger"/>
+					</section>
+
+					<section>
+						<h2>In the works</h2>
+						<ul>
+							<li class="nofragment">Register Grouping</li>
+   							<li class="nofragment">Debugging Parallela with CDT</li>
+							<li class="nofragment">New Launch UI</li>
+							<li class="nofragment">Global Breakpoints</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Features of current interest</h2>
+						<ul>
+							<li class="nofragment">Multi Level Hierarchy in the Debug View
+								<ul>
+									<li>Grouping of Debug view elements</li>
+									<li>Hiding of debug view elements</li>
+									<li>User-selectable Debug view layouts</li>
+								</ul>
+							</li>
+							<li class="nofragment">Synchronized Run Control Operations</li>
+							<li class="nofragment">Per-target Breakpoints</li>
+
+						</ul>
+					</section>
+<!-- 
+Debugging Parallella with CDT
+-->
+					<section>
+						<h2>Debugging Parallella with CDT</h2>
+					</section>
+
 					<section>
 						<h2>An Epiphany Introduction</h2>
 						<img width="1000px" src="img/Epiphany1.png" alt="Epiphany Architecture"/>
@@ -115,9 +235,8 @@
 					</section>
 					
 					<section>
-						<h2>Debugging Parallella with CDT</h2>
+						<h3>Ericsson (CDT) and Adapteva (Parallella) collaboration</h3>
 						<ul>
-							<li class="nofragment">Ericsson (CDT) and Adapteva (Parallella) collaboration</li>
 							<li class="fragment" data-fragment-index="2">Goals:</li>
 							<ul>
 								<li class="fragment" data-fragment-index="2">Open-source multicore debug solution for Parallella</li>
@@ -129,7 +248,7 @@
 					</section>
 
 					<section>
-						<h2>Previous Debug Solution for Epiphany</h2>
+						<h3>Previous Debug Solution for Epiphany</h3>
 						<ul>
 							<li class="fragment" data-fragment-index="1">Single-core traditional hardware debug using GDB</li>
 							<li class="fragment" data-fragment-index="1">Load program on a core and debug it</li>
@@ -322,76 +441,28 @@
 							<li class="nofragment">The entire Parallella: ARM and Epiphany chips</li>
 						</ul>
 					</section>
-
+<!-- 
+Debugging with CDT - a use case Demo
+-->
 					<section>
-						<h2>Other news for CDT Debug</h2>
+						<h2>Debugging with CDT - a use case Demo</h2>
 					</section>
-
+<!-- 
+Q & A
+-->
 					<section>
-						<h2>Return Values</h2>
-						<img width="1000px" src="img/ReturnValues.png" alt="Display of Return Values"/>
-						<ul>
-							<li>After a Step-Return</li>
-							<li>Top element of Variables view</li>
-							<li>Removed at next execution</li>
-							<li>Plan to generalize for Step-Over</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Trace Control View</h2>
-						<img style="float:left" width="500px" src="img/Tracing1.png" alt="Tracing Experiment"/>
-						<br><br>
-						<ul>
-							<li>Graphical view</li>
-							<li>Navigation Scrollbar</li>
-							<li>Circular Buffer</li>
-							<li>Disconnected Tracing</li>
-							<li>Optional automatic refresh</li>
-						</ul>
-						<img width="550px" src="img/Tracing2.png" alt="Examining Tracing Result"/>
-					</section>
-
-					<section>
-						<h2>Dynamic-Printf</h2>
-						<img style="float:left" width="475px" src="img/DPrintfSelect.png" alt="Dynamic Printf Type"/>
-						<br><br>
-						<ul>
-							<li>No re-compiling</li>
-							<li>No re-deploying</li>
-							<li>Debugger can disconnect</li>
-						</ul>
-						<img width="575px" src="img/DPrintfProperties.png" alt="Dynamic Printf Properties"/>
-					</section>
-
-					<section>
-						<h2>Hardware and Temporary Breakpoints</h2>
-						<img width="800px" src="img/HardwareBp.png" alt="Breakpoint type"/>
-						<ul>
-							<li>Through <em>Add Breakpoint</em> or <em>Breakpoint Properties</em></li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>New Launch UI</h2>
-						<img width="1000px" src="img/NewLaunchUI.png" alt="New Launch UI"/>
-					</section>
-
-					<section>
-						<h2>Standalone CDT Debugger</h2>
-						<pre><code>&gt; run-gdbstandalone.sh [-b &lt;build_log&gt;] -e &lt;binary&gt; [arg1 ... argn]</code></pre>
-						<img width="900px" src="img/StandaloneDebugger.png" alt="Standalone Debugger"/>
+						<h2>Q & A</h2>
 					</section>
 
 				<section>
 					<h2>Resources</h2>
 					<ul>
-						<a href="http://www.parallella.org/">Parallella</a><br>
-						<a href="https://wiki.eclipse.org/CDT/MultiCoreDebugWorkingGroup">Multicore Debug Workgroup</a><br>
 						<a href="https://wiki.eclipse.org/CDT/User/NewIn83#Debug">CDT 8.3 Debug New & Noteworthy</a><br>
 						<a href="https://wiki.eclipse.org/CDT/User/NewIn84#Debug">CDT 8.4 Debug New & Noteworthy</a><br>
 						<a href="https://wiki.eclipse.org/CDT/User/FAQ#Debugging_C.2FC.2B.2B_Projects">CDT Debug FAQ</a><br>
 						<a href="https://wiki.eclipse.org/CDT/StandaloneDebugger">CDT Standalone Debugger</a><br>
+						<a href="https://wiki.eclipse.org/CDT/MultiCoreDebugWorkingGroup">Multicore Debug Workgroup</a><br>
+						<a href="http://www.parallella.org/">Parallella</a><br>
 						<a href="http://www.adapteva.com/">Adapteva</a><br>
 						<a href="http://www.ericsson.com/article/open_source_1714451213_c">Ericsson Open-Source</a><br>
 					</ul>

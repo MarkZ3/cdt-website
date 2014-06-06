@@ -178,12 +178,6 @@ CDT Debug - Feature highlights
 					</section>
 
 					<section>
-						<h2>Standalone CDT Debugger</h2>
-						<pre><code>&gt; run-gdbstandalone.sh [-b &lt;build_log&gt;] -e &lt;binary&gt; [arg1 ... argn]</code></pre>
-						<img width="900px" src="img/StandaloneDebugger.png" alt="Standalone Debugger"/>
-					</section>
-
-					<section>
 						<h2>In the works</h2>
 						<ul>
 							<li class="nofragment">Register Grouping</li>
@@ -447,6 +441,40 @@ Debugging with CDT - a use case Demo
 					<section>
 						<h2>Debugging with CDT - a use case Demo</h2>
 					</section>
+
+					<section>
+						<h2>Standalone CDT Debugger</h2>
+						<pre><code>&gt; cdtdebug.sh -e &lt;binary&gt; [arg1 ... argn]</code></pre>
+						<img width="900px" src="img/StandaloneDebugger.png" alt="Standalone Debugger"/>
+					</section>
+
+					<section>
+						<h2>Standalone CDT Debugger</h2>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Uses an existing installation</li>
+							<li class="fragment" data-fragment-index="1">Installs a launch script in your home for convenience</li>
+							<li class="fragment" data-fragment-index="1">Launches with a subset of the plugins (custom config.ini)</li>
+							<li class="fragment" data-fragment-index="2">Several ways of launching:</li>
+							<ul>
+								<li class="fragment" data-fragment-index="2">Run executable: -e</li>
+								<li class="fragment" data-fragment-index="2">Attach: -a</li>
+								<li class="fragment" data-fragment-index="2">Postmortem (Coredump): -c</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Standalone CDT Debugger</h2>
+						<h3>Potential use cases</h3>
+					    <ul>
+							<li class="fragment" data-fragment-index="3">Quick launching from the command-line</li>
+							<li class="fragment" data-fragment-index="3">Integrate with other shell scripts</li>
+							<li class="fragment" data-fragment-index="3">Integrate with crash handlers?</li>
+							<ul>
+								<li class="fragment" data-fragment-index="4">Let's see if that's possible!</li>
+							</ul>
+						</ul>
+					</section>
 <!-- 
 Q & A
 -->
@@ -502,7 +530,7 @@ Q & A
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
